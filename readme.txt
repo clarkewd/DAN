@@ -1,0 +1,1 @@
+use the file in forside-02.html, junior-suits-alt.html, and rooms.
