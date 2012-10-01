@@ -1,0 +1,120 @@
+/* typography mixin */
+.brand-type{
+	font-family: @brand-type, serif;
+	font-weight: normal;
+	font-style:normal;
+	text-transform:uppercase;
+}
+.menu-text, .logo-text{
+	font-family: @base-type, sans-serif;
+	font-weight:600;
+	font-size:14px;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:0.1em;
+	line-height:1.5em;
+}
+.body-text{
+	font-family: @base-type, sans-serif;
+	font-weight:400;
+	text-align:left;
+	color:@brand-color-base-invert;
+}
+.sub-headline{
+	font-family: @base-type, sans-serif;
+	font-weight:300;
+	text-align:center;
+	font-size:1.75em;
+	line-height:1em;
+	color:@brand-color-base;
+}
+.teaser-text{
+	font-family: @base-type, sans-serif;
+	font-weight:300;
+	text-align:left;
+	font-size:1.125em;
+	line-height:1.35em;
+	color:@brand-color-base;
+}
+/* identity logotype mixin */
+.logotype{
+	.brand-type;
+	font-size:2.5em;
+	margin:0;
+	letter-spacing:0.15em;
+	line-height:1em;
+	text-align:center;
+	color:@brand-color-base;
+	a{
+		color:@brand-color-base;
+		font-weight:normal;
+	}
+	@media screen and (max-width:@tablet-01){
+		font-size:3em;
+	}
+}
+.logo-text{
+	letter-spacing:0.2em;
+	font-size:11px;
+	color:@brand-color-base;
+	line-height:1.2em;
+}
+.logo-text-bold{
+	letter-spacing:0.3em;
+	font-weight:600;
+	font-size:14px,
+}
+h1{
+	.brand-type;
+	font-size:4em;
+	line-height:1em;
+	color:@brand-color-base;
+	text-align:center;
+	text-shadow:1px 1px 0px rgba(0,0,0,0.3);
+	.item-invert &{
+		color:@brand-color-base-invert
+	}
+	@media screen and (max-width:@tablet-01){
+		font-size:4em;
+		line-height:1em;
+	}
+	@media screen and (max-width:@mobile){
+		font-size:2em;
+		line-height:0.85em;
+	}
+}
+h2{
+	.brand-type;
+	font-weight:300;
+	font-size:1.75em;
+	text-align:center;
+	line-height:1.25em;
+	letter-spacing:0.1em;
+	color:@brand-color-base;
+	margin-top:@row-height;
+	margin-bottom:@row-height;
+}
+h3{
+	.body-text;
+	font-weight:300;
+	font-size:1.5em;
+	text-align:center;
+	line-height:1.25em;
+	text-transform:capitalize;
+	color:@brand-color-base-invert;
+	margin-bottom:0;
+}
+p{
+	.body-text;
+	font-size:0.85em;
+	line-height:1.25em;
+	margin-top:0;
+	margin-bottom:@row-height;
+	a{
+		color:@brand-color-base-invert;
+		font-weight:600;
+		&:hover{
+			color:@brand-color-base;
+		}
+	}
+}

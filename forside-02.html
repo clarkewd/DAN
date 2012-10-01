@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="Halei">
+	<title></title>
+	<!-- Remove no-js enable html5 elemetns -->
+	<script type="text/javascript">
+		//Clear no-js
+		document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace('no-js','');
+		//Enable html5 elements in IE
+		'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)});
+	</script>
+
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="webfont-dangleterre/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<!-- site navigation -->
+	<div class="site-nav">
+		<div class="wrap">
+			<nav>
+				<div class="nav-bar">
+					<ul class="main-nav">
+						<li class="nav-item item-01"><a href="rooms.html">rooms & suites</a></li>
+						<li class="nav-item item-02"><a href="#">meetings & events</a></li>
+						<li class="nav-item item-03"><a href="#">dinning & drinking</a></li>
+						<li class="nav-item item-04"><a href="#">services</a></li>
+						<li class="nav-item item-05"><a href="#">legacy</a></li>
+<!-- 						<li class="nav-item item-04"><a href="#">legacy <span class="hidden-item"><br>&</span> heritage</a></li>
+ -->				</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- booking -->
+	<footer class="bottom-booking">
+		<div class="booking allcontent">
+			<div class="panel grad2 roomselection">
+			<div class="header">
+				<h3>
+					<span class="title">Your Selection</span>
+					<div class="clear">&nbsp;</div>
+				</h3>
+			</div>
+			<div class="inner">
+				<input type="hidden" name="booking.roomIterator[]" value="1">
+				<div class="subpanel multiroom active opened">
+					<input type="hidden" class="nights" value="1">
+					<div class="subpanel-content">
+						<div class="header">
+							<h3>
+								<span class="title">Room 1</span>
+								<div class="clear">&nbsp;</div>
+							</h3>
+						</div>
+						<div class="inner">
+							<div class="form-field-row">
+								<label for="room1_arrivalDay_layer">Arrival</label>
+								<div class="dateinput">
+									<input type="hidden" id="room1_arrival_layer" name="arrival" value="2012-09-14" class="hasDatepicker">
+									<div class="textinput w79">
+										<input type="text" id="room1_arrivalDay_layer" name="arrivalday" rel="room1_departureDay_layer" hiddenfield="room1_arrival_layer" value="14-09-12">
+									</div>
+									<!-- <img src="content/gfx/icon-cal.png" class="dateinput-trigger"> -->
+									<div class="clear">&nbsp;</div>
+								</div>
+								<div class="clear">&nbsp;</div>
+							</div>
+							<div class="form-field-row">
+								<label for="room1_departureDay_layer">Departure</label>
+								<div class="dateinput">
+									<input type="hidden" id="room1_departure_layer" name="departure" value="2012-09-15" class="hasDatepicker">
+									<div class="textinput w79">
+										<input type="text" id="room1_departureDay_layer" name="departureDay" rel="room1_arrivalDay_layer" hiddenfield="room1_departure_layer" value="15-09-12">
+									</div>
+									<!-- <img src="content/gfx/icon-cal.png" class="dateinput-trigger"> -->
+									<div class="clear">&nbsp;</div>
+								</div>
+								<div class="clear">&nbsp;</div>
+							</div>
+							<div class="form-field-row dropdown-selector room-selector">
+								<label for="room1_adults_layer-button">rooms</label>
+								<select id="room1_adults_layer" name="adults" class="w79" style="display: none; " aria-disabled="false">
+									
+									<option value="1" selected="selected">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select><a class="ui-selectmenu ui-widget ui-state-default ui-corner-all ui-selectmenu-dropdown w79" id="room1_adults_layer-button" role="button" href="#" tabindex="0" aria-haspopup="true" aria-owns="room1_adults_layer-menu" aria-disabled="false"><span class="ui-selectmenu-status">1</span><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span></a>
+								<div class="clear">&nbsp;</div>
+							</div>
+								<div class="form-field-row dropdown-selector guest-selector">
+									<label for="room1_children_layer-button">guests</label>
+									<select id="room1_children_layer" name="childCount" class="w79" style="display: none; " aria-disabled="false">
+										<option value="">0</option>
+										
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select><a class="ui-selectmenu ui-widget ui-state-default ui-corner-all ui-selectmenu-dropdown w79" id="room1_children_layer-button" role="button" href="#" tabindex="0" aria-haspopup="true" aria-owns="room1_children_layer-menu" aria-disabled="false"><span class="ui-selectmenu-status">0</span><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span></a>
+									<div class="clear">&nbsp;</div>
+								</div>
+							<a class="button button1" href="Javascript:void(0)" onclick="applyRoomselectionData();return false;"><span>Check Availability</span></a>
+							<a class="button button2 button-sec" href="Javascript:void(0)" onclick="applyRoomselectionData();return false;"><span>gift certificate</span></a>
+							<div class="clear">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="bottom"> </div>
+		</div>
+		<div class="practical-info">
+			<div class="inner">
+				<div class="practical-info-item practical-info-item-links">
+					<ul class="footer-links">
+						<li class="link-item"><a href="#">press and media</a></li>
+						<li class="link-item"><a href="#">careers</a></li>
+						<li class="link-item"><a href="#">legal information</a></li>
+						<li class="link-item"><a href="#">all contacts</a></li>
+						<li class="link-item"><a href="#">location on map</a></li>
+					</ul>
+				</div>
+				<div class="practical-info-item practical-info-item-lhw">
+					<img src="content/img/logo-lhw.png" alt="">
+					<p>Hotel D'Angleterre is a member of The Leading Hotels of the World</p>
+				</div>
+				<div class="practical-info-item practical-info-item-adress">
+					<p>34, Kongens Nytorv – DK-1050 Copenhagen K – Tel: +45 33 12 00 95 – <a href="mailto:joe@example.com?subject=feedback" "email me">hotel@dangleterre</a></p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- site page -->
+	<div class="page page-intro page-full-screen">
+		<div class="wrap">
+			<div class="flexslider">
+				<ul class="slides">
+					<li class="item-hotel">
+						<div class="display-container display-focus">
+							<div class="display-content display-content-text">
+								<img src="content/gfx/site-logo.png" alt="">
+								<h1>spirit of d'angleterre</h1>
+								<p class="sub-headline">Balancing legacy and style with intuitive and tailored services, the d’Angleterre will complement the desires of today’s refined travellers.</p>
+							</div>
+						</div>
+					</li>
+					<li class="item-01">
+						<!-- <div class="color-overlay"></div> -->
+						<div class="display-container display-focus">
+							<div class="display-content display-content-text">
+								<img src="content/gfx/site-logo.png" alt="">
+								<h1>spirit of d'angleterre</h1>
+								<p class="sub-headline">Balancing legacy and style with intuitive and tailored services, the d’Angleterre will complement the desires of today’s refined travellers.</p>
+							</div>
+						</div>
+					</li>
+					<li class="item-06">
+						<div class="display-container display-focus">
+							<div class="display-content display-content-text">
+								<img src="content/gfx/site-logo.png" alt="">
+								<h1>spirit of d'angleterre</h1>
+								<p class="sub-headline">Balancing legacy and style with intuitive and tailored services, the d’Angleterre will complement the desires of today’s refined travellers.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+<!-- 			<div class="btn btn-large btn-legacy">
+				<div class="btn-icon"></div>
+				<a href="#">legacy</a>
+			</div>
+ -->		</div>
+	</div>
+	<div class="page page-legacy page-full-screen">
+		<div class="wrap">
+			<!-- <h1>SPIRIT OF D'ANGLETERRE</h1> -->
+		</div>
+	</div>
+<body>
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+	<!-- Modernizr -->
+	<script type="text/javascript" src="scripts/modernizr.js" charset="utf-8"></script>
+	<!-- flexslider -->
+	<script defer src="scripts/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="scripts/my-script.js" charset="utf-8"></script>
+</body>
+</html>

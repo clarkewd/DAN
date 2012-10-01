@@ -1,0 +1,1 @@
+(function(e){e(function(){console.log("test")})})(jQuery);

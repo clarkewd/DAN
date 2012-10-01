@@ -1,0 +1,146 @@
+.bottom-booking{
+	display:block;
+	float:none;
+	bottom:-370px;
+	margin:0;
+	width:100%;
+	position:fixed;
+	z-index:101;
+	.transition(0.6s, ease-in-out);
+	background-color:@brand-color-highlight;
+	.allcontent{
+		background-color:@brand-color-base-invert-light;
+		padding:@row-height*0.2 0;
+	}
+	// remove unused clear space, should look again later;
+	.clear{
+		display:none;
+	}
+}
+.center-booking{
+	.transition(0.2s, ease-in-out);
+	bottom:0 !important;
+}
+.roomselection{
+	.clearfix();
+	.header{
+		h3{
+			display:none;
+			.title{
+
+			}
+		}
+	}
+	.inner{
+
+	}
+	.bottom{
+
+	}
+}
+.subpanel-content{
+	.inner{
+		.clearfix();
+		.column(12,14);
+		display:block;
+		position:relative;
+		float:none;
+		margin:0 auto;
+		.form-field-row{
+			display:block;
+			position:relative;
+			float:left;
+			margin-right:@row-height;
+			width:210px;
+			@media screen and (max-width:@tablet-01){
+				margin-bottom:@row-height;
+			}
+			&:first-child{
+				// margin-left:@row-height;
+				@media screen and (max-width:@tablet-01){
+
+				}
+				@media screen and (max-width:@tablet-02){
+					margin-left:0;
+				}
+			}
+			label{
+				.menu-text;
+				display:block;
+				float:left;
+				color:@brand-color-base;
+				text-align:left;
+				margin:@row-height*0.5 @row-height*0.5 @row-height*0.5 0;
+			}
+			.dateinput{
+				display:block;
+				position:relative;
+				float:left;
+				.textinput{
+					input{
+						border:none;
+						.menu-text;
+						width:100px;
+						font-weight:400;
+						text-align:left;
+						color:@brand-color-base-invert;
+						padding:0 @row-height*0.5;
+						margin-top:@row-height*0.5;
+					    -webkit-appearance: none;
+					    border-radius: 0;
+					}
+				}
+				.dateinput-trigger{
+					position:absolute;
+					right:@row-height*0.5;
+					top:3px;
+				}
+			}
+			a.ui-selectmenu{
+				display:block;
+				position:relative;
+				float:left;
+				background-color:@brand-color-base;
+				padding:0 @row-height*0.5;
+				margin-top:@row-height*0.5;
+				.ui-selectmenu-status{
+					.menu-text;
+					font-weight:400;
+					display:block;
+					float:left;
+					color:@brand-color-base-invert;
+					text-align:left;
+					margin-right:@row-height*0.5;
+				}
+				.ui-icon-triangle-1-s{
+					display:block;
+					position:relative;
+					float:left;
+					width:@row-height;
+					height:@row-height;
+					background-repeat:no-repeat;
+					background-position:center bottom;
+					background-image:url('@{icon-dropdown}');
+				}
+			}
+		}
+		.dropdown-selector{
+			width:110px;
+		}
+		.room-selector{
+		}
+		.guest-selector{
+		}
+		a.button{
+			.btn;
+			padding:@row-height*0.5;
+			&:hover{
+				color:@brand-color-base-invert;
+				background-color:@brand-color-background-alt;
+			}
+		}
+		a.button-sec{
+			font-weight:300;
+		}
+	}
+}
