@@ -991,6 +991,20 @@ ul.flex-direction-nav li .flex-next {
 .page-room-gallery .wrap .flex-control-paging {
   bottom: 10%;
 }
+.page-legacy {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.page-legacy-01 {
+  background-image: url('../content/img/legacy-02.jpg');
+}
+.page-legacy-02 {
+  background-image: url('../content/img/legacy-03.jpg');
+}
+.page-legacy-03 {
+  background-image: url('../content/img/legacy-01.jpg');
+}
 .page-content-page .display-container .display-content-row {
   *zoom: 1;
 }
@@ -1230,6 +1244,20 @@ ul.flex-direction-nav li .flex-next {
 }
 .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .flexslider ol.flex-control-nav {
   position: static;
+}
+.page-legacy .wrap .display-container .display-content-text {
+  display: inline;
+  float: left;
+  width: 41.07142857142857%;
+  margin: 0 0.8928571428571428%;
+  margin-left: 50.892857142857146%;
+  background-color: rgba(200, 207, 202, 0.8);
+  margin-top: 84px;
+  padding-bottom: 56px;
+}
+.page-legacy .wrap .display-container .display-content-text > * {
+  margin-left: 14px;
+  margin-right: 14px;
 }
 .video-background {
   display: block;

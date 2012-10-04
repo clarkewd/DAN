@@ -84,8 +84,8 @@ $(function(){ //jQuery Document Ready
 	}
 	function bookingScoll(){
 		var bodyOffset = $('body').scrollTop();
-		var targetOffset = $('.page-legacy').offset();
-		if(bodyOffset>(targetOffset.top*0.9)){
+		var targetOffset = $('.page-legacy-03').offset();
+		if(bodyOffset>(targetOffset.top)){
 			$('.bottom-booking').addClass('center-booking');
 		}else{
 			$('.bottom-booking').removeClass('center-booking');
@@ -96,6 +96,8 @@ $(function(){ //jQuery Document Ready
 		var btnLegacyBottom = $('.bottom-booking .booking').outerHeight(true);
 		$('.bottom-booking').css('bottom', -footerHeight);
 		$('.btn-legacy').css('bottom', (btnLegacyBottom+14));
+		// push footer need fix
+		$('.footer-push').css('height', footerHeight);
     }
 });
 })( jQuery );
