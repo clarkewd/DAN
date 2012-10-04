@@ -29,6 +29,7 @@ $(function(){ //jQuery Document Ready
 				keyboard: true,
 				slideshow: false,
 				animationSpeed: 400,
+				// controlsContainer: ".display-content-text",
 				start: function(slider){
 					$('body').removeClass('loading');
 				}

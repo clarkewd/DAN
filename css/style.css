@@ -37,7 +37,7 @@ body a {
   text-decoration: none;
 }
 body a:hover {
-  color: #320032;
+  color: #283232;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -75,7 +75,7 @@ body a:hover {
 .page-gallery h2 {
   margin-top: 3.5px;
   margin-bottom: 6.3px;
-  color: #320032;
+  color: #283232;
 }
 .page-room-gallery {
   background-color: #e4e7e5;
@@ -104,7 +104,7 @@ body a:hover {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   text-align: left;
-  color: #320032;
+  color: #283232;
 }
 .sub-headline {
   font-family: 'Source Sans Pro', sans-serif;
@@ -167,7 +167,7 @@ h1 {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 .item-invert h1 {
-  color: #320032;
+  color: #283232;
 }
 @media screen and (max-width: 1024px) {
   h1 {
@@ -196,29 +196,29 @@ h2 {
   margin-bottom: 14px;
 }
 h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  text-align: left;
+  font-family: 'dangleterre05regular', serif;
+  font-weight: normal;
+  font-style: normal;
   font-weight: 300;
   font-size: 1.5em;
   text-align: center;
   line-height: 1.25em;
-  text-transform: capitalize;
-  color: #320032;
+  text-transform: uppercase;
+  color: #283232;
   margin-bottom: 0;
 }
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   text-align: left;
-  color: #320032;
+  color: #283232;
   font-size: 0.85em;
   line-height: 1.25em;
   margin-top: 0;
   margin-bottom: 14px;
 }
 p a {
-  color: #320032;
+  color: #283232;
   font-weight: 600;
 }
 p a:hover {
@@ -328,7 +328,7 @@ p a:hover {
 }
 .nav-bar {
   *zoom: 1;
-  background-color: rgba(50, 0, 50, 0.9);
+  background-color: rgba(40, 50, 50, 0.9);
 }
 .nav-bar:before,
 .nav-bar:after {
@@ -402,7 +402,7 @@ p a:hover {
 }
 .nav-bar .main-nav .nav-item a:hover {
   background-color: #ffffff;
-  color: #320032;
+  color: #283232;
 }
 .nav-bar .sec-nav {
   float: right;
@@ -529,7 +529,7 @@ p a:hover {
   background-color: #96bec4;
 }
 .bottom-booking .allcontent {
-  background-color: rgba(50, 0, 50, 0.9);
+  background-color: rgba(40, 50, 50, 0.9);
   padding: 0 0;
 }
 .bottom-booking .clear {
@@ -626,9 +626,9 @@ p a:hover {
   width: 89px;
   font-weight: 400;
   text-align: left;
-  color: #320032;
-  padding: 7px;
-  margin-top: 7px;
+  color: #283232;
+  padding: 0 7px;
+  margin-top: 14px;
   -webkit-appearance: none;
   border-radius: 0;
 }
@@ -642,8 +642,8 @@ p a:hover {
   position: relative;
   float: left;
   background-color: #ffffff;
-  padding: 7px;
-  margin-top: 7px;
+  padding: 0 7px;
+  margin-top: 14px;
 }
 .subpanel-content .inner .form-field-row a.ui-selectmenu .ui-selectmenu-status {
   font-family: 'Source Sans Pro', sans-serif;
@@ -656,7 +656,7 @@ p a:hover {
   font-weight: 400;
   display: block;
   float: left;
-  color: #320032;
+  color: #283232;
   text-align: left;
   margin-right: 7px;
 }
@@ -689,7 +689,7 @@ p a:hover {
   position: relative;
   z-index: 99;
   margin-right: 14px;
-  background-color: #320032;
+  background-color: #283232;
   color: #ffffff;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -710,7 +710,7 @@ p a:hover {
   }
 }
 .subpanel-content .inner a.button:hover {
-  color: #320032;
+  color: #283232;
   background-color: #e4e7e5;
 }
 .subpanel-content .inner a.button-sec {
@@ -729,7 +729,7 @@ p a:hover {
   position: relative;
   z-index: 99;
   margin-right: 14px;
-  background-color: #320032;
+  background-color: #283232;
   color: #ffffff;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -761,7 +761,7 @@ p a:hover {
 .btn-large a {
   display: block;
   padding: 14px 28px;
-  background-color: #320032;
+  background-color: #283232;
 }
 .btn-legacy {
   position: absolute;
@@ -863,7 +863,7 @@ ul.slides li .display-container .display-content-text h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   text-align: left;
-  color: #320032;
+  color: #283232;
   font-weight: 300;
   font-size: 2.25em;
   letter-spacing: 0.15em;
@@ -873,7 +873,7 @@ ul.slides li .display-container .display-content-text h1 {
 }
 ul.slides li .display-container .display-content-text p {
   margin: 0 84px;
-  color: #320032;
+  color: #283232;
   font-size: 1.25em;
   line-height: 1.25em;
 }
@@ -965,8 +965,8 @@ ul.flex-direction-nav li .flex-next {
   display: block;
   position: relative;
   float: left;
-  width: 14px;
-  height: 14px;
+  width: 7px;
+  height: 7px;
   background-color: #ffffff;
   text-indent: -9999px;
   cursor: pointer;
@@ -1036,7 +1036,7 @@ ul.flex-direction-nav li .flex-next {
   width: 47.5%;
   margin: 0 1.25%;
   margin-bottom: 42px;
-  color: #320032;
+  color: #283232;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
 }
 .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview {
@@ -1077,7 +1077,7 @@ ul.flex-direction-nav li .flex-next {
   margin: 14px auto;
 }
 .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a p {
-  color: #320032;
+  color: #283232;
   margin-top: 14px;
 }
 .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a .btn-reservation {
@@ -1101,19 +1101,19 @@ ul.flex-direction-nav li .flex-next {
 }
 .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a:hover .btn-reservation:hover {
   background-color: #ffffff;
-  color: #320032;
+  color: #283232;
 }
 .page-content-page .display-container .display-content-row-highlight {
   background-color: #e4e7e5;
 }
 .page-content-page .display-container .display-content-row-highlight .display-content-row-inner .display-content h2 {
-  color: #320032;
+  color: #283232;
 }
 .page-content-page .display-container .display-content-row-highlight .display-content-row-inner .display-content > p {
-  color: #320032;
+  color: #283232;
 }
 .page-content-page .display-container .display-content-row-highlight .display-content-row-inner .display-content ul.facts li.fact-item {
-  color: #320032;
+  color: #283232;
 }
 .page-content-page .display-container .display-content-row-image {
   background-repeat: no-repeat;
@@ -1201,7 +1201,7 @@ ul.flex-direction-nav li .flex-next {
   letter-spacing: 0;
   text-transform: none;
   text-align: left;
-  color: #320032;
+  color: #283232;
   margin-bottom: 7px;
 }
 .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .facts-content .facts .fact-item:nth-child(odd) {
