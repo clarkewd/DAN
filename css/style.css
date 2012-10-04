@@ -388,16 +388,17 @@ p a:hover {
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  width: 20%;
   margin: 0;
+  display: inline;
+  float: left;
+  text-align: center;
 }
 .nav-bar .main-nav .nav-item a {
   display: block;
   margin: 0 auto;
-  padding: 9.799999999999999px 0;
+  padding: 16.8px 42px;
 }
 .nav-bar .main-nav .nav-item a:hover {
   background-color: #ffffff;
@@ -529,7 +530,7 @@ p a:hover {
 }
 .bottom-booking .allcontent {
   background-color: rgba(50, 0, 50, 0.9);
-  padding: 2.8000000000000003px 0;
+  padding: 0 0;
 }
 .bottom-booking .clear {
   display: none;
@@ -577,6 +578,7 @@ p a:hover {
   display: block;
   position: relative;
   float: left;
+  margin-top: 2.8000000000000003px;
   margin-right: 14px;
   width: 210px;
 }
@@ -605,7 +607,7 @@ p a:hover {
   float: left;
   color: #ffffff;
   text-align: left;
-  margin: 7px 7px 7px 0;
+  margin: 14px 7px 7px 0;
 }
 .subpanel-content .inner .form-field-row .dateinput {
   display: block;
@@ -621,11 +623,11 @@ p a:hover {
   text-align: center;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  width: 100px;
+  width: 89px;
   font-weight: 400;
   text-align: left;
   color: #320032;
-  padding: 0 7px;
+  padding: 7px;
   margin-top: 7px;
   -webkit-appearance: none;
   border-radius: 0;
@@ -640,7 +642,7 @@ p a:hover {
   position: relative;
   float: left;
   background-color: #ffffff;
-  padding: 0 7px;
+  padding: 7px;
   margin-top: 7px;
 }
 .subpanel-content .inner .form-field-row a.ui-selectmenu .ui-selectmenu-status {
@@ -668,6 +670,9 @@ p a:hover {
   background-position: center bottom;
   background-image: url('../content/gfx/icon-dropdown.png');
 }
+.subpanel-content .inner .row-01 {
+  width: 189px;
+}
 .subpanel-content .inner .dropdown-selector {
   width: 110px;
 }
@@ -689,7 +694,9 @@ p a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  padding: 7px;
+  background-color: transparent;
+  padding: 16.8px;
+  margin-right: 0;
 }
 .subpanel-content .inner a.button a {
   display: block;

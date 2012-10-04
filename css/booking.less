@@ -10,7 +10,7 @@
 	background-color:@brand-color-highlight;
 	.allcontent{
 		background-color:@brand-color-base-invert-light;
-		padding:@row-height*0.2 0;
+		padding:0 0;
 	}
 	// remove unused clear space, should look again later;
 	.clear{
@@ -50,6 +50,7 @@
 			display:block;
 			position:relative;
 			float:left;
+			margin-top:@row-height*0.2;
 			margin-right:@row-height;
 			width:210px;
 			@media screen and (max-width:@tablet-01){
@@ -70,7 +71,7 @@
 				float:left;
 				color:@brand-color-base;
 				text-align:left;
-				margin:@row-height*0.5 @row-height*0.5 @row-height*0.5 0;
+				margin:@row-height @row-height*0.5 @row-height*0.5 0;
 			}
 			.dateinput{
 				display:block;
@@ -80,11 +81,11 @@
 					input{
 						border:none;
 						.menu-text;
-						width:100px;
+						width:89px;
 						font-weight:400;
 						text-align:left;
 						color:@brand-color-base-invert;
-						padding:0 @row-height*0.5;
+						padding:@row-height*0.5;
 						margin-top:@row-height*0.5;
 					    -webkit-appearance: none;
 					    border-radius: 0;
@@ -101,7 +102,7 @@
 				position:relative;
 				float:left;
 				background-color:@brand-color-base;
-				padding:0 @row-height*0.5;
+				padding:@row-height*0.5;
 				margin-top:@row-height*0.5;
 				.ui-selectmenu-status{
 					.menu-text;
@@ -124,6 +125,9 @@
 				}
 			}
 		}
+		.row-01{
+			width:189px;
+		}
 		.dropdown-selector{
 			width:110px;
 		}
@@ -133,7 +137,9 @@
 		}
 		a.button{
 			.btn;
-			padding:@row-height*0.5;
+			background-color:transparent;
+			padding:@row-height*1.2;
+			margin-right:0;
 			&:hover{
 				color:@brand-color-base-invert;
 				background-color:@brand-color-background-alt;
