@@ -2,7 +2,9 @@
 
 $(function(){ //jQuery Document Ready
 	/* Black magic goes here */
-	/* windows load function */
+	//add this in your javascript code to 'hide' the address bar
+	window.scrollTo(0, 1);
+    /* windows load function */
 	$(window).load(function(){
 		hideFooter();
 		if(Modernizr.touch){
@@ -11,7 +13,7 @@ $(function(){ //jQuery Document Ready
 				animation: "slide",
 				animationLoop: false,
 				video: false,
-				controlNav: true,
+				controlNav: false,
 				directionNav: false,
 				slideshow: false,
 				animationSpeed: 400,
@@ -42,6 +44,7 @@ $(function(){ //jQuery Document Ready
 		windowHeight();
 		contentPositionInt();
 		hideFooter();
+		toggleNav();
 	});
 	/* windows resize function */
 	$(window).resize(function(){
@@ -50,12 +53,19 @@ $(function(){ //jQuery Document Ready
 	});
 	/* windows scroll function */
     $(window).scroll(function () {
+		// var windowHeight = $(window).height();
+		// var scrollPos = $('body').scrollTop();
 		scrollNav();
 		bookingScoll();
+		// $('.page-legacy').css('backgroundPosition','center '+((scrollPos-(windowHeight*2))*0.4)+'px');
+		// console.log(scrollPos);
     });
     function windowHeight(){
 		var windowHeight = $(window).height();
-		$('.page-full-screen').css('height', windowHeight)
+		$('.page-full-screen').css('height', windowHeight);
+		if(Modernizr.mq('screen and (max-width: 480px)')){
+			$('.page-full-screen').css('height', 'auto');
+		}
 	}
 	function scrollNav(){
 		var bodyOffset = $('body').scrollTop();
@@ -80,12 +90,14 @@ $(function(){ //jQuery Document Ready
 		var navHeight = $('.site-nav').height();
 		var heightOffset = 32;
 		$('.page-content-page-focus .wrap .display-container').css('margin-top', navHeight+heightOffset);
-		console.log('test');
+		if(Modernizr.mq('screen and (max-width: 480px)')){
+			$('.page-content-page-focus .wrap .display-container').css('margin-top', '0px');
+		}
 	}
 	function bookingScoll(){
 		var bodyOffset = $('body').scrollTop();
-		var targetOffset = $('.page-legacy-03').offset();
-		if(bodyOffset>(targetOffset.top)){
+		var targetOffset = $('.footer-push').offset();
+		if(bodyOffset>(targetOffset.top*0.8)){
 			$('.bottom-booking').addClass('center-booking');
 		}else{
 			$('.bottom-booking').removeClass('center-booking');
@@ -95,9 +107,28 @@ $(function(){ //jQuery Document Ready
 		var footerHeight = $('.practical-info').outerHeight(true);
 		var btnLegacyBottom = $('.bottom-booking .booking').outerHeight(true);
 		$('.bottom-booking').css('bottom', -footerHeight);
-		$('.btn-legacy').css('bottom', (btnLegacyBottom+14));
+		// $('.btn-legacy').css('bottom', (btnLegacyBottom+14)); legacy btn removed
 		// push footer need fix
 		$('.footer-push').css('height', footerHeight);
+		if(Modernizr.mq('screen and (max-width: 480px)')){
+			$('.bottom-booking').css('bottom', '0px');
+			$('.footer-push').css('height', '0px');
+		}
+    }
+    function toggleNav(){
+		var windowHeight = $(window).height();
+		var activate = false;
+		$('.mobile-nav .nav-item-menu').bind('touchstart', function(e){
+			$('.nav-bar .main-nav').css('height', windowHeight+100);
+			$('.nav-bar .main-nav').toggleClass('mobile-main-nav');
+			if(activate === false){
+				activate = true;
+				document.ontouchmove = function(e){ e.preventDefault(); };
+			}else if(activate === true){
+				activate = false;
+				document.ontouchmove = function(e){ return true; };
+			}
+		});
     }
 });
 })( jQuery );

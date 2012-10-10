@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title></title>
 	<!-- Remove no-js enable html5 elemetns -->
 	<script type="text/javascript">
@@ -18,6 +18,12 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 	<!-- site navigation -->
+	<div class="mobile-toggle mobile-nav-toggle">
+		<ul class="mobile-nav">
+			<li class="nav-item nav-item-menu">menu</li>
+			<li class="nav-item nav-item-booking"><a href="#">book</a></li>
+		</ul>
+	</div>
 	<div class="site-nav">
 		<div class="wrap">
 			<nav>
@@ -35,20 +41,9 @@
 					</a>
 				</div>
  -->				<div class="nav-bar">
-<!-- 					<ul class="sec-nav">
-						<li class="nav-item item-01"><a href="#">d'angleterre legacy</a></li>
-						<li class="nav-item item-02"><a href="#">guest service</a></li>
-						<li class="nav-item item-03"><a href="#">gallery</a></li>
-						<li class="nav-item item-04"><a href="#">location</a></li>
-						<li class="nav-item item-05"><a href="#">danish</a></li>
-					</ul>
- -->
-<!--  					<div class="nav-hide">
-						<a href="forside-01.html"><img src="content/gfx/icon-hotel.png" alt="home-icon"></a>
-					</div>
- -->					<ul class="main-nav">
+					<ul class="main-nav">
 						<li class="nav-item item-01"><a href="forside-03.html">home</a></li>
-						<li class="nav-item item-01"><a href="rooms.html">rooms & suites</a></li>
+						<li class="nav-item item-01"><a class="active" href="rooms.html">rooms & suites</a></li>
 						<li class="nav-item item-02"><a href="#">meetings & events</a></li>
 						<li class="nav-item item-03"><a href="#">dinning & drinking</a></li>
 						<li class="nav-item item-04"><a href="#">services</a></li>
@@ -59,6 +54,7 @@
 		</div>
 	</div>
 	<!-- site page -->
+	<div class="mobile-top-push"></div>
 	<div class="page page-rooms-overview page-content-page  page-content-page-focus">
 		<div class="wrap">
 			<div class="display-container">
@@ -78,28 +74,28 @@
 								<li class="room">
 									<a href="#">
 										<img src="content/img/room-01.jpg" alt="">
-										<h3>deluxe rooms</h3>
+										<h2>deluxe rooms</h2>
 										<div class="btn btn-reservation">make a reservation</div>
 									</a>
 								</li>
 								<li class="room">
 									<a href="junior-suites-alt.html">
 										<img src="content/img/room-02.jpg" alt="">
-										<h3>junior suites</h3>
+										<h2>junior suites</h2>
 										<div class="btn btn-reservation">make a reservation</div>
 									</a>
 								</li>
 								<li class="room">
 									<a href="#">
 										<img src="content/img/room-03.jpg" alt="">
-										<h3>suites</h3>
+										<h2>suites</h2>
 										<div class="btn btn-reservation">make a reservation</div>
 									</a>
 								</li>
 								<li class="room">
 									<a href="#">
 										<img src="content/img/room-04.jpg" alt="">
-										<h3>the royal</h3>
+										<h2>the royal</h2>
 										<div class="btn btn-reservation">make a reservation</div>
 									</a>
 								</li>
@@ -110,13 +106,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="page page-legacy">
-		<div class="wrap">
-			<!-- <h1>SPIRIT OF D'ANGLETERRE</h1> -->
-		</div>
-	</div>
 	<!-- booking -->
 	<footer class="bottom-booking">
+		<div class="identity-logo"><img src="content/gfx/site-logo-neg.png" alt=""></div>
 		<div class="booking allcontent">
 			<div class="panel grad2 roomselection">
 			<div class="header">
@@ -185,14 +177,8 @@
 		</div>
 		<div class="practical-info">
 			<div class="inner">
-				<h2>
-					hotel d'angletrre
-				</h2>
 				<div class="practical-info-item practical-info-item-adress">
-					<p>34, Kongens Nytorv</p>
-					<p>DK-1050 Copenhagen K</p>
-					<p class="telephone">Tel: +45 33 12 00 95</p>
-					<p><a href="mailto:joe@example.com?subject=feedback" "email me">hotel@dangleterre</a></p>
+					<p>34, Kongens Nytorv – DK-1050 Copenhagen K – Tel: +45 33 12 00 95 – <a href="mailto:joe@example.com?subject=feedback" "email me">hotel@dangleterre</a></p>
 				</div>
 				<div class="practical-info-item practical-info-item-links">
 					<ul class="footer-links">
@@ -215,6 +201,8 @@
 			</div>
 		</div>
 	</footer>
+	<!-- site footer -->
+	<div class="footer-push"></div>
 <body>
 
 	<!-- jQuery -->

@@ -9,6 +9,9 @@
 				float:none;
 				margin:0 auto;
 				padding:@row-height*2 0 @row-height*3;
+				@media screen and (max-width:@mobile){
+					.column(14,14);
+				}
 				.display-content{
 					.row(10);
 					h1{
@@ -20,8 +23,16 @@
 					>p{
 						.column(5,10);
 						margin-bottom:@row-height*3;
-						color:@brand-color-base-invert;
-						text-shadow:1px 1px 0 rgba(255,255,255,0.25);
+						color:@brand-color-base;
+						// text-shadow:1px 1px 0 rgba(255,255,255,0.25);
+						@media screen and (max-width:@mobile){
+							.column(12,14);
+							display:block;
+							position:relative;
+							float:none;
+							margin:0 auto @row-height*2;
+							text-align:center;
+						}
 					}
 					ul.room-overview{
 						.clearfix();
@@ -29,6 +40,13 @@
 						li.room{
 							.column(6,12);
 							margin-bottom:@row-height*2;
+							@media screen and (max-width:@mobile){
+								.column(14,14);
+								margin-bottom:@row-height*2;
+							}
+							&:last-child{
+								margin-bottom:0;
+							}
 							a{
 								display:block;
 								position:relative;
@@ -57,19 +75,22 @@
 									margin-right:0;
 								}
 								&:hover{
-									background-color:@brand-color-base;
+									background-color:@brand-color-highlight-entertained;
 									img{
 										.transition(0.6s, ease-in-out);
 									}
 									.btn-reservation{
 										display:block;
 										&:hover{
-											background-color:@brand-color-base;
+											background-color:@brand-color-highlight-entertained;
 											color:@brand-color-base-invert;
 										}
 									}
 								}
 							}
+						}
+						@media screen and (max-width:@mobile){
+							margin-bottom:0;
 						}
 					}
 				}
@@ -137,6 +158,10 @@
 				float:none;
 				margin:0 auto;
 				padding:@row-height*3 0;
+				@media screen and (max-width:@mobile){
+					.column(14,14);
+					padding:@row-height*3 0;
+				}
 				.display-content{
 					.facts-content{
 						.column(2,10);
@@ -145,7 +170,7 @@
 							list-style-type:disc;
 							list-style-image:url('@{icon-list-bullet}');
 							.fact-item{
-								.logo-text;
+								.menu-text;
 								font-weight:400;
 								letter-spacing:0;
 								text-transform:none;
@@ -158,9 +183,26 @@
 								}
 							}
 						}
+						@media screen and (max-width:@mobile){
+							.column(14,14);
+							.facts{
+								width:100%;
+								margin:0;
+								padding:0;
+								.fact-item{
+									font-size:16px;
+									display:block;
+									width:95%;
+									padding-left:5%;
+								}
+							}
+						}
 					}
 					.flexslider{
 						.column(8,10);
+						@media screen and (max-width:@mobile){
+							.column(14,14);
+						}
 						ul.slides{
 							position:relative;
 							li{
@@ -204,6 +246,13 @@
 				}
 				p{
 
+				}
+				@media screen and (max-width:@mobile){
+					.column(12,14);
+					.push(1);
+					margin-top:@row-height*6;
+					margin-bottom:@row-height*4;
+					padding-bottom:@row-height*2;
 				}
 			}
 		}

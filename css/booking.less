@@ -1,3 +1,4 @@
+
 .bottom-booking{
 	display:block;
 	float:none;
@@ -7,7 +8,22 @@
 	position:fixed;
 	z-index:101;
 	.transition(0.6s, ease-in-out);
-	background-color:@brand-color-highlight;
+	.identity-logo{
+		background-color:@brand-color-highlight;
+		margin:0;
+		img{
+			display:none;
+			width:80%;
+			margin:0 auto;
+			padding:@row-height*4 0;
+		}
+		@media screen and (max-width:@mobile){
+			background-color:@brand-color-base;
+			img{
+				padding-bottom:0;
+			}
+		}
+	}
 	.allcontent{
 		background-color:@brand-color-base-invert-light;
 		padding:0 0;
@@ -15,6 +31,22 @@
 	// remove unused clear space, should look again later;
 	.clear{
 		display:none;
+	}
+	@media screen and (max-width:@mobile){
+		position:relative;
+		bottom:0;
+		.identity-logo{
+			img{
+				display:block;
+			}
+		}
+		.allcontent{
+			display:none;
+			// background-color:@brand-color-highlight;
+			background-color:@brand-color-base-invert;
+			background-repeat:no-repeat;
+			background-position:center @row-height*2;
+		}
 	}
 }
 .center-booking{
@@ -46,6 +78,9 @@
 		position:relative;
 		float:none;
 		margin:0 auto;
+		@media screen and (max-width:@mobile){
+			.column(14,14);
+		}
 		.form-field-row{
 			display:block;
 			position:relative;
@@ -53,9 +88,6 @@
 			margin-top:@row-height*0.2;
 			margin-right:@row-height;
 			width:210px;
-			@media screen and (max-width:@tablet-01){
-				margin-bottom:@row-height;
-			}
 			&:first-child{
 				// margin-left:@row-height;
 				@media screen and (max-width:@tablet-01){
@@ -124,12 +156,59 @@
 					background-image:url('@{icon-dropdown}');
 				}
 			}
+			@media screen and (max-width:@tablet-01){
+				margin-bottom:@row-height;
+			}
+			@media screen and (max-width:@mobile){
+				width:100%;
+				margin:0;
+				label{
+					color:@brand-color-base;
+					width:100%;
+					text-align:center;
+					margin:@row-height auto;
+					float:none;
+				}
+				.dateinput{
+					float:none;
+					.textinput{
+						input{
+							display:block;
+							position:relative;
+							width:80%;
+							padding:@row-height;
+							margin:0 auto;
+							text-align:center;
+							background-color:@brand-color-base;
+						}
+					}
+				}
+				a.ui-selectmenu{
+					.clearfix;
+					margin:0 auto;
+					position:relative;
+					float:none;
+					width:40%;
+					.ui-selectmenu-status{
+						text-align:center;
+						// need fix
+						margin-left:25%;
+					}
+					.ui-icon-triangle-1-s{
+						margin-top:@row-height*0.75;
+					}
+				}
+			}
 		}
 		.row-01{
 			width:189px;
 		}
 		.dropdown-selector{
 			width:110px;
+			@media screen and (max-width:@mobile){
+				width:50%;
+				margin-right:0;
+			}
 		}
 		.room-selector{
 		}
@@ -142,7 +221,12 @@
 			margin-right:0;
 			&:hover{
 				color:@brand-color-base-invert;
-				background-color:@brand-color-background-alt;
+				background-color:@brand-color-base;
+			}
+			@media screen and (max-width:@mobile){
+				width:100%;
+				padding-left:0;
+				padding-right:0;
 			}
 		}
 		a.button-sec{

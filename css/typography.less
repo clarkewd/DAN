@@ -5,7 +5,7 @@
 	font-style:normal;
 	text-transform:uppercase;
 }
-.menu-text, .logo-text{
+.menu-text{
 	font-family: @base-type, sans-serif;
 	font-weight:600;
 	font-size:14px;
@@ -13,6 +13,12 @@
 	text-align:center;
 	letter-spacing:0.1em;
 	line-height:1.5em;
+	@media screen and (max-width:@mobile){
+		// font-family:@brand-type, serif;
+		font-size:24px;
+		font-weight:300;
+		line-height:1.5em;
+	}
 }
 .body-text{
 	font-family: @base-type, sans-serif;
@@ -86,11 +92,11 @@ h1{
 h2{
 	.brand-type;
 	font-weight:300;
-	font-size:1.75em;
+	font-size:2em;
 	text-align:center;
 	line-height:1.25em;
-	letter-spacing:0.1em;
-	color:@brand-color-base;
+	letter-spacing:0.06em;
+	color:@brand-color-base-invert;
 	margin-top:@row-height;
 	margin-bottom:@row-height;
 }

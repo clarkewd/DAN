@@ -2,7 +2,12 @@
 	display:block;
 	position:fixed;
 	width:100%;
-	z-index:100;
+	z-index:102;
+	background-color:@brand-color-base-invert-light;
+	@media screen and (max-width:@mobile){
+		position:relative;
+		background-color:@brand-color-base-invert;
+	}
 }
 .identity{
 	margin-bottom:@row-height;
@@ -80,7 +85,6 @@
 .nav-bar{
 	.clearfix();
 	// margin-top:@row-height;
-	background-color:@brand-color-base-invert-light;
 	>ul{
 		.clearfix();
 		margin:0;
@@ -111,8 +115,6 @@
 		display:block;
 		float:none;
 		margin:0 auto;
-		// border-top:1px solid @brand-color-base;
-		// border-bottom:1px solid @brand-color-base;
 		.nav-item{
 			.menu-text;
 			// width:15%;
@@ -126,28 +128,64 @@
 				margin:0 auto;
 				padding:@row-height*1.2 @row-height*3;
 				&:hover{
-					background-color:@brand-color-base;
+					background-color:@brand-color-highlight-entertained;
 					color:@brand-color-base-invert;
 				}
 			}
+			a.active{
+				background-color:@brand-color-highlight-entertained;
+				color:@brand-color-base-invert;
+			}
 		}
+		@media screen and (max-width:@mobile){
+			display:none;
+			width:100%;
+			padding-top:@row-height*2;
+			.nav-item{
+				.brand-type;
+				display:block;
+				position:relative;
+				width:100%;
+				line-height:1em;
+				a{
+					padding:@row-height*1.2  0;
+				}
+			}
+
+		}
+	}
+	.mobile-main-nav{
+		top:@row-height*3.5;
+		display:block;
+		position:fixed;
+		background-color:@brand-color-base-invert-light;
 	}
 	.sec-nav{
 		float:right;
 	}
 }
-.main-nav{
+.mobile-nav{
+	.clearfix;
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:300;
+	background-color:@brand-color-base-invert;
+	margin-top:0;
+	padding:0;
+	list-style:none;
 	.nav-item{
-		a{
-			&:hover{
-
-			}
-			.hidden-item{
-				@media screen and (max-width:@tablet-01){
-					display:none;
-				}
-			}
-		}
+		.menu-text;
+		display:block;
+		position:relative;
+		margin:2%;
+		height:@row-height*3;
+	}
+	.nav-item-menu{
+		float:left;
+	}
+	.nav-item-booking{
+		float:right;
 	}
 }
 .sec-nav{
