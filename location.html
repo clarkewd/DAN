@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title></title>
+	<!-- Remove no-js enable html5 elemetns -->
+	<script type="text/javascript">
+		//Clear no-js
+		document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace('no-js','');
+		//Enable html5 elements in IE
+		'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)});
+	</script>
+	<!-- google map script, need fix -->
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA7MalwPkgq6SfwdDIcQQ35zw_UzSsFqfw&sensor=false">
+    </script>
+    <script type="text/javascript">
+	function initialize() {
+		// Create an array of styles.
+		var styles = [
+		{
+		  stylers: [
+		    { hue: "#00ffe6" },
+		    { saturation: -20 }
+		  ]
+		},{
+		  featureType: "road",
+		  elementType: "geometry",
+		  stylers: [
+		    { lightness: 100 },
+		    { visibility: "simplified" }
+		  ]
+		},{
+		  featureType: "road",
+		  elementType: "labels",
+		  stylers: [
+		    { visibility: "off" }
+		  ]
+		}
+		];
+
+		// Create a new StyledMapType object, passing it the array of styles,
+		// as well as the name to be displayed on the map type control.
+		var styledMap = new google.maps.StyledMapType(styles,
+		{name: "Styled Map"});
+
+		// lan og lng
+		var myLatlng = new google.maps.LatLng(55.676097,12.568337);
+		var marker = 'content/gfx/icon-google-map-marker.png';
+		// Create a map object, and include the MapTypeId to add
+		// to the map type control.
+		var mapOptions = {
+			zoom: 16,
+			center: myLatlng,
+			scrollwheel: false,
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+			}
+		};
+		var map = new google.maps.Map(document.getElementById('map_canvas'),
+		mapOptions);
+		// add marker
+		  var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		      icon: marker,
+		      title:"Hello World!"
+		  });
+		//Associate the styled map with the MapTypeId and set it to display.
+		map.mapTypes.set('map_style', styledMap);
+		map.setMapTypeId('map_style');
+	}
+    </script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="webfont-dangleterre/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="initialize()">
+	<!-- site navigation -->
+	<div class="mobile-toggle mobile-nav-toggle">
+		<ul class="mobile-nav">
+			<li class="nav-item nav-item-menu">menu</li>
+			<li class="nav-item nav-item-booking"><a href="#">book</a></li>
+		</ul>
+	</div>
+	<div class="site-nav">
+		<div class="wrap">
+			<nav>
+				<div class="nav-bar">
+					<ul class="main-nav">
+						<li class="nav-item item-01"><a href="forside-03.html">home</a></li>
+						<li class="nav-item item-01"><a class="active" href="rooms.html">rooms & suites</a></li>
+						<li class="nav-item item-02"><a href="#">meetings & events</a></li>
+						<li class="nav-item item-03"><a href="#">dinning & drinking</a></li>
+						<li class="nav-item item-04"><a href="#">services</a></li>
+						<li class="nav-item item-05"><a href="#">legacy</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- site page -->
+	<div class="mobile-top-push"></div>
+	<div class="page page-content-page">
+		<div class="wrap">
+			<div class="display-container">
+				<div class="display-content-row display-content-row-description">
+					<div class="display-content-row-inner">
+						<div class="display-content display-content">
+							<h1>our location & the surroundings</h1>
+							<p class="teaser-text">Each of the 90 spacious and elegantly decorated rooms and suites have been completely renovated in 2012. All have been exquisitely appointed to create the perfect environment for any visit – be it business, pleasure or entertainment.Features include walk-in closets, grand bathrooms and individual state-of-the-art in-room climate control, entertainment and technology. Many of the deluxe rooms, junior suites and suites offer balconies. Smoking rooms available upon request.</p>
+							<p class="teaser-text">The Royal Suite, featuring a living space of more than 250 square meters (2,690 square feet), has lavish fabrics and furnishings. Overlooking one of the city’s most classic squares, Kongens Nytorv, the Royal Suite offers a breathtaking view of the Royal Danish Theatre and Nyhavn.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- location page -->
+	<div class="page page-content-page page-entertained page-location">
+		<div class="wrap">
+			<div class="display-container">
+				<div class="display-content-row display-content-row-description">
+					<div class="display-content-row-inner">
+						<div class="display-content">
+							<h2>nyhavn</h2>
+						</div>
+					</div>
+				</div>
+				<div class="display-content-accordion">
+					<div class="display-content-row display-content-row-image display-content-row-image-02">
+						<div class="display-content-row-inner">
+							<div class="display-content display-content">
+							</div>
+						</div>
+					</div>
+					<div class="display-content-row display-content-row-damp-light">
+						<div class="display-content-row-inner">
+							<div class="display-content">
+								<div class="googlemap-location">
+									<div id="map_canvas" style="width:100%; height:100%"></div>
+								</div>
+								<div class="facts-content">
+									<div class="facts">
+										<p>	Nyhavn is a 17th century waterfront, canal and entertainment district in Copenhagen, Denmark. Stretching from Kongens Nytorv to the harbour front just south of the Royal Playhouse, it is lined by brightly coloured 17th and early 18th century townhouses and bars, cafes and restaurants. Serving as a "heritage harbour", the canal has many historical wooden ships.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- location page -->
+	<div class="page page-content-page page-entertained page-location">
+		<div class="wrap">
+			<div class="display-container">
+				<div class="display-content-row display-content-row-description">
+					<div class="display-content-row-inner">
+						<div class="display-content">
+							<h2>strøget</h2>
+						</div>
+					</div>
+				</div>
+				<div class="display-content-accordion">
+					<div class="display-content-row display-content-row-image display-content-row-image-02">
+						<div class="display-content-row-inner">
+							<div class="display-content display-content">
+							</div>
+						</div>
+					</div>
+					<div class="display-content-row display-content-row-damp-light">
+						<div class="display-content-row-inner">
+							<div class="display-content">
+								<div class="googlemap-location">
+									<div id="map_canvas" style="width:100%; height:100%"></div>
+								</div>
+								<div class="facts-content">
+									<div class="facts">
+										<p>	Nyhavn is a 17th century waterfront, canal and entertainment district in Copenhagen, Denmark. Stretching from Kongens Nytorv to the harbour front just south of the Royal Playhouse, it is lined by brightly coloured 17th and early 18th century townhouses and bars, cafes and restaurants. Serving as a "heritage harbour", the canal has many historical wooden ships.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- location page -->
+	<div class="page page-content-page page-entertained page-location">
+		<div class="wrap">
+			<div class="display-container">
+				<div class="display-content-row display-content-row-description">
+					<div class="display-content-row-inner">
+						<div class="display-content">
+							<h2>the backstreets</h2>
+						</div>
+					</div>
+				</div>
+				<div class="display-content-accordion">
+					<div class="display-content-row display-content-row-image display-content-row-image-02">
+						<div class="display-content-row-inner">
+							<div class="display-content display-content">
+							</div>
+						</div>
+					</div>
+					<div class="display-content-row display-content-row-damp-light">
+						<div class="display-content-row-inner">
+							<div class="display-content">
+								<div class="googlemap-location">
+									<div id="map_canvas" style="width:100%; height:100%"></div>
+								</div>
+								<div class="facts-content">
+									<div class="facts">
+										<p>	Nyhavn is a 17th century waterfront, canal and entertainment district in Copenhagen, Denmark. Stretching from Kongens Nytorv to the harbour front just south of the Royal Playhouse, it is lined by brightly coloured 17th and early 18th century townhouses and bars, cafes and restaurants. Serving as a "heritage harbour", the canal has many historical wooden ships.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- booking -->
+	<footer class="bottom-booking">
+		<div class="identity-logo"><img src="content/gfx/site-logo-neg.png" alt=""></div>
+		<div class="booking allcontent">
+			<div class="panel grad2 roomselection">
+			<div class="header">
+				<h3>
+					<span class="title">Your Selection</span>
+				</h3>
+			</div>
+			<div class="inner">
+				<input type="hidden" name="booking.roomIterator[]" value="1">
+				<div class="subpanel multiroom active opened">
+					<input type="hidden" class="nights" value="1">
+					<div class="subpanel-content">
+						<div class="header">
+							<h3>
+								<span class="title">Room 1</span>
+										</h3>
+						</div>
+						<div class="inner">
+							<div class="form-field-row row-01">
+								<label for="room1_arrivalDay_layer">Arrival</label>
+								<div class="dateinput">
+									<input type="hidden" id="room1_arrival_layer" name="arrival" value="2012-09-14" class="hasDatepicker">
+									<div class="textinput w79">
+										<input type="text" id="room1_arrivalDay_layer" name="arrivalday" rel="room1_departureDay_layer" hiddenfield="room1_arrival_layer" value="14-09-12">
+									</div>
+									<!-- <img src="content/gfx/icon-cal.png" class="dateinput-trigger"> -->
+												</div>
+										</div>
+							<div class="form-field-row row-02">
+								<label for="room1_departureDay_layer">Departure</label>
+								<div class="dateinput">
+									<input type="hidden" id="room1_departure_layer" name="departure" value="2012-09-15" class="hasDatepicker">
+									<div class="textinput w79">
+										<input type="text" id="room1_departureDay_layer" name="departureDay" rel="room1_arrivalDay_layer" hiddenfield="room1_departure_layer" value="15-09-12">
+									</div>
+									<!-- <img src="content/gfx/icon-cal.png" class="dateinput-trigger"> -->
+												</div>
+										</div>
+							<div class="form-field-row dropdown-selector room-selector  row-03">
+								<label for="room1_adults_layer-button">rooms</label>
+								<select id="room1_adults_layer" name="adults" class="w79" style="display: none; " aria-disabled="false">
+									
+									<option value="1" selected="selected">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select><a class="ui-selectmenu ui-widget ui-state-default ui-corner-all ui-selectmenu-dropdown w79" id="room1_adults_layer-button" role="button" href="#" tabindex="0" aria-haspopup="true" aria-owns="room1_adults_layer-menu" aria-disabled="false"><span class="ui-selectmenu-status">1</span><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span></a>
+										</div>
+								<div class="form-field-row dropdown-selector guest-selector">
+									<label for="room1_children_layer-button">guests</label>
+									<select id="room1_children_layer" name="childCount" class="w79" style="display: none; " aria-disabled="false">
+										<option value="">0</option>
+										
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select><a class="ui-selectmenu ui-widget ui-state-default ui-corner-all ui-selectmenu-dropdown w79" id="room1_children_layer-button" role="button" href="#" tabindex="0" aria-haspopup="true" aria-owns="room1_children_layer-menu" aria-disabled="false"><span class="ui-selectmenu-status">0</span><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span></a>
+												</div>
+							<a class="button button1" href="Javascript:void(0)" onclick="applyRoomselectionData();return false;"><span>Check Availability</span></a>
+							<a class="button button2 button-sec" href="Javascript:void(0)" onclick="applyRoomselectionData();return false;"><span>gift certificate</span></a>
+								</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="bottom"> </div>
+		</div>
+		<div class="practical-info">
+			<div class="inner">
+				<div class="practical-info-item practical-info-item-adress">
+					<p>34, Kongens Nytorv – DK-1050 Copenhagen K – Tel: +45 33 12 00 95 – <a href="mailto:joe@example.com?subject=feedback" "email me">hotel@dangleterre</a></p>
+				</div>
+				<div class="practical-info-item practical-info-item-links">
+					<ul class="footer-links">
+						<li class="link-item"><a href="#">rooms & suites</a></li>
+						<li class="link-item"><a href="#">meetings & events</a></li>
+						<li class="link-item"><a href="#">dinning & drikking</a></li>
+						<li class="link-item"><a href="#">services</a></li>
+						<li class="link-item"><a href="#">legacy</a></li>
+						<li class="link-item"><a href="#">press & media</a></li>
+						<li class="link-item"><a href="#">careers</a></li>
+						<li class="link-item"><a href="#">faq</a></li>
+						<li class="link-item"><a href="#">legal information</a></li>
+						<li class="link-item"><a href="#">all contact</a></li>
+					</ul>
+				</div>
+				<div class="practical-info-item practical-info-item-lhw">
+					<img src="content/img/logo-lhw.png" alt="">
+					<p>Hotel D'Angleterre is a member of The Leading Hotels of the World</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- site footer -->
+	<div class="footer-push"></div>
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+	<!-- Modernizr -->
+	<script type="text/javascript" src="scripts/modernizr.js" charset="utf-8"></script>
+	<script type="text/javascript" src="scripts/my-script.js" charset="utf-8"></script>
+</body>
+</html>

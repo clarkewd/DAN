@@ -45,6 +45,7 @@ $(function(){ //jQuery Document Ready
 		contentPositionInt();
 		hideFooter();
 		toggleNav();
+		toggleLocation();
 	});
 	/* windows resize function */
 	$(window).resize(function(){
@@ -128,6 +129,12 @@ $(function(){ //jQuery Document Ready
 				activate = false;
 				document.ontouchmove = function(e){ return true; };
 			}
+		});
+    }
+    function toggleLocation(){
+    	console.log('test');
+		$('.page-location .display-content-row-description').bind('click', function(e){
+			console.log('test');
 		});
     }
 });
