@@ -127,9 +127,6 @@
 		.display-content-row-image-01{
 			background-image:url('@{bg-img-12}');
 		}
-		.display-content-row-image-02{
-			background-image:url('@{bg-img-13}');
-		}
 		.display-content-row-description{
 			.display-content-row-inner{
 				.display-content{
@@ -272,12 +269,59 @@
 		}
 	}
 }
+#map-location{
+	height:@row-height*30;
+}
 .page-location{
 	.wrap{
+		background-color:@brand-color-background-alt;
+		.transition(0.2s, ease-in-out);
+		&:nth-child(even){
+			background-color:@brand-color-background-alt-light;
+		}
+		&:hover{
+			background-color:@brand-color-highlight-entertained;
+		}
 		.display-container{
+			.display-content-accordion{
+				display:none;
+			}
+			.display-content-row-description{
+				cursor: pointer;				
+			}
 			.display-content-row-inner{
 				padding:0;
 			}
 		}
+	}
+	.location-wrap-01{
+		.display-container{
+			.display-content-accordion{
+				.display-content-row-image{
+					background-image:url('@{bg-img-13}');
+				}
+			}
+		}
+	}
+	.location-wrap-02{
+		.display-container{
+			.display-content-accordion{
+				.display-content-row-image{
+					background-image:url('@{bg-img-14}');
+				}
+			}
+		}
+	}
+	.location-wrap-03{
+		.display-container{
+			.display-content-accordion{
+				.display-content-row-image{
+					background-image:url('@{bg-img-15}');
+				}
+			}
+		}
+	}
+	.active{
+		background-color:@brand-color-highlight-entertained !important;
 	}
 }

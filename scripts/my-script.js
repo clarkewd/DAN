@@ -7,6 +7,7 @@ $(function(){ //jQuery Document Ready
     /* windows load function */
 	$(window).load(function(){
 		hideFooter();
+		googleMapLocation();
 		if(Modernizr.touch){
 			// script target to touch device
 			$('.flexslider').flexslider({
@@ -132,10 +133,138 @@ $(function(){ //jQuery Document Ready
 		});
     }
     function toggleLocation(){
-    	console.log('test');
 		$('.page-location .display-content-row-description').bind('click', function(e){
-			console.log('test');
+			$(this).parent().find('.display-content-accordion').slideToggle();
+			$(this).parents('.wrap').toggleClass('active');
+			google.maps.event.trigger(document.getElementById("map-nyhavn"), 'resize');
+			google.maps.event.trigger(document.getElementById("map-stroeget"), 'resize');
+			google.maps.event.trigger(document.getElementById("map-backstreet"), 'resize');
 		});
     }
+	function googleMapLocation(){
+		// Create an array of styles.
+		var styles = [
+		{
+			stylers:
+				[
+					{ "visibility": "off" }
+				]
+		},{
+			"featureType": "landscape",
+			"stylers": [
+				{ "visibility": "on" },
+				{ "color": "#c8cfc9" }
+			]
+		},{
+			"featureType": "road",
+			"stylers": [
+				{ "visibility": "on" },
+				{ "color": "#e4e7e4" }
+			]
+		},{
+			"featureType": "water",
+			"stylers": [
+				{ "visibility": "on" },
+				{ "color": "#96bec4" }
+			]
+		},{
+			"featureType": "poi",
+			"elementType": "geometry",
+			"stylers": [
+				{ "color": "#808080" },
+				{ "visibility": "off" }
+			]
+		},{
+			"featureType": "poi",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{ "visibility": "on" },
+				{ "color": "#192923" }
+			]
+		},{
+			"featureType": "poi",
+			"elementType": "labels.text.stroke",
+			"stylers": [
+				{ "visibility": "on" },
+				{ "weight": 2 },
+				{ "color": "#ffffff" }
+			]
+		},{
+			"elementType": "labels.icon",
+			"stylers": [
+			{ "visibility": "on" }
+			]
+		}];
+		// Create a new StyledMapType object, passing it the array of styles,
+		// as well as the name to be displayed on the map type control.
+		var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+		// lan og lng
+		var locLatLng = new google.maps.LatLng(55.680128,12.586668);
+		var nyhavnLatLng = new google.maps.LatLng(55.676097,12.568337);
+		var stroegetLatLng = new google.maps.LatLng(58.676097,11.568337);
+		var backstreetLatLng = new google.maps.LatLng(54.676097,10.568337);
+		var iconMarkerSmall = 'content/gfx/icon-google-map-marker-small.png';
+		var iconMarkerBig = 'content/gfx/icon-google-map-marker-big.png';
+		// Create a map object, and include the MapTypeId to add
+		// to the map type control.
+		var locOptions = {
+			zoom: 16,
+			center: locLatLng,
+			scrollwheel: false,
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+			}
+		};
+		var nyhavnOptions = {
+			zoom: 16,
+			center: nyhavnLatLng,
+			scrollwheel: false,
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+			}
+		};
+		var stroegetOptions = {
+			zoom: 16,
+			center: stroegetLatLng,
+			scrollwheel: false,
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+			}
+		};
+		var backstreetOptions = {
+			zoom: 16,
+			center: backstreetLatLng,
+			scrollwheel: false,
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+			}
+		};
+		var localMap = new google.maps.Map(document.getElementById('map-location'),locOptions);
+		var nyhavnMap = new google.maps.Map(document.getElementById('map-nyhavn'),nyhavnOptions);
+		var stroegetMap = new google.maps.Map(document.getElementById('map-stroeget'),stroegetOptions);
+		var backstreetMap = new google.maps.Map(document.getElementById('map-backstreet'),backstreetOptions);
+		// add marker
+		var markerSmall = new google.maps.Marker({
+			position: nyhavnLatLng,
+			map: nyhavnMap,
+			icon: iconMarkerSmall,
+			title:"Hotel"
+		});
+		var markerBig = new google.maps.Marker({
+			position: locLatLng,
+			map: localMap,
+			icon: iconMarkerBig,
+			title:"Hotel"
+		});
+		//Associate the styled map with the MapTypeId and set it to display.
+		localMap.mapTypes.set('map_style', styledMap);
+		localMap.setMapTypeId('map_style');
+		nyhavnMap.mapTypes.set('map_style', styledMap);
+		nyhavnMap.setMapTypeId('map_style');
+		stroegetMap.mapTypes.set('map_style', styledMap);
+		stroegetMap.setMapTypeId('map_style');
+		backstreetMap.mapTypes.set('map_style', styledMap);
+		backstreetMap.setMapTypeId('map_style');
+	}
 });
 })( jQuery );

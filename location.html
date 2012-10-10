@@ -16,67 +16,12 @@
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA7MalwPkgq6SfwdDIcQQ35zw_UzSsFqfw&sensor=false">
     </script>
     <script type="text/javascript">
-	function initialize() {
-		// Create an array of styles.
-		var styles = [
-		{
-		  stylers: [
-		    { hue: "#00ffe6" },
-		    { saturation: -20 }
-		  ]
-		},{
-		  featureType: "road",
-		  elementType: "geometry",
-		  stylers: [
-		    { lightness: 100 },
-		    { visibility: "simplified" }
-		  ]
-		},{
-		  featureType: "road",
-		  elementType: "labels",
-		  stylers: [
-		    { visibility: "off" }
-		  ]
-		}
-		];
-
-		// Create a new StyledMapType object, passing it the array of styles,
-		// as well as the name to be displayed on the map type control.
-		var styledMap = new google.maps.StyledMapType(styles,
-		{name: "Styled Map"});
-
-		// lan og lng
-		var myLatlng = new google.maps.LatLng(55.676097,12.568337);
-		var marker = 'content/gfx/icon-google-map-marker.png';
-		// Create a map object, and include the MapTypeId to add
-		// to the map type control.
-		var mapOptions = {
-			zoom: 16,
-			center: myLatlng,
-			scrollwheel: false,
-			mapTypeControlOptions: {
-				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-			}
-		};
-		var map = new google.maps.Map(document.getElementById('map_canvas'),
-		mapOptions);
-		// add marker
-		  var marker = new google.maps.Marker({
-		      position: myLatlng,
-		      map: map,
-		      icon: marker,
-		      title:"Hello World!"
-		  });
-		//Associate the styled map with the MapTypeId and set it to display.
-		map.mapTypes.set('map_style', styledMap);
-		map.setMapTypeId('map_style');
-	}
     </script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="webfont-dangleterre/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="initialize()">
+<body>
 	<!-- site navigation -->
 	<div class="mobile-toggle mobile-nav-toggle">
 		<ul class="mobile-nav">
@@ -110,16 +55,20 @@
 						<div class="display-content display-content">
 							<h1>our location & the surroundings</h1>
 							<p class="teaser-text">Each of the 90 spacious and elegantly decorated rooms and suites have been completely renovated in 2012. All have been exquisitely appointed to create the perfect environment for any visit – be it business, pleasure or entertainment.Features include walk-in closets, grand bathrooms and individual state-of-the-art in-room climate control, entertainment and technology. Many of the deluxe rooms, junior suites and suites offer balconies. Smoking rooms available upon request.</p>
-							<p class="teaser-text">The Royal Suite, featuring a living space of more than 250 square meters (2,690 square feet), has lavish fabrics and furnishings. Overlooking one of the city’s most classic squares, Kongens Nytorv, the Royal Suite offers a breathtaking view of the Royal Danish Theatre and Nyhavn.</p>
 						</div>
+					</div>
+				</div>
+				<div class="display-content-row">
+					<div class="googlemap-location">
+						<div id="map-location"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- location page -->
-	<div class="page page-content-page page-entertained page-location">
-		<div class="wrap">
+	<div class="page page-content-page page-location">
+		<div class="wrap location-wrap-01">
 			<div class="display-container">
 				<div class="display-content-row display-content-row-description">
 					<div class="display-content-row-inner">
@@ -129,7 +78,7 @@
 					</div>
 				</div>
 				<div class="display-content-accordion">
-					<div class="display-content-row display-content-row-image display-content-row-image-02">
+					<div class="display-content-row display-content-row-image">
 						<div class="display-content-row-inner">
 							<div class="display-content display-content">
 							</div>
@@ -139,7 +88,7 @@
 						<div class="display-content-row-inner">
 							<div class="display-content">
 								<div class="googlemap-location">
-									<div id="map_canvas" style="width:100%; height:100%"></div>
+									<div id="map-nyhavn" style="width:100%; height:100%"></div>
 								</div>
 								<div class="facts-content">
 									<div class="facts">
@@ -153,10 +102,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- location page -->
-	<div class="page page-content-page page-entertained page-location">
-		<div class="wrap">
+		<div class="wrap location-wrap-02">
 			<div class="display-container">
 				<div class="display-content-row display-content-row-description">
 					<div class="display-content-row-inner">
@@ -166,7 +112,7 @@
 					</div>
 				</div>
 				<div class="display-content-accordion">
-					<div class="display-content-row display-content-row-image display-content-row-image-02">
+					<div class="display-content-row display-content-row-image">
 						<div class="display-content-row-inner">
 							<div class="display-content display-content">
 							</div>
@@ -176,7 +122,7 @@
 						<div class="display-content-row-inner">
 							<div class="display-content">
 								<div class="googlemap-location">
-									<div id="map_canvas" style="width:100%; height:100%"></div>
+									<div id="map-stroeget" style="width:100%; height:100%"></div>
 								</div>
 								<div class="facts-content">
 									<div class="facts">
@@ -190,20 +136,17 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- location page -->
-	<div class="page page-content-page page-entertained page-location">
-		<div class="wrap">
+		<div class="wrap location-wrap-03">
 			<div class="display-container">
 				<div class="display-content-row display-content-row-description">
 					<div class="display-content-row-inner">
 						<div class="display-content">
-							<h2>the backstreets</h2>
+							<h2>the backstreet</h2>
 						</div>
 					</div>
 				</div>
 				<div class="display-content-accordion">
-					<div class="display-content-row display-content-row-image display-content-row-image-02">
+					<div class="display-content-row display-content-row-image">
 						<div class="display-content-row-inner">
 							<div class="display-content display-content">
 							</div>
@@ -213,7 +156,7 @@
 						<div class="display-content-row-inner">
 							<div class="display-content">
 								<div class="googlemap-location">
-									<div id="map_canvas" style="width:100%; height:100%"></div>
+									<div id="map-backstreet" style="width:100%; height:100%"></div>
 								</div>
 								<div class="facts-content">
 									<div class="facts">
@@ -331,6 +274,7 @@
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 	<!-- Modernizr -->
 	<script type="text/javascript" src="scripts/modernizr.js" charset="utf-8"></script>
+	<script type="text/javascript" src="scripts/map-script.js" charset="utf-8"></script>
 	<script type="text/javascript" src="scripts/my-script.js" charset="utf-8"></script>
 </body>
 </html>
