@@ -122,7 +122,7 @@
 				.display-content{
 					height:@row-height*20;
 					@media screen and (max-width:@mobile){
-						height:@row-height*10;
+						height:@row-height*15;
 					}
 				}
 			}
@@ -295,7 +295,7 @@
 #map-location{
 	height:@row-height*20;
 	@media screen and (max-width:@mobile){
-		height:@row-height*10;
+		height:@row-height*15;
 	}
 }
 .page-location{
@@ -317,6 +317,19 @@
 			}
 			.display-content-row-inner{
 				padding:0;
+			}
+		}
+		.display-container{
+			.display-content-row{
+				padding-top: 0;
+				.display-content-row-inner{
+					.display-content{
+						.facts-content{
+							.column(7,14);
+							margin-top:@row-height;
+						}
+					}
+				}
 			}
 		}
 	}
