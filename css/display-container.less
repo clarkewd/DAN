@@ -121,6 +121,9 @@
 			.display-content-row-inner{
 				.display-content{
 					height:@row-height*20;
+					@media screen and (max-width:@mobile){
+						height:@row-height*10;
+					}
 				}
 			}
 		}
@@ -167,15 +170,15 @@
 				padding:@row-height*3 0;
 				@media screen and (max-width:@mobile){
 					.column(14,14);
-					padding:@row-height*3 0;
+					padding:@row-height*3 0 0;
 				}
 				.display-content{
 					.facts-content{
-						.column(2,10);
+						.column(3,10);
 						.facts{
-							.row(5);
 							list-style-type:disc;
 							list-style-image:url('@{icon-list-bullet}');
+							padding-left:@row-height;
 							.fact-item{
 								.menu-text;
 								font-weight:400;
@@ -185,28 +188,45 @@
 								color:@brand-color-base-invert;
 								margin-bottom:@row-height*0.5;
 								// border-bottom:1px dotted @brand-color-base-invert;
-								&:nth-child(odd){
-									clear:left;
-								}
 							}
 						}
 						@media screen and (max-width:@mobile){
 							.column(14,14);
 							.facts{
+								background-color:@brand-color-highlight;
 								width:100%;
 								margin:0;
-								padding:0;
+								padding:@row-height*2 0;
 								.fact-item{
 									font-size:16px;
 									display:block;
-									width:95%;
+									width:90%;
 									padding-left:5%;
+									padding-right:5%;
+									color:@brand-color-base;
+									&:last-child{
+										margin-bottom:0;
+									}
+								}
+							}
+						}
+					}
+					// prelaunch stuff, remove after more content
+					.prelaunch-facts-content{
+						.column(10,10);
+						.facts{
+							.row(10);
+							.fact-item{
+								.column(5,10);
+								text-align:center;
+								&:nth-child(odd){
+									clear:left;
 								}
 							}
 						}
 					}
 					.flexslider{
-						.column(8,10);
+						.column(7,10);
 						@media screen and (max-width:@mobile){
 							.column(14,14);
 						}
@@ -230,8 +250,11 @@
 						}
 					}
 					.googlemap-location{
-						.column(8,10);
+						.column(7,10);
 						height:@row-height*20;
+						@media screen and (max-width:@mobile){
+							.column(5,10);
+						}
 					}
 
 				}
@@ -270,7 +293,10 @@
 	}
 }
 #map-location{
-	height:@row-height*30;
+	height:@row-height*20;
+	@media screen and (max-width:@mobile){
+		height:@row-height*10;
+	}
 }
 .page-location{
 	.wrap{
@@ -297,6 +323,8 @@
 	.location-wrap-01{
 		.display-container{
 			.display-content-accordion{
+				// set the first accordion active;
+				display: block;
 				.display-content-row-image{
 					background-image:url('@{bg-img-13}');
 				}

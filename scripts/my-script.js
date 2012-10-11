@@ -7,7 +7,6 @@ $(function(){ //jQuery Document Ready
     /* windows load function */
 	$(window).load(function(){
 		hideFooter();
-		googleMapLocation();
 		if(Modernizr.touch){
 			// script target to touch device
 			$('.flexslider').flexslider({
@@ -47,11 +46,13 @@ $(function(){ //jQuery Document Ready
 		hideFooter();
 		toggleNav();
 		toggleLocation();
+		googleMapLocation();
 	});
 	/* windows resize function */
 	$(window).resize(function(){
 		windowHeight();
 		hideFooter();
+		googlemapResize ();
 	});
 	/* windows scroll function */
     $(window).scroll(function () {
@@ -136,9 +137,8 @@ $(function(){ //jQuery Document Ready
 		$('.page-location .display-content-row-description').bind('click', function(e){
 			$(this).parent().find('.display-content-accordion').slideToggle();
 			$(this).parents('.wrap').toggleClass('active');
-			google.maps.event.trigger(document.getElementById("map-nyhavn"), 'resize');
-			google.maps.event.trigger(document.getElementById("map-stroeget"), 'resize');
-			google.maps.event.trigger(document.getElementById("map-backstreet"), 'resize');
+			googlemapResize ();
+			e.preventDefault();
 		});
     }
 	function googleMapLocation(){
@@ -197,7 +197,7 @@ $(function(){ //jQuery Document Ready
 		}];
 		// Create a new StyledMapType object, passing it the array of styles,
 		// as well as the name to be displayed on the map type control.
-		var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+		var styledMap = new google.maps.StyledMapType(styles,{name: "Dangleterre Map"});
 		// lan og lng
 		var locLatLng = new google.maps.LatLng(55.680128,12.586668);
 		var nyhavnLatLng = new google.maps.LatLng(55.676097,12.568337);
@@ -210,7 +210,8 @@ $(function(){ //jQuery Document Ready
 		var locOptions = {
 			zoom: 16,
 			center: locLatLng,
-			scrollwheel: false,
+			scrollwheel:false,
+			panControl:false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 			}
@@ -218,7 +219,8 @@ $(function(){ //jQuery Document Ready
 		var nyhavnOptions = {
 			zoom: 16,
 			center: nyhavnLatLng,
-			scrollwheel: false,
+			scrollwheel:false,
+			panControl:false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 			}
@@ -226,7 +228,8 @@ $(function(){ //jQuery Document Ready
 		var stroegetOptions = {
 			zoom: 16,
 			center: stroegetLatLng,
-			scrollwheel: false,
+			scrollwheel:false,
+			panControl:false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 			}
@@ -234,7 +237,8 @@ $(function(){ //jQuery Document Ready
 		var backstreetOptions = {
 			zoom: 16,
 			center: backstreetLatLng,
-			scrollwheel: false,
+			scrollwheel:false,
+			panControl:false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 			}
@@ -265,6 +269,12 @@ $(function(){ //jQuery Document Ready
 		stroegetMap.setMapTypeId('map_style');
 		backstreetMap.mapTypes.set('map_style', styledMap);
 		backstreetMap.setMapTypeId('map_style');
+	}
+	function googlemapResize (){
+		google.maps.event.trigger(document.getElementById("map-location"), 'resize');
+		google.maps.event.trigger(document.getElementById("map-nyhavn"), 'resize');
+		google.maps.event.trigger(document.getElementById("map-stroeget"), 'resize');
+		google.maps.event.trigger(document.getElementById("map-backstreet"), 'resize');
 	}
 });
 })( jQuery );
