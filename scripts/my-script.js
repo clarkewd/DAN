@@ -47,6 +47,7 @@ $(function(){ //jQuery Document Ready
 		toggleNav();
 		toggleLocation();
 		googleMapLocation();
+		scrollToLocation();
 	});
 	/* windows resize function */
 	$(window).resize(function(){
@@ -100,7 +101,7 @@ $(function(){ //jQuery Document Ready
 	function bookingScoll(){
 		var bodyOffset = $('body').scrollTop();
 		var targetOffset = $('.footer-push').offset();
-		if(bodyOffset>(targetOffset.top*0.8)){
+		if(bodyOffset>(targetOffset.top*0.9)){
 			$('.bottom-booking').addClass('center-booking');
 		}else{
 			$('.bottom-booking').removeClass('center-booking');
@@ -141,6 +142,48 @@ $(function(){ //jQuery Document Ready
 			e.preventDefault();
 		});
     }
+	function scrollToLocation(){
+		var nyhavnPos = $('#location-nyhavn-des').offset();
+		var stroegetPos = $('#location-stroeget-des').offset();
+		$('#location-nyhavn').bind('click', function(e){
+			$('body').animate({
+				// scroll to location, need fix
+				scrollTop:((nyhavnPos.top)-72)
+			}, '600', function(){
+				$('#location-nyhavn-des').parent().find('.display-content-accordion').slideDown();
+				$('#location-nyhavn-des').parents('.wrap').addClass('active');
+			});
+			e.preventDefault(e);
+		});
+		$('#location-stroeget').bind('click', function(e){
+			$('body').animate({
+				// scroll to location, need fix
+				scrollTop:((stroegetPos.top)-72)
+			}, '200', function(){
+				setTimeout(function(){
+					// animation complete, need fix footer and google map
+					$('#location-stroeget-des').parent().find('.display-content-accordion').slideDown();
+					$('#location-stroeget-des').parents('.wrap').addClass('active');
+					googlemapResize();
+				}, 300);
+			});
+			e.preventDefault(e);
+		});
+		$('#location-backstreet').bind('click', function(e){
+			$('body').animate({
+				// scroll to location, need fix
+				scrollTop:((stroegetPos.top)-72)
+			}, '200', function(){
+				setTimeout(function(){
+					// animation complete, need fix footer and google map
+					$('#location-backstreet-des').parent().find('.display-content-accordion').slideDown();
+					$('#location-backstreet-des').parents('.wrap').addClass('active');
+					googlemapResize();
+				}, 300);
+			});
+			e.preventDefault(e);
+		});
+	}
 	function googleMapLocation(){
 		// Create an array of styles.
 		var styles = [
@@ -200,11 +243,39 @@ $(function(){ //jQuery Document Ready
 		var styledMap = new google.maps.StyledMapType(styles,{name: "Dangleterre Map"});
 		// lan og lng
 		var locLatLng = new google.maps.LatLng(55.680128,12.586668);
-		var nyhavnLatLng = new google.maps.LatLng(55.676097,12.568337);
+		var nyhavnLatLng = new google.maps.LatLng(55.681106,12.586604);
 		var stroegetLatLng = new google.maps.LatLng(58.676097,11.568337);
 		var backstreetLatLng = new google.maps.LatLng(54.676097,10.568337);
 		var iconMarkerSmall = 'content/gfx/icon-google-map-marker-small.png';
 		var iconMarkerBig = 'content/gfx/icon-google-map-marker-big.png';
+
+		// nyhavn lines
+		var nyhavnCoords = [
+			new google.maps.LatLng(55.679128,12.593889),
+			new google.maps.LatLng(55.680767,12.587784)
+		];
+		var nyhavnStreetPath = new google.maps.Polyline({
+			path:nyhavnCoords,
+			strokeColor: "#192823",
+			strokeOpacity:0.9,
+			strokeWeight:2
+
+		});
+		// backstreet area
+		var backstreetCoords=[
+			new google.maps.LatLng(55.679173,12.582041),
+			new google.maps.LatLng(55.679681,12.584836),
+			new google.maps.LatLng(55.678792,12.584847),
+			new google.maps.LatLng(55.678459,12.582326)
+		];
+		backstreetArea = new google.maps.Polygon({
+			paths: backstreetCoords,
+			strokeColor: "#192823",
+			strokeOpacity:0.9,
+			strokeWeight:1,
+			fillColor: "#192823",
+			fillOpacity:0.35
+		});
 		// Create a map object, and include the MapTypeId to add
 		// to the map type control.
 		var locOptions = {
@@ -236,7 +307,7 @@ $(function(){ //jQuery Document Ready
 		};
 		var backstreetOptions = {
 			zoom: 16,
-			center: backstreetLatLng,
+			center: locLatLng,
 			scrollwheel:false,
 			panControl:false,
 			mapTypeControlOptions: {
@@ -254,12 +325,21 @@ $(function(){ //jQuery Document Ready
 			icon: iconMarkerSmall,
 			title:"Hotel"
 		});
+		var markerSmall01 = new google.maps.Marker({
+			position: nyhavnLatLng,
+			map: backstreetMap,
+			icon: iconMarkerSmall,
+			title:"Hotel"
+		});
 		var markerBig = new google.maps.Marker({
 			position: locLatLng,
 			map: localMap,
 			icon: iconMarkerBig,
 			title:"Hotel"
 		});
+		// add path/area to the maps
+		nyhavnStreetPath.setMap(nyhavnMap);
+		backstreetArea.setMap(backstreetMap);
 		//Associate the styled map with the MapTypeId and set it to display.
 		localMap.mapTypes.set('map_style', styledMap);
 		localMap.setMapTypeId('map_style');
