@@ -276,6 +276,17 @@ $(function(){ //jQuery Document Ready
 			fillColor: "#192823",
 			fillOpacity:0.35
 		});
+		// stroeget circle
+		var stroegetCircle = new google.maps.Circle({
+			strokeColor: "#192823",
+			strokeOpacity:0.9,
+			strokeWeight:1,
+			fillColor: "#192823",
+			fillOpacity:0.35,
+			center: locLatLng,
+			radius: 500
+		});
+
 		// Create a map object, and include the MapTypeId to add
 		// to the map type control.
 		var locOptions = {
@@ -297,8 +308,8 @@ $(function(){ //jQuery Document Ready
 			}
 		};
 		var stroegetOptions = {
-			zoom: 16,
-			center: stroegetLatLng,
+			zoom: 14,
+			center: locLatLng,
 			scrollwheel:false,
 			panControl:false,
 			mapTypeControlOptions: {
@@ -340,6 +351,7 @@ $(function(){ //jQuery Document Ready
 		// add path/area to the maps
 		nyhavnStreetPath.setMap(nyhavnMap);
 		backstreetArea.setMap(backstreetMap);
+		stroegetCircle.setMap(stroegetMap);
 		//Associate the styled map with the MapTypeId and set it to display.
 		localMap.mapTypes.set('map_style', styledMap);
 		localMap.setMapTypeId('map_style');
