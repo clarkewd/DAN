@@ -12,7 +12,7 @@
 				float:none;
 				margin:0 auto;
 				padding:@row-height*2 0 @row-height*3;
-				@media screen and (max-width:@mobile){
+				@media screen and (max-width:@tablet-02){
 					.column(14,14);
 				}
 				.display-content{
@@ -44,6 +44,10 @@
 						li.room{
 							.column(6,12);
 							margin-bottom:@row-height*2;
+							@media screen and (max-width:@tablet-02){
+								.column(7,14);
+								margin-bottom:@row-height*2;
+							}
 							@media screen and (max-width:@mobile){
 								.column(14,14);
 								margin-bottom:@row-height*2;
@@ -174,6 +178,55 @@
 							text-align:left;
 							color:@brand-color-base-invert;
 							margin-bottom:@row-height*0.5;
+							@media screen and (max-width:@mobile){
+								font-size:14px;
+								font-weight:400;
+							}
+						}
+					}
+					>ul.contacts{
+						.column(10,10);
+						padding:0;
+						li.contact-item{
+							display:block;
+							position:relative;
+							float:left;
+							width:22%;
+							margin-bottom:@row-height;
+							margin-right:3%;
+							&:nth-child(4n+1){
+								clear:left;
+							}
+							@media screen and (max-width:@tablet-01){
+								width:30%;
+								margin-right:3%;
+								&:nth-child(4n+1){
+									clear:none;
+								}
+								&:nth-child(3n+1){
+									clear:left;
+								}
+							}
+							@media screen and (max-width:@tablet-02){
+								width:45%;
+								margin-right:5%;
+								&:nth-child(4n+1){
+									clear:none;
+								}
+								&:nth-child(3n+1){
+									clear:none;
+								}
+								&:nth-child(2n+1){
+									clear:left;
+								}
+							}
+							h3{
+								text-align:left;
+								margin-top:0;
+							}
+							p{
+								margin-bottom:@row-height*0.5;
+							}
 						}
 					}
 					h1{
@@ -190,6 +243,7 @@
 			padding-bottom:@row-height*2;
 			background-color:@brand-color-background-alt;
 			.display-content-row-inner{
+				padding-top:0;
 				.display-content{
 					>p{
 						color:@brand-color-base-invert;
@@ -214,7 +268,7 @@
 				float:none;
 				margin:0 auto;
 				padding:@row-height*2 0;
-				@media screen and (max-width:@mobile){
+				@media screen and (max-width:@tablet-02){
 					.column(14,14);
 					padding:@row-height*2 0 0;
 				}
@@ -236,20 +290,13 @@
 								// border-bottom:1px dotted @brand-color-base-invert;
 							}
 						}
-						@media screen and (max-width:@mobile){
+						@media screen and (max-width:@tablet-02){
 							.column(14,14);
 							.facts{
-								background-color:@brand-color-highlight;
-								width:100%;
-								margin:0;
-								padding:@row-height*2 0;
 								.fact-item{
 									font-size:16px;
 									display:block;
 									width:90%;
-									padding-left:5%;
-									padding-right:5%;
-									color:@brand-color-base;
 									&:last-child{
 										margin-bottom:0;
 									}
@@ -273,7 +320,7 @@
 					}
 					.flexslider{
 						.column(7,10);
-						@media screen and (max-width:@mobile){
+						@media screen and (max-width:@tablet-02){
 							.column(14,14);
 						}
 						ul.slides{

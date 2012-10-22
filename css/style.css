@@ -246,6 +246,7 @@ p {
 p a {
   color: #192823;
   font-weight: 400;
+  text-decoration: underline;
 }
 p a:hover {
   color: #ffffff;
@@ -627,7 +628,7 @@ p a:hover {
 .practical-info .inner .practical-info-item {
   display: inline;
   float: left;
-  width: 14.583333333333334%;
+  width: 31.25%;
   margin: 0 1.0416666666666665%;
 }
 .practical-info .inner .practical-info-item-adress {
@@ -835,7 +836,7 @@ p a:hover {
 @media screen and (max-width: 1024px) {
   
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .subpanel-content .inner .form-field-row:first-child {
     margin-left: 0;
   }
@@ -1452,7 +1453,7 @@ ul.flex-direction-nav li .flex-next {
   margin: 0 auto;
   padding: 28px 0 42px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-content-page .display-container .display-content-row .display-content-row-inner {
     display: inline;
     float: left;
@@ -1521,6 +1522,15 @@ ul.flex-direction-nav li .flex-next {
   width: 47.91666666666667%;
   margin: 0 1.0416666666666665%;
   margin-bottom: 28px;
+}
+@media screen and (max-width: 768px) {
+  .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room {
+    display: inline;
+    float: left;
+    width: 48.214285714285715%;
+    margin: 0 0.8928571428571428%;
+    margin-bottom: 28px;
+  }
 }
 @media screen and (max-width: 480px) {
   .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room {
@@ -1697,6 +1707,65 @@ ul.flex-direction-nav li .flex-next {
     line-height: 1.5em;
   }
 }
+@media screen and (max-width: 480px) {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul li,
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol li {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts {
+  display: inline;
+  float: left;
+  width: 97.5%;
+  margin: 0 1.25%;
+  padding: 0;
+}
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item {
+  display: block;
+  position: relative;
+  float: left;
+  width: 22%;
+  margin-bottom: 14px;
+  margin-right: 3%;
+}
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item:nth-child(4n+1) {
+  clear: left;
+}
+@media screen and (max-width: 1024px) {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item {
+    width: 30%;
+    margin-right: 3%;
+  }
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item:nth-child(4n+1) {
+    clear: none;
+  }
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item {
+    width: 45%;
+    margin-right: 5%;
+  }
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item:nth-child(4n+1) {
+    clear: none;
+  }
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item:nth-child(3n+1) {
+    clear: none;
+  }
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item:nth-child(2n+1) {
+    clear: left;
+  }
+}
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item h3 {
+  text-align: left;
+  margin-top: 0;
+}
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul.contacts li.contact-item p {
+  margin-bottom: 7px;
+}
 .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content h1 {
   margin-bottom: 14px;
 }
@@ -1707,6 +1776,9 @@ ul.flex-direction-nav li .flex-next {
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: #e4e7e5;
+}
+.page-content-page .display-container .display-content-row-damp-light .display-content-row-inner {
+  padding-top: 0;
 }
 .page-content-page .display-container .display-content-row-damp-light .display-content-row-inner .display-content > p {
   color: #192823;
@@ -1737,7 +1809,7 @@ ul.flex-direction-nav li .flex-next {
   margin: 0 auto;
   padding: 28px 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-room-gallery .display-container .display-content-row .display-content-row-inner {
     display: inline;
     float: left;
@@ -1784,26 +1856,17 @@ ul.flex-direction-nav li .flex-next {
     line-height: 1.5em;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .facts-content {
     display: inline;
     float: left;
     width: 98.21428571428571%;
     margin: 0 0.8928571428571428%;
   }
-  .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .facts-content .facts {
-    background-color: #7c8084;
-    width: 100%;
-    margin: 0;
-    padding: 28px 0;
-  }
   .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .facts-content .facts .fact-item {
     font-size: 16px;
     display: block;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #ffffff;
   }
   .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .facts-content .facts .fact-item:last-child {
     margin-bottom: 0;
@@ -1845,7 +1908,7 @@ ul.flex-direction-nav li .flex-next {
   width: 67.5%;
   margin: 0 1.25%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .flexslider {
     display: inline;
     float: left;
