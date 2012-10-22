@@ -1,4 +1,4 @@
-The PSD file is only for visual guide. forside-03.html, junior-suites-alt.html, rooms.html and location.html are the latest html page. 
+The PSD file is only for visual guide. forside-03.html, junior-suites-alt.html, rooms.html, legal.html, careers.html and location.html are the latest html page. 
 There has been some inconsistencies from PSD file to HTML. F.x. global top navigation, intro text color in rooms and so on, but the HTML file is the latest file, which lars also confirmed.
 
 Plugins:
