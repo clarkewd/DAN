@@ -1347,6 +1347,9 @@ ul.flex-direction-nav li .flex-next {
 .page-legacy-03 {
   background-image: url('../content/img/legacy-01.jpg');
 }
+.mobile-top-push {
+  display: block;
+}
 .page-content-page .display-container .display-content-row {
   *zoom: 1;
 }
