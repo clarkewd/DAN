@@ -1612,10 +1612,12 @@ ul.flex-direction-nav li .flex-next {
 .page-content-page .display-container .display-content-row-image-01 {
   background-image: url('../content/img/room-01.jpg');
 }
-.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p {
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p,
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ul,
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol {
   display: inline;
   float: left;
-  width: 57.49999999999999%;
+  width: 67.5%;
   margin: 0 1.25%;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
@@ -1630,7 +1632,9 @@ ul.flex-direction-nav li .flex-next {
   text-align: center;
 }
 @media screen and (max-width: 1024px) {
-  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p,
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ul,
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol {
     display: inline;
     float: left;
     width: 77.5%;
@@ -1642,7 +1646,9 @@ ul.flex-direction-nav li .flex-next {
   }
 }
 @media screen and (max-width: 480px) {
-  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p,
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ul,
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol {
     display: inline;
     float: left;
     width: 87.5%;
@@ -1651,6 +1657,44 @@ ul.flex-direction-nav li .flex-next {
     position: relative;
     float: none;
     margin: 0 auto 14px;
+  }
+}
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul,
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol {
+  list-style-type: disc;
+  list-style-image: url('../content/gfx/icon-list-bullet.png');
+  list-style-position: inside;
+  padding-left: 14px;
+  margin: 0 auto 28px;
+}
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul li,
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: left;
+  color: #192823;
+  margin-bottom: 7px;
+}
+@media screen and (max-width: 768px) {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul li,
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol li {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > ul li,
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content ol li {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5em;
   }
 }
 .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content h1 {
@@ -1663,6 +1707,13 @@ ul.flex-direction-nav li .flex-next {
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: #e4e7e5;
+}
+.page-content-page .display-container .display-content-row-damp-light .display-content-row-inner .display-content > p {
+  color: #192823;
+  font-size: 0.85em;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.6em;
 }
 .page-room-gallery .display-container .display-content-row {
   *zoom: 1;

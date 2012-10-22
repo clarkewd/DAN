@@ -11,17 +11,12 @@
 		//Enable html5 elements in IE
 		'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)});
 	</script>
-	<!-- google map script, need fix -->
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA7MalwPkgq6SfwdDIcQQ35zw_UzSsFqfw&sensor=false">
-    </script>
-    <script type="text/javascript">
-    </script>
+
+
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="webfont-dangleterre/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 	<!-- site navigation -->
 	<div class="mobile-toggle mobile-nav-toggle">
 		<ul class="mobile-nav">
@@ -38,7 +33,7 @@
 						<li class="nav-item item-01"><a href="rooms.html">rooms &<span class="menu-break"></span>suites</a></li>
 						<li class="nav-item item-02"><a href="#">meetings &<span class="menu-break"></span>events</a></li>
 						<li class="nav-item item-03"><a href="#">dining &<span class="menu-break"></span>drinking</a></li>
-						<li class="nav-item item-04"><a class="active" href="location.html">services &<span class="menu-break"></span>location</a></li>
+						<li class="nav-item item-04"><a href="location.html">services &<span class="menu-break"></span>location</a></li>
 						<li class="nav-item item-05"><a href="#">our<span class="menu-break"></span>legacy</a></li>
 					</ul>
 				</div>
@@ -47,124 +42,57 @@
 	</div>
 	<!-- site page -->
 	<div class="mobile-top-push"></div>
-	<div class="page page-content-page">
+	<div class="page page-content-page page-content-page-focus">
 		<div class="wrap">
 			<div class="display-container">
-				<div class="display-content-row">
-					<div class="googlemap-location">
-						<div id="map-location"></div>
-					</div>
-				</div>
 				<div class="display-content-row display-content-row-description">
 					<div class="display-content-row-inner">
 						<div class="display-content display-content">
-							<h1>our location & the surroundings</h1>
-							<p class="teaser-text">The d’Angleterre is located on Kongens Nytorv in the heart of Copenhagen. With neighbors such as the Royal Theatre,  <a href="" id="location-nyhavn">Nyhavn Canal</a> and the pedestrian shopping street  <a href="" id="location-stroeget">Strøget</a>, the d’Angleterre is surrounded by the <a href="" id="location-backstreet">best shopping</a>, design, dining and cultural experiences Copenhagen has to offer.</p>
+							<h1>legal</h1>
+							<p class="teaser-text">This website is operated by Hotel d’Angleterre and this policy applies to all websites owned, operated, controlled and otherwise made available by Hotel d’Angleterre, its affiliates and supported organizations. This policy does not cover information collected on sites linked to or from our Websites.</p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!-- location page -->
-	<div class="page page-content-page  page-location">
-		<div class="wrap location-wrap-01 active">
-			<div class="display-container">
-				<div id="location-nyhavn-des" class="display-content-row display-content-row-description">
+				<div class="display-content-row display-content-row-description display-content-row-damp-light">
 					<div class="display-content-row-inner">
-						<div class="display-content">
-							<h2>nyhavn</h2>
-						</div>
-					</div>
-				</div>
-				<div class="display-content-accordion">
-					<div class="display-content-row display-content-row-image">
-						<div class="display-content-row-inner">
-							<div class="display-content display-content">
-							</div>
-						</div>
-					</div>
-					<div class="display-content-row display-content-row-damp-light">
-						<div class="display-content-row-inner">
-							<div class="display-content">
-								<div class="googlemap-location">
-									<div id="map-nyhavn" style="width:100%; height:100%"></div>
-								</div>
-								<div class="facts-content">
-									<div class="description">
-										<p>	Nyhavn is a 17th century waterfront, canal and entertainment district in Copenhagen, Denmark. Stretching from Kongens Nytorv to the harbour front just south of the Royal Playhouse, it is lined by brightly coloured 17th and early 18th century townhouses and bars, cafes and restaurants. Serving as a "heritage harbour", the canal has many historical wooden ships.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="wrap location-wrap-02">
-			<div class="display-container">
-				<div id="location-stroeget-des" class="display-content-row display-content-row-description">
-					<div class="display-content-row-inner">
-						<div class="display-content">
-							<h2>strøget</h2>
-						</div>
-					</div>
-				</div>
-				<div class="display-content-accordion">
-					<div class="display-content-row display-content-row-image">
-						<div class="display-content-row-inner">
-							<div class="display-content display-content">
-							</div>
-						</div>
-					</div>
-					<div class="display-content-row display-content-row-damp-light">
-						<div class="display-content-row-inner">
-							<div class="display-content">
-								<div class="googlemap-location">
-									<div id="map-stroeget" style="width:100%; height:100%"></div>
-								</div>
-								<div class="facts-content">
-									<div class="description">
-										<p>	Nyhavn is a 17th century waterfront, canal and entertainment district in Copenhagen, Denmark. Stretching from Kongens Nytorv to the harbour front just south of the Royal Playhouse, it is lined by brightly coloured 17th and early 18th century townhouses and bars, cafes and restaurants. Serving as a "heritage harbour", the canal has many historical wooden ships.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="wrap location-wrap-03">
-			<div class="display-container">
-				<div id="location-backstreet-des" class="display-content-row display-content-row-description">
-					<div class="display-content-row-inner">
-						<div class="display-content">
-							<h2>the backstreet</h2>
-						</div>
-					</div>
-				</div>
-				<div class="display-content-accordion">
-					<div class="display-content-row display-content-row-image">
-						<div class="display-content-row-inner">
-							<div class="display-content display-content">
-							</div>
-						</div>
-					</div>
-					<div class="display-content-row display-content-row-damp-light">
-						<div class="display-content-row-inner">
-							<div class="display-content">
-								<div class="googlemap-location">
-									<div id="map-backstreet" style="width:100%; height:100%"></div>
-								</div>
-								<div class="facts-content">
-									<div class="description">
-										<p>	Nyhavn is a 17th century waterfront, canal and entertainment district in Copenhagen, Denmark. Stretching from Kongens Nytorv to the harbour front just south of the Royal Playhouse, it is lined by brightly coloured 17th and early 18th century townhouses and bars, cafes and restaurants. Serving as a "heritage harbour", the canal has many historical wooden ships.
-										</p>
-									</div>
-								</div>
-							</div>
+						<div class="display-content display-content">
+							<p>We reserve the right to change or modify our privacy practices that are described herein from time to time simply by posting a revised Privacy Policy on this Website. Any such change shall be effective immediately upon posting of the revised Privacy Policy on this Website. We reserve the right to make the revised or changed Privacy Policy effective for information we already have about you, as well as any information we receive in the future. We encourage you check back often to determine any changes to this Privacy Policy so that you understand our current privacy practices. Continued access of the Website by you will constitute your acceptance of any changes or revisions to the Privacy Policy.</p>
+							<p>PLEASE NOTE THAT THIS PRIVACY POLICY APPLIES ONLY TO THE HOTEL D’ANGLETERRE’S WEBSITES AND USE OF INFORMATION AND DOES NOT APPLY TO ANY INFORMATION THAT YOU MAY PROVIDE TO US BY OTHER MEANS, SUCH AS VIA MAIL OR TELEPHONE.</p>
+							<h3>Introduction</h3>
+							<p>It is the goal of our Website to provide information around individual interests, at the same time protecting your privacy. The following privacy policy describes the information we collect, how we use it and what rights you have to it. By using this Website, you acknowledge and agree to the terms and conditions of this Website Privacy Policy Statement ("Privacy Policy"). If you do not agree to these terms and conditions, please do not use this Website.</p>
+							<h3>Information We Collect</h3>
+							<p>The Company collects personal information from you at on the Website when you voluntarily submit it to us. The Company requests personal information from you (which may include your name, address, telephone number, email address, home address, work address, landline phone number, cell phone number, credit card number, and other personal preferences such as preferred brands, wish list, other products and services purchased. Following are identifiers that permit the physical or online contacting of a specific individual when you:</p>
+							<ul>
+								<li>Subscribe to receive email newsletters or other correspondence</li>
+								<li>Subscribe to receive print versions of our magazine;</li>
+								<li>Complete a request, registration, survey, application or other form;</li>
+								<li>Request information on a product or service from us or from one of our vendors, suppliers or other agents;</li>
+								<li>Submit any content or materials to this Website;</li>
+								<li>Request materials from Hotel d’Angleterre; and/or</li>
+								<li>Request e-mail, fax, mail or telephone support or services.</li>							
+							</ul>
+							<p>This Website sometimes may offer contests or promotions that are sponsored by or co-sponsored by one or more third parties. By virtue of a third party sponsorship, these organizations may obtain personally identifiable information that you voluntarily submit. Hotel d’Angleterre has no control over the third-party sponsors' use of this information. Be sure to review all privacy policies published by these third parties and contact them directly if you have questions as they may have privacy terms that differ from our Privacy Policy.</p>
+							<p>This Website also collects non-personally-identifiable information from your Web browser to determine aggregated trends and usage statistics (including, but not limited to, number of visitors, time spent on the Website, browser type and version, pages requested, and pages visited), for purposes of site administration and to compile aggregate information about usage of the Website. The non-personally-identifiable information that is collected will not permit individual identification, meaning you will remain anonymous. Personally identifiable information is obtained if you elect to provide us with this information during your visit to the Website or during an earlier visit or subsequent visit and we are able to link your IP address between your current visit and one of these other visits.</p>
+							<p>Hotel d’Angleterre will also work with service providers that provide tracking and data collection technologies in order to:</p>
+							<ul>
+								<li>Serve ads across the Company’s Websites,</li>
+								<li>Deliver and track email communications;</li>
+								<li>Process purchase orders through e-commerce transactions;</li>
+								<li>Fulfill print and digital subscription orders</li>
+							</ul>
+							<p>These companies may collect personal information about your visits to the Website and your interaction with the Website, including advertising.</p>
+							<p>You may choose not to provide us with any personal information. In such event, you can still access and use many portions of the Website; however, you will not be able to access and use those portions of this Website or the services available on or through this Company Website that require your personal information.</p>
+							<h3>Using Information</h3>
+							<p>We may use the information we collect to:</p>
+							<ul>
+								<li>Enhance the online customer experience, provide more relevant content and information, customize and/or personalize communications, improve page load time, deliver more relevant advertising and promotional offers, develop new products and Websites, and improve the overall site navigation and usability;</li>
+								<li>Send you Company related promotional, marketing, sales, and public relations efforts;</li>
+								<li>Provide marketing leads to third party organizations.</li>
+								<li>Respond to customer service inquiries;</li>
+								<li>Communicate about your subscription and account information or other customer service needs;</li>
+							</ul>
+							<h3>Questions and Feedback</h3>
+							<p>We welcome your questions, comments, and concerns about this Privacy Policy and our privacy practices. Please send us feedback pertaining to these matters or any other issue you may have with this Company Website to:</p>
 						</div>
 					</div>
 				</div>
@@ -250,7 +178,7 @@
 						<li class="link-item"><a href="#">rooms & suites</a></li>
 						<li class="link-item"><a href="#">meetings & events</a></li>
 						<li class="link-item"><a href="#">dinning & drikking</a></li>
-						<li class="link-item"><a href="#">services</a></li>
+						<li class="link-item"><a href="#">services & locations</a></li>
 						<li class="link-item"><a href="#">legacy</a></li>
 						<li class="link-item"><a href="#">press & media</a></li>
 						<li class="link-item"><a href="#">careers</a></li>
@@ -268,13 +196,13 @@
 	</footer>
 	<!-- site footer -->
 	<div class="footer-push"></div>
+<body>
 
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 	<!-- Modernizr -->
 	<script type="text/javascript" src="scripts/modernizr.js" charset="utf-8"></script>
-	<script type="text/javascript" src="scripts/map-script.js" charset="utf-8"></script>
 	<script type="text/javascript" src="scripts/my-script.js" charset="utf-8"></script>
 </body>
 </html>

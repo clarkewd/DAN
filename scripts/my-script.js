@@ -93,12 +93,13 @@ $(function(){ //jQuery Document Ready
 	}
 	function contentPositionInt(){
 		var navHeight = $('.site-nav').height();
+		var mobileNavHeight = $('.mobile-nav').height();
 		var heightOffset = 32;
 		// $('.page-content-page-focus .wrap .display-container').css('margin-top', navHeight+heightOffset);
 		$('.mobile-top-push').css('height', navHeight);
 		if(Modernizr.mq('screen and (max-width: 480px)')){
 			// $('.page-content-page-focus .wrap .display-container').css('margin-top', '0px');
-			$('.mobile-top-push').css('height', '0px');
+			$('.mobile-top-push').css('height', mobileNavHeight);
 		}
 	}
 	function bookingScoll(){
