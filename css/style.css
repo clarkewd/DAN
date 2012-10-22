@@ -112,7 +112,12 @@ body a:hover {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1em;
+}
+@media screen and (max-width: 768px) {
+  .menu-text {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .menu-text {
@@ -411,17 +416,32 @@ p a:hover {
   float: none;
   margin: 0 auto;
 }
+@media screen and (max-width: 1330px) {
+  .nav-bar .main-nav {
+    display: inline;
+    float: left;
+    width: 98.21428571428571%;
+    margin: 0 0.8928571428571428%;
+    float: none;
+  }
+}
 .nav-bar .main-nav .nav-item {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1em;
+  width: 16.66%;
   margin: 0;
   display: inline;
   float: left;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .nav-bar .main-nav .nav-item {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .nav-bar .main-nav .nav-item {
@@ -433,15 +453,41 @@ p a:hover {
 .nav-bar .main-nav .nav-item a {
   display: block;
   margin: 0 auto;
-  padding: 16.8px 42px;
+  padding: 16.8px 0;
+}
+.nav-bar .main-nav .nav-item a span.menu-break {
+  display: block;
+}
+@media screen and (max-width: 480px) {
+  .touch .nav-bar .main-nav .nav-item a span.menu-break {
+    display: none;
+  }
 }
 .nav-bar .main-nav .nav-item a:hover {
   background-color: #96bec4;
   color: #192823;
 }
+@media screen and (max-width: 1330px) {
+  .nav-bar .main-nav .nav-item a {
+    padding: 16.8px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav-bar .main-nav .nav-item a {
+    padding: 16.8px 0;
+  }
+}
 .nav-bar .main-nav .nav-item a.active {
   background-color: #96bec4;
   color: #192823;
+}
+.nav-bar .main-nav .nav-item:first-child a {
+  padding: 23.8px 0;
+}
+@media screen and (max-width: 480px) {
+  .touch .nav-bar .main-nav .nav-item:first-child a {
+    padding: 16.8px 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .nav-bar .main-nav {
@@ -498,11 +544,16 @@ p a:hover {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1em;
   display: block;
   position: relative;
   margin: 2%;
   height: 42px;
+}
+@media screen and (max-width: 768px) {
+  .mobile-nav .nav-item {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .mobile-nav .nav-item {
@@ -603,10 +654,14 @@ p a:hover {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
   text-align: left;
   line-height: 1em;
   margin-bottom: 7px;
+}
+@media screen and (max-width: 768px) {
+  .practical-info .inner .practical-info-item-links ul.footer-links li.link-item {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .practical-info .inner .practical-info-item-links ul.footer-links li.link-item {
@@ -792,12 +847,17 @@ p a:hover {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1em;
   display: block;
   float: left;
   color: #ffffff;
   text-align: left;
   margin: 14px 7px 7px 0;
+}
+@media screen and (max-width: 768px) {
+  .subpanel-content .inner .form-field-row label {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .subpanel-content .inner .form-field-row label {
@@ -819,7 +879,7 @@ p a:hover {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1em;
   width: 89px;
   font-weight: 400;
   text-align: left;
@@ -828,6 +888,11 @@ p a:hover {
   margin-top: 14px;
   -webkit-appearance: none;
   border-radius: 0;
+}
+@media screen and (max-width: 768px) {
+  .subpanel-content .inner .form-field-row .dateinput .textinput input {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .subpanel-content .inner .form-field-row .dateinput .textinput input {
@@ -856,13 +921,18 @@ p a:hover {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1em;
   font-weight: 400;
   display: block;
   float: left;
   color: #192823;
   text-align: left;
   margin-right: 7px;
+}
+@media screen and (max-width: 768px) {
+  .subpanel-content .inner .form-field-row a.ui-selectmenu .ui-selectmenu-status {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .subpanel-content .inner .form-field-row a.ui-selectmenu .ui-selectmenu-status {
@@ -951,7 +1021,7 @@ p a:hover {
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1em;
   float: left;
   letter-spacing: 0.1em;
   display: block;
@@ -966,6 +1036,11 @@ p a:hover {
   background-color: transparent;
   padding: 16.8px;
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .subpanel-content .inner a.button {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .subpanel-content .inner a.button {
@@ -1005,7 +1080,7 @@ p a:hover {
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1em;
   float: left;
   letter-spacing: 0.1em;
   display: block;
@@ -1017,6 +1092,11 @@ p a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .btn {
@@ -1402,10 +1482,15 @@ ul.flex-direction-nav li .flex-next {
   float: left;
   width: 47.5%;
   margin: 0 1.25%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 1.125em;
+  line-height: 1.35em;
   margin-bottom: 42px;
   color: #ffffff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .page-content-page .display-container .display-content-row .display-content-row-inner .display-content > p {
     display: inline;
     float: left;
@@ -1414,7 +1499,7 @@ ul.flex-direction-nav li .flex-next {
     display: block;
     position: relative;
     float: none;
-    margin: 0 auto 28px;
+    margin: 0 auto 14px;
     text-align: center;
   }
 }
@@ -1527,16 +1612,46 @@ ul.flex-direction-nav li .flex-next {
 .page-content-page .display-container .display-content-row-image-01 {
   background-image: url('../content/img/room-01.jpg');
 }
-.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p.teaser-text {
+.page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p {
   display: inline;
   float: left;
-  width: 77.5%;
+  width: 57.49999999999999%;
   margin: 0 1.25%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 1.125em;
+  line-height: 1.35em;
+  color: #ffffff;
   display: block;
   position: relative;
   float: none;
-  margin: 0 auto;
+  margin: 0 auto 14px;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p {
+    display: inline;
+    float: left;
+    width: 77.5%;
+    margin: 0 1.25%;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content > p {
+    display: inline;
+    float: left;
+    width: 87.5%;
+    margin: 0 1.25%;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto 14px;
+  }
 }
 .page-content-page .display-container .display-content-row-description .display-content-row-inner .display-content h1 {
   margin-bottom: 14px;
@@ -1598,13 +1713,18 @@ ul.flex-direction-nav li .flex-next {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1em;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
   text-align: left;
   color: #192823;
   margin-bottom: 7px;
+}
+@media screen and (max-width: 768px) {
+  .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .facts-content .facts .fact-item {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .page-room-gallery .display-container .display-content-row .display-content-row-inner .display-content .facts-content .facts .fact-item {

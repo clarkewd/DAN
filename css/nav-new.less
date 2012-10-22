@@ -115,26 +115,54 @@
 		display:block;
 		float:none;
 		margin:0 auto;
+		@media screen and (max-width:@laptop){
+			.column(14,14);
+			float:none;
+		}
 		.nav-item{
 			.menu-text;
-			// width:15%;
+			width:16.66%;
 			margin:0;
 			display:inline;
 			float:left;
 			text-align:center;
 			a{
+				span.menu-break{
+					display:block;
+					.touch &{
+						@media screen and (max-width:@mobile){
+							display:none;
+						}
+					}
+				}
 				display:block;
 				// width:50%;
 				margin:0 auto;
-				padding:@row-height*1.2 @row-height*3;
+				padding:@row-height*1.2 0;
 				&:hover{
 					background-color:@brand-color-highlight-entertained;
 					color:@brand-color-base-invert;
+				}
+				@media screen and (max-width:@laptop){
+					padding:@row-height*1.2 0;
+				}
+				@media screen and (max-width:@tablet-01){
+					padding:@row-height*1.2 0;
 				}
 			}
 			a.active{
 				background-color:@brand-color-highlight-entertained;
 				color:@brand-color-base-invert;
+			}
+			&:first-child{
+				a{
+					padding:@row-height*1.7 0;
+					.touch &{
+						@media screen and (max-width:@mobile){
+							padding:@row-height*1.2 0;
+						}
+					}
+				}
 			}
 		}
 		@media screen and (max-width:@mobile){

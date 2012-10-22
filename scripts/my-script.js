@@ -53,6 +53,7 @@ $(function(){ //jQuery Document Ready
 	$(window).resize(function(){
 		windowHeight();
 		hideFooter();
+		contentPositionInt();
 		googlemapResize ();
 	});
 	/* windows scroll function */
@@ -94,10 +95,10 @@ $(function(){ //jQuery Document Ready
 		var navHeight = $('.site-nav').height();
 		var heightOffset = 32;
 		// $('.page-content-page-focus .wrap .display-container').css('margin-top', navHeight+heightOffset);
-		$('.mobile-top-push').css('height', navHeight)
+		$('.mobile-top-push').css('height', navHeight);
 		if(Modernizr.mq('screen and (max-width: 480px)')){
 			// $('.page-content-page-focus .wrap .display-container').css('margin-top', '0px');
-			$('.mobile-top-push').css('height', '0px')
+			$('.mobile-top-push').css('height', '0px');
 		}
 	}
 	function bookingScoll(){
