@@ -14,7 +14,7 @@
 	letter-spacing:0.1em;
 	line-height:1em;
 	@media screen and (max-width:@tablet-02){
-		font-size:13px;
+		// font-size:13px;
 	}
 	@media screen and (max-width:@mobile){
 		// font-family:@brand-type, serif;
@@ -95,18 +95,21 @@ h1{
 h2{
 	.brand-type;
 	font-weight:300;
-	font-size:2em;
+	font-size:1.5em;
 	text-align:center;
 	line-height:1.25em;
 	letter-spacing:0.06em;
 	color:@brand-color-base-invert;
 	margin-top:@row-height;
 	margin-bottom:@row-height;
+	@media screen and (max-width:@tablet-01){
+		font-size:1.25em;
+	}
 }
 h3{
 	.brand-type;
 	font-weight:300;
-	font-size:1.5em;
+	font-size:1.25em;
 	text-align:center;
 	line-height:1.25em;
 	text-transform:uppercase;

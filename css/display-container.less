@@ -12,9 +12,6 @@
 				float:none;
 				margin:0 auto;
 				padding:@row-height*2 0 @row-height*3;
-				@media screen and (max-width:@tablet-02){
-					.column(14,14);
-				}
 				.display-content{
 					.row(10);
 					h1{
@@ -42,11 +39,20 @@
 						.clearfix();
 						padding:0;
 						li.room{
-							.column(6,12);
+							.column(4,12);
 							margin-bottom:@row-height*2;
+							&:nth-child(3n+1){
+								clear:left;
+							}
 							@media screen and (max-width:@tablet-02){
 								.column(7,14);
 								margin-bottom:@row-height*2;
+								&:nth-child(3n+1){
+									clear:none;
+								}
+								&:nth-child(2n+1){
+									clear:left;
+								}
 							}
 							@media screen and (max-width:@mobile){
 								.column(14,14);
@@ -267,6 +273,11 @@
 		}
 		.display-content-row-damp{
 			background-color:@brand-color-background-alt-01;
+			.display-content-row-inner{
+				@media screen and (max-width:@laptop){
+					.column(14,14);
+				}
+			}
 		}
 		.display-content-row-damp-light{
 			padding-top:@row-height*2;
@@ -298,7 +309,7 @@
 				float:none;
 				margin:0 auto;
 				padding:@row-height*2 0;
-				@media screen and (max-width:@tablet-02){
+				@media screen and (max-width:@laptop){
 					.column(14,14);
 					padding:@row-height*2 0 0;
 				}
@@ -309,6 +320,7 @@
 							list-style-type:disc;
 							list-style-image:url('@{icon-list-bullet}');
 							padding-left:@row-height;
+							margin-top:0;
 							.fact-item{
 								.menu-text;
 								font-weight:400;
@@ -320,11 +332,10 @@
 								// border-bottom:1px dotted @brand-color-base-invert;
 							}
 						}
-						@media screen and (max-width:@tablet-02){
-							.column(14,14);
+						@media screen and (max-width:@laptop){
+							.column(4,14);
 							.facts{
-								.fact-item{
-									font-size:16px;
+									.fact-item{
 									display:block;
 									width:90%;
 									&:last-child{
@@ -333,26 +344,12 @@
 								}
 							}
 						}
-					}
-					// prelaunch stuff, remove after more content
-					.prelaunch-facts-content{
-						.column(10,10);
-						.facts{
-							.row(10);
-							.fact-item{
-								.column(5,10);
-								text-align:center;
-								&:nth-child(odd){
-									clear:left;
-								}
-							}
+						@media screen and (max-width:@tablet-02){
+							.column(14,14);
 						}
 					}
 					.flexslider{
 						.column(7,10);
-						@media screen and (max-width:@tablet-02){
-							.column(14,14);
-						}
 						ul.slides{
 							position:relative;
 							li{
@@ -367,6 +364,12 @@
 									text-align:center;
 								}
 							}
+						}
+						@media screen and (max-width:@laptop){
+							.column(10,14);
+						}
+						@media screen and (max-width:@tablet-02){
+							.column(14,14);
 						}
 						ol.flex-control-nav{
 							position:static;
