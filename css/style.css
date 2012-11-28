@@ -146,6 +146,13 @@ body a:hover {
   line-height: 1.35em;
   color: #ffffff;
 }
+.sub-text {
+  text-align: center;
+  padding: 2.8000000000000003px 14px 14px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #7c8084;
+}
 /* identity logotype mixin */
 .logotype {
   font-family: 'dangleterre05regular', serif;
@@ -1549,11 +1556,7 @@ ul.flex-direction-nav li .flex-next {
   transition: all 0.6s ease-in-out;
 }
 .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a h3 {
-  margin: 14px auto;
-}
-.page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a p {
-  color: #192823;
-  margin-top: 14px;
+  margin: 14px auto 0;
 }
 .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a .btn-reservation {
   display: none;
@@ -1570,6 +1573,12 @@ ul.flex-direction-nav li .flex-next {
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+}
+.page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a:hover p {
+  color: #192823;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .page-content-page .display-container .display-content-row .display-content-row-inner .display-content ul.room-overview li.room a:hover .btn-reservation {
   display: block;
