@@ -11,7 +11,7 @@ $(function(){ //jQuery Document Ready
 			// script target to touch device
 			$('.flexslider').flexslider({
 				animation: "slide",
-				animationLoop: false,
+				animationLoop: true,
 				video: false,
 				controlNav: false,
 				directionNav: false,
@@ -25,12 +25,13 @@ $(function(){ //jQuery Document Ready
 			// script target to no-touch device
 			$('.flexslider').flexslider({
 				animation: "slide",
-				animationLoop: false,
+				animationLoop: true,
 				prevText: "",
 				nextText: "",
 				keyboard: true,
-				slideshow: false,
+				slideshow: true,
 				animationSpeed: 400,
+				slideshowSpeed: 6000,
 				// controlsContainer: ".display-content-text",
 				start: function(slider){
 					$('body').removeClass('loading');
