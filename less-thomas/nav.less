@@ -1,0 +1,160 @@
+.site-nav{
+	display:block;
+	position:fixed;
+	width:100%;
+	z-index:100;
+	background-color:yellow;
+}
+.identity{
+	margin-bottom:@row-height;
+	a{
+		&:hover{
+			color:@brand-color-base;
+		}
+		img{
+			width:380px;
+			margin:@row-height auto @row-height*1.5;
+			display:block;
+			position:relative;
+			float:none;
+			@media screen and (max-width:@tablet-02){
+				width:300px;
+			}
+		}
+	}
+	.logo{
+		.column(4,14);
+		display:block;
+		float:none;
+		margin:@row-height auto;
+		img{
+			display:block;
+			margin:0 auto;
+			width:15%;
+		}
+		@media screen and (max-width:@tablet-01){
+			.column(4,14);
+			display:block;
+			float:none;
+			margin:@row-height auto;
+			img{
+				width:25%;
+			}
+		}
+		@media screen and (max-width:@tablet-02){
+			.column(8,14);
+			display:block;
+			float:none;
+			margin:@row-height auto;
+		}
+	}
+	.hide-logo{
+		// margin-top:-75px;
+		.transition(0.6s, ease-in-out);
+	}
+	.logotype-wrap{
+		.column(4,14);
+		display:block;
+		float:none;
+		margin:0 auto;
+		@media screen and (max-width:@tablet-01){
+			.column(12,14);
+			display:block;
+			float:none;
+			margin:0 auto;
+		}
+		.logo-type{
+		}
+	}
+	.logo-text-wrap{
+		.column(4,14);
+		display:block;
+		float:none;
+		margin:0 auto;
+		.logo-text{
+			display:block;
+			margin:0 auto;
+			text-align:center;
+		}
+	}
+}
+.nav-bar{
+	.clearfix();
+	// margin-top:@row-height;
+	background-color:@brand-color-base-invert-light;
+	>ul{
+		.clearfix();
+		margin:0;
+		padding-left:0;
+		li{
+			display:block;
+			float:left;
+			margin-right:@row-height;
+		}
+	}
+	.nav-hide{
+		.column(1,14);
+		position:absolute;
+		text-align:center;
+		top:0;
+		a{
+			padding:@row-height*0.5 0 @row-height*0.2;
+			display:block;
+			img{
+				display:block;
+				position:relative;
+				margin:0 auto;
+			}
+		}
+	}
+	.main-nav{
+		.column(12,14);
+		display:block;
+		float:none;
+		margin:0 auto;
+		// border-top:1px solid @brand-color-base;
+		// border-bottom:1px solid @brand-color-base;
+		.nav-item{
+			.menu-text;
+			width:20%;
+			margin:0;
+			a{
+				display:block;
+				// width:50%;
+				margin:0 auto;
+				padding:@row-height*1.2 0;
+				&:hover{
+					background-color:@brand-color-base;
+					color:@brand-color-base-invert;
+				}
+			}
+		}
+	}
+	.sec-nav{
+		float:right;
+	}
+}
+.main-nav{
+	.nav-item{
+		a{
+			&:hover{
+
+			}
+			.hidden-item{
+				@media screen and (max-width:@tablet-01){
+					display:none;
+				}
+			}
+		}
+	}
+}
+.sec-nav{
+	.nav-item{
+		float:left;
+		a{
+			&:hover{
+
+			}
+		}
+	}
+}

@@ -130,6 +130,7 @@ $(function(){ //jQuery Document Ready
 		$('.mobile-nav .nav-item-menu').bind('touchstart', function(e){
 			$('.nav-bar .main-nav').css('height', windowHeight+100);
 			$('.nav-bar .main-nav').toggleClass('mobile-main-nav');
+			alert('test');
 			if(activate === false){
 				activate = true;
 				document.ontouchmove = function(e){ e.preventDefault(); };

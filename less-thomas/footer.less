@@ -1,0 +1,114 @@
+.practical-info{
+	.clearfix();
+	.column(12,14);
+	display:block;
+	position:relative;
+	float:none;
+	margin:0 auto;
+	padding:@row-height*10 0 @row-height;
+	background-repeat:no-repeat;
+	background-position:center @row-height*3;
+	background-image:url('@{site-logo-neg}');
+	@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+		width:100%;
+		// display:none;
+		position:relative;
+		background-image:none;
+		padding-top:@row-height*2;
+	}
+	.inner{
+		.row(12);
+		h2{
+			.column(12,12);
+			margin-bottom:@row-height;
+		}
+		.practical-info-item{
+			.column(4,12);
+		}
+		.practical-info-item-adress{
+			.column(12,12);
+			position:absolute;
+			bottom:0;
+			margin:-@row-height*2.25 auto 0;
+            display: block;
+			p{
+				text-align:center;
+			}
+		}
+		.practical-info-item-links{
+			ul.footer-links{
+				padding:0;
+				margin:0;
+				list-style-type:none;
+				li.menu-item {
+					.menu-text;
+					text-align:left;
+					line-height:1em;
+					margin-bottom:@row-height*0.5;
+					&:nth-child(odd){
+						clear:left;
+					}
+					a{
+						color:@brand-color-base-invert;
+						&:hover{
+							color:@brand-color-highlight;
+						}
+					}
+					@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+						font-size:14px;
+						text-align:center;
+					}
+
+				}
+			}
+		}
+		.practical-info-item-lhw{
+			.column(3,12);
+			float:right;
+			img{
+				display:block;
+				position:relative;
+				float:none;
+				margin:0 auto @row-height;
+			}
+			p{
+				color:@brand-color-base;
+				text-align:center;
+			}
+		}
+		@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+			width:100%;
+			margin:0;
+			.practical-info-item-links{
+				.column(14,14);
+				ul.footer-links{
+					li.link-item{
+						font-family: @base-type, sans-serif;
+						font-size:16px;
+						a{
+							display:block;
+							color:@brand-color-base-invert;
+							text-align:center;
+							padding:@row-height 0;
+						}
+					}
+				}
+			}
+			.practical-info-item-lhw{
+				.column(6,14);
+				float:none;
+				display:block;
+				margin:0 auto;
+				img{
+					width:100%;
+				}
+			}
+			.practical-info-item-adress{
+				// width:100%;
+				// margin:@row-height;
+				position:relative;
+				margin-top:0;
+			}
+		}
+	}
+}

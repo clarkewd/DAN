@@ -1,0 +1,672 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, area, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption
+{ margin:0; padding:0; border:0; outline:0; }
+
+table, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; outline:0; }
+
+div#principal table,
+div#principal tbody,
+div#principal tfoot,
+div#principal thead,
+div#principal tr,
+div#principal th,
+div#principal td { margin:0; padding:0; border:0; outline:0; }
+ol, ul { list-type:none; list-style-type:none; }
+a { text-decoration:none; }
+a:hover, a:focus { text-decoration:none; color:#666; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; } 
+body,table,tr,th,td,p,div,span,h1,h2,h3,h4,h5,h6,input,textarea { font-family: Arial,sans-serif; 
+}
+html, body.webpage { height: 100%; margin: 0; padding: 0;
+}
+body { 
+}
+div#main { width: 100%; height: 100%; margin: 0; padding: 0; text-align: center; 
+}
+div#pagecontent { width: 1146px; margin: 0 auto; padding: 7px 0 0 0; text-align: center; position: relative; background-color: transparent; background-image: url(); background-repeat: no-repeat; background-position: top center;
+}
+div#pagecontent-inner { width: 990px; margin: 0 auto; text-align: left; background-color: transparent;
+} div#pagecontent-inner h1 { font-size: 1.6em; font-weight: normal; margin: 0 0 20px 14px; } div#pagecontent-inner p.header_subdescr { margin: 0 0 20px 14px; font-size: 0.9em; } div#top-elements { height: 152px; overflow: hidden; clear: both;
+}
+div#top-elements select,
+div#top-elements .ui-selectmenu,
+div#top-elements .button { float: right;
+}
+div#top-elements .button { margin-top: 1px;
+} div#content-left { position: relative; width: 210px; margin: 0 20px 0 0; float: left; min-height: 300px;
+} div#content-left .panel { margin-bottom: 15px; }
+div#content-right { position: relative; width: 760px; margin: 0; float: left;
+}
+div#content-inner { position: relative;
+} div.list-container.whiten { opacity: 0.3; filter: alpha(opacity=30);
+} .clear { clear: both; float: none; height: 0px; overflow: hidden;
+} .hidden { display: none; } .nextstepbutton .button { float: right;
+} ul.bulletlist { list-style-type: disc;
+} 
+body.useWebFonts h1 {  letter-spacing: 0.0em; text-decoration: none; text-transform: none; word-spacing: 0em; line-height: 1.2;
+} 
+.button { display: block; float: left; overflow: hidden; text-decoration: none; font-weight: bold; text-align: center; cursor: pointer; outline:0; background: transparent url() no-repeat scroll top left;
+}
+.button span { float: left; display: block; background:url() right -0px no-repeat; white-space:nowrap; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none; user-select: none;
+} 
+
+.button.button1 { height: 24px; padding: 0 0 0 12px; margin: 0 10px 0 0; line-height: 24px; font-size: 12px; background-position: -2170px -48px; background-repeat: no-repeat; color:#666;
+} .button.button1 span { height: 24px; margin: 0 0 0 6px; padding: 0 12px 0 0; background-position: right -0px; background-repeat: no-repeat; }  .button.button1:hover, .button.button1.hover { background-position: -2170px -72px; background-repeat: no-repeat; } .button.button1:hover span, .button.button1.hover span { background-position: right -24px; background-repeat: no-repeat; } 
+
+.button.button2 { height: 22px; padding: 0 0 0 6px; margin: 0 10px 0 0; line-height: 22px; font-size: 11px; background-position: -2170px -140px; background-repeat: no-repeat;
+} .button.button2 span { height: 22px; margin: 0 0 0 0; padding: 0 6px 0 0; background-position: right -96px; background-repeat: no-repeat; }  .button.button2:hover, .button.button2.hover { background-position: -2170px -162px; background-repeat: no-repeat; } .button.button2:hover span, .button.button2.hover span { background-position: right -118px; background-repeat: no-repeat; } 
+
+.button.button3 { height: 24px; overflow: hidden; padding: 0 0 0 12px; margin: 0; line-height: 24px; font-size: 12px; background-position: -2170px -232px; background-repeat: no-repeat;
+} .button.button3 span { height: 24px; margin: 0; padding: 0 12px 0 0; line-height: 24px; background-position: right -184px; background-repeat: no-repeat; }  .button.button3:hover, .button.button3.hover { background-position: -2170px -256px; background-repeat: no-repeat; } .button.button3:hover span, .button.button3.hover span { background-position: right -208px; background-repeat: no-repeat; } 
+
+.button.button4 { height: 34px; padding: 0 0 0 12px; margin: 0 10px 0 0; line-height: 34px; font-size: 12px; background-position: -2170px -348px; background-repeat: no-repeat; color: #FFF;
+} .button.button4 span { height: 34px; margin: 0 0 0 6px; padding: 0 12px 0 0; background-position: right -280px; background-repeat: no-repeat; color: #FFF; } .button.button4 span.arrow { display: block; float: left; width: 19px; background-color: transparent; background-position: -1140px -100px; background-repeat: no-repeat; margin: 10px 0 0 0; overflow: hidden; }  .button.button4:hover, .button.button4.hover { background-position: -2170px -382px; background-repeat: no-repeat; color: #FFF; } .button.button4:hover span, .button.button4.hover span { background-position: right -314px; background-repeat: no-repeat; color: #FFF; } .button.button4:hover span.arrow, .button.button4.hover span.arrow { background-position: -1140px -100px; background-repeat: no-repeat; } 
+
+.button.button5 { height: 24px; padding: 0 0 0 12px; margin: 0 10px 0 0; line-height: 24px; font-size: 12px; background-position: -2170px -232px; background-repeat: no-repeat; color: #FFF;
+} .button.button5 span { height: 24px; margin: 0 0 0 1px; padding: 0 12px 0 0; background-position: right -184px; background-repeat: no-repeat; color: #FFF; }  .button.button5:hover, .button.button5.hover { background-position: -2170px -256px; background-repeat: no-repeat; color: #FFF; } .button.button5:hover span, .button.button5.hover span { background-position: right -208px; background-repeat: no-repeat; color: #FFF; } 
+.toggleBtn { display: block; float: right; width: 18px; height: 19px; cursor: pointer; background-color: transparent; background-position: -1040px -219px; background-repeat: no-repeat; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none; user-select: none;
+} .toggleBtn:hover, .toggleBtn.hover { background-color: transparent; background-position: -1040px -238px; background-repeat: no-repeat; } .opened .toggleBtn { display: block; float: right; width: 18px; height: 19px; cursor: pointer; background-color: transparent; background-position: -1000px -219px; background-repeat: no-repeat; } .opened .toggleBtn:hover, .opened .toggleBtn.hover { background-color: transparent; background-position: -1000px -238px; background-repeat: no-repeat; } 
+.iconbutton { background-repeat: no-repeat; cursor: pointer; display: block; float: right; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none; user-select: none;
+}
+a.iconbutton { text-decoration: none;
+} .iconbutton1 { background-position: -960px -360px; width: 26px; height: 20px; margin: 0px;
+} .iconbutton1:hover, .iconbutton1.hover{ background-position: -960px -380px; } .opened .iconbutton1 { background-position: -960px -400px; } .opened .iconbutton1:hover, .opened .iconbutton1.hover{ background-position: -960px -420px; } .iconbutton2 { background-position: -1006px -360px; width: 24px; height: 21px; margin: 0px;
+} .iconbutton2:hover, .iconbutton2.hover{ background-position: -1006px -381px; } .iconbutton3 { background-position: -1050px -360px; width: 21px; height: 19px; margin: 8px;
+} .iconbutton3:hover, .iconbutton3.hover{ background-position: -1050px -379px; } .iconbutton.closeBtn { float: none; width: 18px; height: 18px; background-position: -960px -220px;
+} .iconbutton.closeBtn:hover, .iconbutton.closeBtn.hover { background-position: -960px -239px; } .iconbutton.deleteBtn { width: 24px; height: 20px; background-position: -960px -290px;
+} .iconbutton.deleteBtn:hover, .iconbutton.deleteBtn.hover { background-position: -960px -310px; }  .ui-datepicker { font-size: 0.8em; z-index: 600;
+} 
+
+a.ui-selectmenu { background-position: -960px -950px; background-repeat: no-repeat; border: 1px solid #C7C7C7; font-weight: bold; font-size: 1em; font-weight: normal; outline: medium none; display: block; height: 23px; overflow: hidden; position: relative; text-decoration: none; cursor: default; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px 3px 3px 3px;
+} a.ui-selectmenu span.ui-selectmenu-status { float: left; font-weight: normal; font-size: 0.8em; line-height: 1.1em; padding: 0.4em 0.5em !important; white-space: nowrap; } a.ui-selectmenu span.ui-icon-triangle-1-s { text-decoration: none;  background-repeat: no-repeat; display: block; float: right; overflow: hidden; text-indent: -99999px; height: 23px; width: 30px; margin: 0; top: 0; right: 0; position: relative; background-position: -1380px -851px; background-repeat: no-repeat; }
+ul.ui-selectmenu-menu { background: white url() scroll left top; z-index: 500;  border: 1px solid #999999; color: #666666; font-size: 1em; font-family: inherit; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;
+}
+.ui-selectmenu-menu.w79 { width: 79px !important;
+}
+.ui-selectmenu-menu.w129 { width: 129px !important;
+} .white-detail-layer .content #packagedetails .bar #addpackage_type,
+ul.ui-selectmenu-menu#addpackage_type-button { width: auto !important; min-width: 255px !important;
+}
+ul.ui-selectmenu-menu#addpackage_type-menu { width: auto !important; margin-top: 1px; min-width: 253px !important;
+} ul.ui-selectmenu-menu li { border: 0 !important; font-size: 0.9em; font-family: inherit; color: #666666; white-space: nowrap; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; } ul.ui-selectmenu-menu li a { line-height: 1.0em; color: inherit; padding: 0.5em 0.5em; font-size: 0.8em; white-space: nowrap; } ul.ui-selectmenu-menu li.ui-state-hover, ul.ui-selectmenu-menu li.ui-state-focus { background-image: none; background-color: #E9E9E9; border: 0px; color: inherit; } ul.ui-selectmenu-menu li.ui-state-hover a, ul.ui-selectmenu-menu li.ui-state-focus a { line-height: 1.0em; color: inherit; } 
+.textinput { display: block; float: left; margin: 0; padding: 0; background-position: -960px -950px; background-repeat: no-repeat; border: 1px solid #CCCCCC; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+textarea { background-position: -960px -950px; background-repeat: no-repeat; border: 1px solid #CCCCCC; padding: 3px; font-size: 0.9em; max-height: 145px; max-width: 440px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.dateinput { display: block; float: left; margin: 0; padding: 0;
+} .textinput input, .textinput span { height: 22px; line-height: 22px; padding: 1px 4px; border: 0; color: #666666; font-size: 0.9em; white-space: nowrap; background: transparent none; } .textinput span, .dateinput span { display: block; display: inline-block; } .dateinput .textinput, .dateinput .textinput input { cursor: pointer; } .w28 { width: 26px; 
+} .textinput.w28 input { width: 18px; }
+.w50 { width: 48px; 
+} .textinput.w50 input { width: 40px; }
+.w55 { width: 53px; 
+} .textinput.w55 input { width: 45px; }
+.w79 { width: 78px;
+} .textinput.w79 input, .dateinput.w79 input { width: 70px; }
+.w95 { width: 95px;
+} .textinput.w95 input, .dateinput.w95 input { width: 87px; }
+.w99 { width: 99px;
+} .textinput.w99 input, .dateinput.w99 input { width: 91px; }
+.w125 { width: 125px;
+} .textinput.w125 input, .dateinput.w125 input { width: 117px; }
+.w129 { width: 129px;
+} .textinput.w129 input, .dateinput.w129 input { width: 121px; }
+.w140 { width: 140px;
+} .textinput.w140 input, .dateinput.w140 input { width: 132px; }
+.w195 { width: 195px;
+} .textinput.w195 input, .dateinput.w195 input { width: 187px; }
+.w230 { width: 230px;
+} .textinput.w230 input, .dateinput.w230 input { width: 222px; } .dateinput { width: 103px;
+}
+.dateinput-trigger { width: 17px; height: 16px; overflow: hidden; margin: 5px 0 0 6px; background-position: -1160px -160px; background-repeat: no-repeat; cursor: pointer;
+} .zipinput { margin-right: 10px;
+}
+.logininput input { font-style: italic;
+}
+.pointer,
+.pointer span { cursor: pointer;
+}
+.unselectable { user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none;
+} 
+#content-inner-hiddenlayer { padding: 20px; background-color: #FFF;
+} 
+#menu { height: 39px; overflow: hidden; clear: both; margin: 0 0 30px 0;
+} #menu ul { height: 39px; overflow: hidden; list-style-type: none; text-align: center; margin: 0; padding: 0; } #menu li { display: block; float: left; height: 39px; background-position: -96px -100px; background-repeat: no-repeat; }  #menu li.left-edges { width: 6px; background-position: -90px -100px; background-repeat: no-repeat; } #menu li.right-edges { width: 6px; background-position: -844px -100px; background-repeat: no-repeat; } #menu li a { display: block; height: 39px; width: 100%; line-height: 1.9em; font-size: 1.15em; text-decoration: none; text-align: center; cursor: default; } #menu li a.islinked { cursor: pointer; } #menu li.seperator span { margin: 1px 0 0 0; display: block; width: 1px; height: 39px; overflow: hidden; background-position: -479px -160px; background-repeat: no-repeat; }  #menu li.active { }  #menu li.active.left-edges { background-position: -50px -160px; } #menu li.active.right-edges { background-position: -460px -160px; } #menu li.active a { background-position: -230px -160px; background-repeat: no-repeat; font-weight: bold; cursor: default; } 
+.panel.grad1 { width: 210px;
+} .panel.grad1 .header { background-position: -1980px -700px; background-repeat: no-repeat; } .panel.grad1 .header h3 { padding: 7px 36px 7px 11px; position: relative; } .panel.grad1 .header h3 span.title { font-size: 0.9em; font-weight: normal; height: auto; } .panel.grad1 .header h3 .toggleBtn { position: absolute; float: none; top: 8px; right: 8px; } .panel.grad1 .header .bottom { height: 1px; overflow: hidden; background-position: -1980px -796px; background-repeat: no-repeat; } .panel.grad1 .inner { padding: 8px 17px; background-position: -1980px -797px; background-repeat: no-repeat; font-size: 0.9em; } .panel.grad1 .inner p { margin: 0 0 11px 0; font-size: 0.85em; line-height: 1.5em; } .panel.grad1 .inner .button { margin: 0; } .panel.grad1 .bottom { height: 5px; background-position: -1980px -1418px; background-repeat: no-repeat; } .panel.grad2 { width: 210px;
+} .panel.grad2 .header { background-position: -1540px -630px; background-repeat: no-repeat; } .panel.grad2 .header h3 { padding: 11px 8px 7px 11px;  } .panel.grad2 .header h3 span.title { display: inline-block; float: left; font-size: 0.9em; font-weight: normal; height: auto; } .panel.grad2 .header h3 .deleteBtn { float: left; margin: 0 5px 0 8px; } .panel.grad2 .header h3 .button2 { float: right; margin: 0 0 0 10px; } .panel.grad2 .header h3 .button1 {  float: none; margin: 5px 0 0 0; font-size: 0.9em; font-weight: normal; } .panel.grad2 .header h3 .button1 span { margin-left: 0; } .panel.grad2 .header .bottom { height: 3px; overflow: hidden;  background-position: -1760px -739px; background-repeat: no-repeat; } .panel.grad2 .inner { padding: 8px 17px; background-position: -1540px bottom; background-repeat: no-repeat; font-size: 0.9em; } .panel.grad2.withtotal .inner { background-position: -1760px bottom !important; } .panel.grad2 .inner p { margin: 0 0 11px 0; font-size: 0.85em; line-height: 1.5em; } .panel.grad2 .inner .button { margin: 0; } .panel.grad2 .bottom { height: 0px;  } .panel.roomselection .inner { padding: 0; } .panel.roomselection .inner .form-field-row { margin: 1px 0 6px 0; } .panel.roomselection .inner .form-field-row label { display: block; float: left; width: 80px; line-height: 24px; margin: 0 5px 0 0; text-align: left; } .panel.roomselection .inner .form-field-row input, .panel.roomselection .inner .form-field-row select, .panel.roomselection .inner .form-field-row a.ui-selectmenu { display: block; float: left; } .panel.roomselection .inner .form-field-row .child1_age, .panel.roomselection .inner .form-field-row .child2_age { margin: 0 10px 0 0; } .panel.roomselection .inner .children_ages .form-field-row { height: 25px; margin: 0 0 7px 0; } .panel.roomselection .inner .children_ages .ui-selectmenu.w79 { width: 79px !important; } .panel.roomselection .inner .button { width: 100%; margin: 5px 0; } .panel.roomselection .inner .button span { width: 160px; } .panel.roomselection .inner a.details { display: block; float: left; margin: 3px 0 0 0; padding: 0 0 5px 0; font-size: 0.9em; line-height: 28px; position: relative; } .panel.roomselection .inner .button.change-room-btn { width: auto; float: right; padding: 0 0 0 7px; } .panel.roomselection .inner .button.change-room-btn span { width: auto; } .panel.roomselection .inner .form-field-row .field-displayvalue { line-height: 24px; border-bottom: 1px solid #DBDBDB; padding: 0 0 0 85px; } .panel.roomselection .inner .form-field-row .field-displayvalue span { line-height: 18px; } .panel.roomselection .inner .form-field-row.fullwidth { margin: 10px 0 0 0; } .panel.roomselection .inner .form-field-row.fullwidth .field-displayvalue { padding: 0; } .panel.roomselection .inner .form-field-row.fullwidth .field-displayvalue .deleteBtn { display: block; float: right; margin: 0 0 0 10px; } .panel.roomselection .subpanel a.ui-selectmenu span.ui-selectmenu-status { font-size: 0.9em; }  .panel.roomselection .subpanel.multiroom .subpanel-content { padding: 7px 0 7px 0; background-position: -1540px -1636px; background-repeat: no-repeat; } .panel.roomselection .subpanel.multiroom.closed .subpanel-content { padding: 7px 0 0 0; }  .panel.roomselection .subpanel.multiroom.active .subpanel-content { background-position: -1540px -739px; background-repeat: no-repeat; } .panel.roomselection .subpanel.multiroom { padding-bottom: 0; } .panel.roomselection .subpanel .header { background: transparent none; } .panel.roomselection .subpanel .header h3 { padding: 1px 8px 10px 11px; } .panel.roomselection .subpanel.closed .header h3 { padding: 1px 8px 5px 11px; } .panel.roomselection .header h3 span.title { display: block; float: left; font-size: 0.9em; font-weight: normal; } .panel.roomselection .subpanel .header h3 span.title { font-size: 1.05em; } .panel.roomselection .subpanel .inner { padding: 9px 9px 6px 9px;  margin: 0 1px; background-image: none; } .panel.roomselection .subpanel.closed .inner { display:none; } .panel.roomselection .subpanel .inner .roomtotal_panel { height: 31px; overflow: hidden; margin: 5px 0 0 0; padding: 2px 10px; background-position: -1765px -2090px; background-repeat: no-repeat; } .panel.roomselection .subpanel .inner .roomtotal_panel .total_label { float: left; width: 40%; line-height: 31px; font-weight: bold; font-size: 1.1em; } .panel.roomselection .subpanel .inner .roomtotal_panel .total_value { float: right; text-align: right; width: 60%; line-height: 31px; font-weight: bold; font-size: 1em; }   .panel.roomselection .subpanel.multiroom .bottom { height: 4px; background-position: -1540px bottom; background-repeat: no-repeat; }  .panel.roomselection .subpanel.multiroom.active .bottom { height: 4px; background-position: -1540px -1632px; background-repeat: no-repeat; }  .panel.roomselection .subpanel.multiroom.active.closed .bottom { height: 4px; background-position: -1760px -622px; background-repeat: no-repeat; } .panel.roomselection .bottom_panel { padding: 9px; font-size: 0.8em; background: transparent none; } .panel.roomselection.withtotal .bottom_panel { padding: 9px; font-size: 0.9em; background-position: -1760px -1715px; background-repeat: no-repeat; } .panel.roomselection .bottom_panel .form-field-row label {  } .panel.roomselection .bottom_panel .form-field-row.talink a { display: block; padding: 4px 0 8px 0; text-decoration: none; } .panel.roomselection .bottom_panel .form-field-row.talink a:hover { text-decoration: underline; } .panel.roomselection .bottom_panel .form-field-row.talink .textinput input { font-size: 1em; } .panel.roomselection .totals_panel { padding: 20px 9px; font-size: 1em; } .panel.roomselection .totals_panel .grandtotal_label { display: block; float: left; width: 105px; height: 35px; font-weight: bold; font-size: 1.0em; line-height: 18px; } .panel.roomselection .totals_panel .grandtotal_value { display: block; float: right; } .panel.roomselection .totals_panel .grandtotal_value .price { display: block; text-align: right; font-weight: bold; font-size: 0.9em; line-height: 1.6em; } .panel.roomselection .totals_panel .grandtotal_value .price_info { display: block; text-align: right; font-weight: normal; font-size: 0.8em; line-height: 1.2em; } .panel.grad3 { width: 210px; height: 35px; background-position: -1980px -630px; background-repeat: no-repeat;
+} .panel.grad3 h3 { padding: 0 0 0 10px; font-size: 0.8em; height: 35px; line-height: 35px; overflow: hidden; } .panel.grad3 h3 .title {  }  .panel.verisign { width: 210px; height: 92px; background-color: transparent; background-position: -1980px -1439px; background-repeat: no-repeat; position: relative;
+} .panel.verisign:hover, .panel.verisign.hover { background-position: -1980px -1538px; background-repeat: no-repeat; } .panel.verisign .closeBtn { position: absolute; top: 5px; right: 8px; z-index: 10; } .panel.verisign .moreBtn { position: absolute; display: block; bottom: 8px; right: 8px; width: 21px; height: 19px; z-index: 10; } #package-banners { margin: 0 0 17px 0;
+} .filterPanel {  height: 86px; background-position: -91px -380px; background-repeat: no-repeat; padding: 11px 14px;
+} .filterPanel .spacer { height: 14px; overflow: hidden; } .filterPanel select, .filterPanel .ui-selectmenu .ui-selectmenu-status { font-weight: bold; }
+.smallFilterPanel { height: 23px;
+}  #pricerange { float: left; width: 480px; font-size: 1em;
+}
+#pricerange .title { float: left; padding: 0 12px 0 0; line-height: 24px; font-size: 0.9em; font-weight: bold;
+}
+#pricerange #pricerange_val0,
+#pricerange #pricerange_val1 { float: left; min-width: 25px; padding: 0 12px 0 0; line-height: 24px; font-weight: bold;
+} #pricerangeslider { width: 125px;  height: 7px; float: left; margin: 10px 25px 10px 0;
+} #pricerangeslider.ui-widget-content { border: 0; background-color: transparent; background-position: -130px -340px; background-repeat: no-repeat; color: transparent; } #pricerangeslider .ui-widget-header { border: 0; background: none;  color: transparent; } #pricerangeslider .ui-slider-handle { position: absolute; z-index: 199; width: 0.9em; height: 0.9em; cursor: default; top: -.5em; } #pricerangeslider .ui-state-default, #pricerangeslider .ui-widget-content .ui-state-default { border: 0; height: 23px; width: 26px; background-color: transparent; background-position: -90px -340px; background-repeat: no-repeat; font-weight: bold; color: #EEE; outline: none; } 
+#currencyselect { float: right; height: 25px;
+} 
+#filterselect_sorting,
+#filterselect_sorting-button { float: left; margin: 0 10px 0 0;
+}
+#filterselect_rates,
+#filterselect_rates-button { float: left;
+}  
+.hotelresultlist { margin: 20px 1px 0px 0px; 
+} .hotelresultlist .hotel { float: none; margin: 0 0 20px 0; } .hotelresultlist .hotel .header { height: 38px; overflow: hidden; background-repeat: no-repeat; background-position: -132px -7px; } .hotelresultlist .hotel .header h3 { float: left; font-size: 1.1em; line-height: 38px; overflow: hidden; color: #FFFFFF; font-weight: normal; margin: 0 20px 0 10px; width: 50%; } .hotelresultlist .hotel .header .price { float: right; line-height: 28px; height: 28px; overflow: hidden; margin: 4px 5px 0 0; text-align: right; } .hotelresultlist .hotel .header .price .left { display: block; background-color: transparent; background-position: -2170px -472px; background-repeat: no-repeat; cursor: pointer; display: block; float: left; height: 28px; width: 6px; } .hotelresultlist .hotel .header .price .right { display: block; background-color: transparent; background-position: right -416px; background-repeat: no-repeat; cursor: pointer; display: block; float: left; height: 28px; padding: 2px 0 0 0; } .hotelresultlist .hotel .header .price .right .pricevalue { font-size: 0.9em; font-weight: bold; line-height: 26px; } .hotelresultlist .hotel .header .price .right .button { float: right; margin: 0 2px 0 6px; } .hotelresultlist .hotel .inner { padding: 10px; margin: 0 1px; border-bottom: 1px solid #CDCDCD; } .hotelresultlist .hotel .inner .images { float: left; width: 193px; margin: 0 20px 10px 0; } .hotelresultlist .hotel .inner .innerimagegallery { width: 193px; height: 121px; margin: 0; text-align: center; display: table-cell; vertical-align: middle; background: -moz-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -webkit-gradient(linear, left top, left bottom, from(#B3B3B3), to(#CCCCCC));  background: -webkit-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -o-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -ms-linear-gradient(top, #B3B3B3, #CCCCCC);  background: linear-gradient(top, #B3B3B3, #CCCCCC);  } .hotelresultlist .hotel .inner .images .innerimagegallery_thumbs { width: 193px; height: 27px; margin: 6px 0 0 0; } .hotelresultlist .hotel .inner .images .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .hotelresultlist .hotel .inner .images .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 6px 0 0; } .hotelresultlist .hotel .inner .images .innerimagegallery_thumbs li img { width: 100%; height: 100%; vertical-align: middle; cursor: pointer; } .hotelresultlist .hotel .inner .images .innerimagegallery_thumbs li.open_gallery_in_lightbox { margin: 0px !important; width: 25px !important; } .hotelresultlist .hotel .inner .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span { display: block; width: 18px; height: 18px; margin: 4px 0 0 0; cursor: pointer; background-color: transparent; background-position: -1079px -159px; background-repeat: no-repeat; } .hotelresultlist .hotel .inner .hotel_details { font-size: 0.8em; } .hotelresultlist .hotel .inner .hotel_details .vmenu { width: 144px; float: left; margin: 0 12px 0 0; padding: 1px 0 0 0; } .hotelresultlist .hotel .inner .hotel_details .vmenu ul { list-style-type: none; margin: 0; padding: 2px 0 0 0; width: 144px; background-color: transparent; background-position: -1980px -1649px; background-repeat: no-repeat; } .hotelresultlist .hotel .inner .hotel_details .vmenu li { height: 28px; line-height: 26px; padding: 0 11px; cursor: pointer; } .hotelresultlist .hotel .inner .hotel_details .vmenu li.active { font-weight: bold; } .hotelresultlist .hotel .inner .hotel_details .vmenu li.sep { height: 1px; overflow: hidden; padding: 0; cursor: default; background-color: transparent; background-position: -1982px -1883px; background-repeat: repeat-x; border-bottom: 1px solid #FFFFFF; } .hotelresultlist .hotel .inner .hotel_details .bottom { height: 5px; overflow: hidden; background-color: transparent; background-position: -1980px -1862px; background-repeat: no-repeat; } .hotelresultlist .hotel .inner .hotel_details .tab_container { float: left; margin: 6px 0 0 0; width: 365px; position: relative; } .hotelresultlist .hotel .inner .hotel_details .tab_container .tab p { margin: 0 0 1.2em 0; } .hotelresultlist .hotel .inner .hotel_details .tab_container .tab ul.col_1-2 { list-style-type: disc; width: 160px; margin: 0 10px 0 15px; display: block; float: left; } .hotelresultlist .hotel .inner .hotel_details .tab_container .tab ul.col_2-2 { width: 160px; margin: 0 0 0 15px; display: block; float: left; } .hotelresultlist .hotel .inner .hotel_details .tab_container .tab ul.bulletlist li { float: none; display: list-item; height: auto; overflow: visible; list-style-type: disc; cursor: default; line-height: 1.3em; } .hotelresultlist .hotel .inner .hotel_details .tab_container .citycountryinfo { position: absolute; width: 200px; top: 10px; right: 0px; text-align: right; font-weight: bold; } .hotelresultlist .hotel .inner .hotel_details .tab_container .hotel-stars { margin: 0 0 6px 0; } .hotelresultlist .hotel .inner .hotel_details .tab_container .rateicons { float: none; height: 32px; } .hotelresultlist .hotel .inner .hotel_details .tab_container .rateicons .rateicon { float: left; width: 30px; height: 24px; margin: 5px 0 0 4px; background-repeat: no-repeat; } .hotelresultlist .hotel .inner .hotel_details .tab_container p.hoteldescription { float: none; margin: 10px 0 5px 0; } .hotelresultlist .hotel .inner a.details { display: block; float: right; margin: 0 10px 0 20px; padding: 0 0 0 12px; font-size: 0.9em; font-weight: normal; line-height: 37px; position: relative; } .hotelresultlist .hotel .inner a.details span.arrow { display: block; position: absolute; left: 0px; top: 15px; width: 7px; height: 7px; background-color: transparent; background-position: -1110px -160px; background-repeat: no-repeat; overflow: hidden; } 
+.sidepanel-banners { width: 210px; overflow: hidden;
+} .sidepanel-banners .banner { margin: 0 0 10px 0; text-align: center; } .sidepanel-banners .banner a { border: 0; margin: 0; padding: 0; } .sidepanel-banners .banner a img { border: 0; margin: 0; padding: 0; } 
+.contentslider { position: relative; overflow: hidden;
+} .contentslider .items { position: relative; width: 20000em; height: 100%; overflow: hidden; } .contentslider .items .item { float: left; width: 760px; height: 100%; } .contentslider .item .package-description p { padding: 2px 0 3px 0; font-size: 0.9em; height: 31px; overflow: hidden; margin-bottom: 3px; } .contentslider .item .package-description a { padding: 1px 25px 8px 0; display: inline; position: relative; font-size: 0.9em; } .contentslider .item .package-description a span.arrow { display: block; position: absolute; right: 7px; top: 6px; width: 7px; height: 7px; background-position: -1110px -170px; background-repeat: no-repeat; overflow: hidden; } .contentslider .navigation { position: absolute; z-index: 20; left: 12px; bottom: 12px; width: 70%; height: 19px; } .contentslider .navigation a { display: block; float: left; width: 21px; height: 19px; margin: 0 6px 0 0; text-align: center; background-color: #FFFFFF; background-color: rgba(255, 255, 255, 0.6); border-radius: 3px; line-height: 18px; font-size: 12px; font-weight: bold; } .contentslider .navigation a.active, .contentslider .navigation a:hover { background-color: #316191; color: #FFFFFF; } 
+.hotel-stars { height: 22px; margin: 0 0 13px 0;
+} .hotel-stars span.star, .hotel-stars span.halfstar { display: inline-block; height: 22px; line-height: 22px; width: 23px; margin: 0 1px 0 0; background-color: transparent; background-position: -995px -99px; background-repeat: no-repeat; } .hotel-stars span.halfstar { background-position: -1019px -99px; } #package-banner-slider { width: 760px; height: 169px; margin: 0 0 20px 0;
+} #package-banner-slider .item { -moz-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3); box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3); } #package-banner-slider .package-description { position: relative; display: inline; display: inline-block; margin-top: 79px; padding: 7px 10px 7px 10px; float: right; text-align: right; width: auto; max-width: 550px; height: auto; max-height: 78px; font-size: 0.9em; background-color: #FFFFFF; opacity: .8; filter: alpha(opacity=80); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; }  
+.layer { min-width: 40px; min-height: 30px; max-width: 516px; max-height: 255px; position: relative;
+} .layer .content { position: relative; } .layer .content .closeBtn { position: absolute; right: 8px; top: 5px; z-index: 10; } .layer1 {
+} .layer1 .border-top, .layer1 .border-right, .layer1 .border-bottom, .layer1 .border-left { display: block; position: absolute; } .layer1 .border-top { top: 0; left: 3px; right: 3px;  height: 3px; z-index: 90; background-color: transparent; background-position: -53px -1170px; background-repeat: no-repeat; } .layer1 .border-right { top: 3px; bottom: 3px; right: 0; width: 3px;  z-index: 91; background-color: transparent; background-position: -566px -1173px; background-repeat: no-repeat; } .layer .border-bottom { bottom: 0; left: 3px; right: 3px;  height: 3px; z-index: 92; background-color: transparent; background-position: -53px -1425px; background-repeat: no-repeat; } .layer1 .border-left { top: 3px; bottom: 3px; left: 0; width: 3px;  z-index: 93; background-color: transparent; background-position: -50px -1173px; background-repeat: no-repeat; } .layer1 .edge-lt, .layer1 .edge-rt, .layer1 .edge-lb, .layer1 .edge-rb { display: block; position: absolute; width: 3px; height: 3px; } .layer1 .edge-lt { top: 0; left: 0; z-index: 96; background-color: transparent; background-position: -50px -1170px; background-repeat: no-repeat; } .layer1 .edge-rt { top: 0; right: 0; z-index: 98; background-color: transparent; background-position: -566px -1170px; background-repeat: no-repeat; } .layer1 .edge-lb { bottom: 0; left: 0; z-index: 97; background-color: transparent; background-position: -50px -1425px; background-repeat: no-repeat; } .layer1 .edge-rb { bottom: 0; right: 0; z-index: 99; background-color: transparent; background-position: -566px -1425px; background-repeat: no-repeat; } .layer1 .content { margin: 3px; padding: 3px; min-width: 34px; min-height: 24px; background-color: transparent; position: relative; background-color: transparent; background-position: -53px -1173px; background-repeat: no-repeat; } #loggedin-layer { max-width: 450px; min-height: 28px; position: absolute; top: 6px; right: 217px;
+} #loggedin-layer .content { margin: 0; padding: 3px 3px 0; } #loggedin-layer .content p { float: left; font-size: 0.75em; margin: 0 10px 0 5px; line-height: 22px; } #loggedin-layer .content .button { float: right; margin: 0; } 
+-layer { height: 100%; border-radius: 3px;
+} .package-detail-layer { background-color: #FFFFFF; border: 1px solid #CDCDCD;
+} .package-detail-layer .header { height: 38px; clear: both; float: none; margin: 0 1px; background-color: transparent; background-position: -5px -550px; background-repeat: no-repeat; } .draggable .package-detail-layer > .header { cursor: move; } .package-detail-layer .header h3 { font-size: 1.2em; font-weight: normal; line-height: 36px; margin: 0 20px 0 8px; float: left; } .package-detail-layer .header h3.packageoccupanies { font-size: 0.95em; line-height: 2.5em; } .package-detail-layer .header h3 span.small { font-size: 0.8em; } .package-detail-layer .header .button { display: block; float: right; margin: 7px 8px 0 0; } .package-detail-layer .content { clear: both; float: none; padding: 20px 40px; background-color: #F0F0F0; } .package-detail-layer .panel { margin: 0 0 20px 0; } .package-detail-layer .panel .inner { padding: 20px 10px; background-color: #FFFFFF; font-size: 0.8em; border-bottom: 1px solid #CDCDCD; } .package-detail-layer #packagedetails_occupancy { padding: 7px 0 0 0; } .package-detail-layer #packagedetails_occupancy span.label { display: block; float: right; margin: 0 10px; font-size: 0.9em; line-height: 25px; } .package-detail-layer #packagedetails_occupancy select { display: block; float: right; } .package-detail-layer #packagedetails_occupancy .ui-selectmenu { display: block; float: right; width: 38px !important; } .package-detail-layer #packagedetails_occupancy .buttoncontainer { display: block; float: right; margin: 0 0 0 10px; } .package-detail-layer #packagedetails_occupancy .buttoncontainer .button { margin-top: 0px; } .package-detail-layer .panel .button1 { float: right; margin: 7px 10px 0 10px; } .package-detail-layer .panel.gallery .inner .content-image .img-container .jump-left .arrow, .package-detail-layer .panel.gallery .inner .content-image .img-container .jump-right .arrow { margin-top: 67% !important; } .package-detail-layer .bottom { clear: both; float: none; height: 5px; background-color: #F0F0F0; } .white-detail-layer { background-color: transparent; border: 0; height: 100%; font-size: 0.9em;
+} .white-detail-layer .border-top, .white-detail-layer .border-right, .white-detail-layer .border-bottom, .white-detail-layer .border-left { display: block; position: absolute; } .white-detail-layer .border-top { top: 0; left: 0; width: 100%; height: 5px; z-index: 90; background-color: transparent; background-position: -50px -1448px; background-repeat: no-repeat; } .white-detail-layer .border-right { top: 0; right: 0; width: 5px; height: 100%; z-index: 91; background-color: transparent; background-position: -1366px -1448px; background-repeat: no-repeat; } .white-detail-layer .border-bottom { bottom: 0; left: 0; width: 100%; height: 5px; z-index: 92; background-color: transparent; background-position: -50px -2170px; background-repeat: no-repeat; } .white-detail-layer .border-left { bottom: 0; left: 0; width: 5px; height: 100%; z-index: 93; background-color: transparent; background-position: -50px -1448px; background-repeat: no-repeat; } .white-detail-layer .edge-lt, .white-detail-layer .edge-rt, .white-detail-layer .edge-lb, .white-detail-layer .edge-rb { display: block; position: absolute; width: 6px; height: 6px; } .white-detail-layer .edge-lt { top: 0; left: 0; z-index: 96; background-color: transparent; background-position: -50px -1448px; background-repeat: no-repeat; } .white-detail-layer .edge-rt { top: 0; right: 0; z-index: 98; background-color: transparent; background-position: -1365px -1448px; background-repeat: no-repeat; } .white-detail-layer .edge-lb { bottom: 0; left: 0; z-index: 97; background-color: transparent; background-position: -50px -2169px; background-repeat: no-repeat; } .white-detail-layer .edge-rb { bottom: 0; right: 0; z-index: 99; background-color: transparent; background-position: -1365px -2169px; background-repeat: no-repeat; } .white-detail-layer .content { clear: both; float: none; position: relative; height: 100%; margin: 5px; background-color: transparent; background-position: -56px -1454px; background-repeat: no-repeat; } .white-detail-layer .content .header { height: 27px; clear: both; float: none; margin: 0 0 3px 0; padding: 10px; overflow: hidden; text-overflow: ellipsis; position: relative; } .white-detail-layer .content .header h3 { font-size: 1.0em; font-weight: normal; line-height: 28px; margin: 0 100px 0 0; float: left; font-weight: bold; } .white-detail-layer .content .header .button { display: block; position: absolute; top: 14px; right: 0; } .white-detail-layer .content .inner { margin: 10px; background-color: #FFFFFF; }  .white-detail-layer .content #packagedetails { padding-top: 0; margin-top: 0; } .white-detail-layer .content #packagedetails .content { margin: 0; padding: 0; height: 155px; overflow: auto; } .white-detail-layer .content #packagedetails .content .img { float: left; width: 175px; margin: 0 10px 0 0; } .white-detail-layer .content #packagedetails .content .content-description { float: left; width: 250px; font-size: 0.9em; } .white-detail-layer .content #packagedetails .bar { margin: 10px 0 10px 0; } .white-detail-layer .content #packagedetails .bar label { display: block; float: left; margin: 0 10px 5px 0; line-height: 23px; } .white-detail-layer .content #packagedetails .bar select, .white-detail-layer .content #packagedetails .bar .ui-selectmenu { float: left; margin: 0 10px 5px 0; min-width: 40px; } .white-detail-layer .content #packagedetails .bar #addpackage_type { min-width: 200px; } .white-detail-layer .content #packagedetails .bar .left { float: left; width: 274px; } .white-detail-layer .content #packagedetails .bar .right { float: right; margin: 0 0 0 10px; } .white-detail-layer .content #packagedetails .bar .right .pricevalue { font-size: 1.2em; line-height: 25px; float: right; margin: 0 6px 0 0; font-weight: bold; } .white-detail-layer .content #packagedetails .bar .right .pricevalue span { font-family: Tahoma,Verdana,Arial,sans-serif; font-weight: bold; } .white-detail-layer .content #packagedetails .bar .right .button { margin-right: 0; float: right; }  .white-detail-layer .content .inner .toc { font-size: 0.8em; padding: 10px; height: 605px; background-color: #FFFFFF; overflow: auto; } 
+
+.hotel_details .vmenu li:last-child,
+.room .content .vmenu li:last-child,
+.rate .content .vmenu li:last-child,
+.roomrate .content .vmenu li:last-child { height: 26px !important;
+}
+.hotel_details .vmenu li span,
+.room .content .vmenu li span,
+.rate .content .vmenu li span,
+.roomrate .content .vmenu li span { font-size: 0.9em;
+}
+.hotel_details .vmenu li.video span,
+.room .content .vmenu li.video span,
+.roomrate .content .vmenu li.video span,
+.roomrate .content .collapsed_view a.video span { padding: 0 0 0 6px; display: block; float: left;
+} .hotel_details .vmenu li.video span.icon, .room .content .vmenu li.video span.icon, .roomrate .content .vmenu li.video span.icon, .roomrate .content .collapsed_view a.video span.icon { display: block; float: left; width: 18px; height: 16px; padding: 0; margin: 4px 0 0 0; background-color: transparent; background-position: -960px -160px; background-repeat: no-repeat; } .roomrate .room_details .tab_container .tab ul.col_1-2 { width: 48%; margin: 0 2% 0 0; display: block; float: left;
+}
+.roomrate .room_details .tab_container .tab ul.col_2-2 { width: 50%; margin: 0; display: block; float: left;
+} .roomrate .rooms_left_warning { position: relative;
+}
+.roomrate .rooms_left_warning span.closeBtn { display: block !important; position: absolute !important; padding: 0 !important; right: 12px !important; top: 12px !important; overflow: hidden !important;
+} .rateicons .rateicon.breakfast { background-position: -1080px -480px;
+} .rateicons .rateicon.breakfast:hover { background-position: -1080px -504px; }
+.rateicons .rateicon.halfboard { background-position: -1120px -480px;
+} .rateicons .rateicon.halfboard:hover { background-position: -1120px -504px; }
+.rateicons .rateicon.fullboard { background-position: -1160px -480px;
+} .rateicons .rateicon.fullboard:hover { background-position: -1160px -504px; }
+.rateicons .rateicon.deposit { background-position: -960px -480px;
+} .rateicons .rateicon.deposit:hover { background-position: -960px -504px; }
+.rateicons .rateicon.package { background-position: -1000px -480px;
+} .rateicons .rateicon.package:hover { background-position: -1000px -504px; }
+.rateicons .rateicon.onhold { background-position: -1040px -480px;
+} .rateicons .rateicon.onhold:hover { background-position: -1040px -504px; } 
+.ratelistview_roomsontop .room { margin: 0 0 20px 0;
+} .ratelistview_roomsontop .room .header { height: 39px; margin: 0; background-color: transparent; background-position: -91px -499px; background-repeat: no-repeat; } .ratelistview_roomsontop .room .header.withwarning { height: 38px; } .ratelistview_roomsontop .room .header h3 { line-height: 37px; margin: 0 8px; float: left;  font-weight: normal; overflow: hidden; text-overflow: ellipsis; height: 35px;  font-size: 1.05em; max-width: 540px;  cursor: pointer; } .ratelistview_roomsontop .room .header .moreinfos { line-height: 14px; float: right; margin: 7px 10px 0 0; padding: 0 32px 0 0; overflow: hidden; position: relative; text-align: right;  width: 130px; } .ratelistview_roomsontop .room .header .moreinfos span { font-size: 0.8em; line-height: 0.95em; } .ratelistview_roomsontop .room .header .moreinfos .iconbutton { position: absolute; top: 2px; right: 0px; } .ratelistview_roomsontop .room.opened .header .moreinfos .iconbutton {  background-position: -1006px -402px; } .ratelistview_roomsontop .room.opened .header .moreinfos .iconbutton:hover, .ratelistview_roomsontop .room.opened .header .moreinfos .iconbutton.hover { background-position: -1006px -423px; } .ratelistview_roomsontop .room .rooms_left_warning { height: 27px; font-size: 0.9em; background-color: transparent; background-position: -91px -728px; background-repeat: no-repeat; margin: 0; padding: 10px 15px 0 15px; line-height: 20px; } .ratelistview_roomsontop .room .rooms_left_warning span { position: relative; padding: 0 0 0 30px; } .ratelistview_roomsontop .room .rooms_left_warning span.icon_warning { width: 20px; height: 17px; overflow: hidden; position: absolute; top: 0; left: 0; padding: 0; margin: 0; background-color: transparent; background-position: -1020px -160px; background-repeat: no-repeat; } .ratelistview_roomsontop .room.closed .rooms_left_warning { margin: 0; display: none; } .ratelistview_roomsontop .room .room_details { padding: 12px 12px 30px 12px; font-size: 0.8em; } .ratelistview_roomsontop .room .room_details .vmenu { width: 144px; float: left; margin: 0 12px 0 0; padding: 5px 0 0 0; } .ratelistview_roomsontop .room .room_details .vmenu ul { list-style-type: none; margin: 0; padding: 2px 0 0 0; width: 144px; background-color: transparent; background-position: -1980px -1649px; background-repeat: no-repeat; } .ratelistview_roomsontop .room .room_details .vmenu li { height: 28px; line-height: 26px; padding: 0 11px; cursor: pointer; } .ratelistview_roomsontop .room .room_details .vmenu li.active { font-weight: bold; } .ratelistview_roomsontop .room .room_details .vmenu li.sep { height: 1px; overflow: hidden; padding: 0; cursor: default; background-color: transparent; background-position: -1982px -1883px; background-repeat: repeat-x; border-bottom: 1px solid #FFFFFF; } .ratelistview_roomsontop .room .room_details .bottom { height: 5px; overflow: hidden; background-color: transparent; background-position: -1980px -1862px; background-repeat: no-repeat; } .ratelistview_roomsontop .room .room_details .tab_container { float: left; margin: 6px 0 0 20px; width: 560px; } .ratelistview_roomsontop .room .room_details .tab_container .tab p { margin: 0 0 1.2em 0; } .ratelistview_roomsontop .room .content { background-color: transparent; margin: 5px 0 0 0; } .ratelistview_roomsontop .room.opened .content { margin: 4px 0 0 0; } .ratelistview_roomsontop .room .content .images { float: left; width: 193px; margin: 0 20px 10px 0; } .ratelistview_roomsontop .room .content .images .innerimagegallery { width: 193px; height: 121px; margin: 0; text-align: center; display: table-cell; vertical-align: middle; background: -moz-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -webkit-gradient(linear, left top, left bottom, from(#B3B3B3), to(#CCCCCC));  background: -webkit-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -o-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -ms-linear-gradient(top, #B3B3B3, #CCCCCC);  background: linear-gradient(top, #B3B3B3, #CCCCCC);  } .ratelistview_roomsontop .room .content .images .innerimagegallery_thumbs { width: 193px; height: 27px; margin: 6px 0 0 0; } .ratelistview_roomsontop .room .content .images .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .ratelistview_roomsontop .room .content .images .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 6px 0 0; } .ratelistview_roomsontop .room .content .images .innerimagegallery_thumbs li img { width: 100%; height: 100%; cursor: pointer; } .ratelistview_roomsontop .room .content .images .innerimagegallery_thumbs li.open_gallery_in_lightbox { margin: 0px !important; width: 25px !important; } .ratelistview_roomsontop .room .content .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span { display: block; width: 18px; height: 18px; margin: 4px 0 0 0; cursor: pointer; background-color: transparent; background-position: -1079px -159px; background-repeat: no-repeat; } .ratelistview_roomsontop .room .content .rates { margin-left: 213px; } .ratelistview_roomsontop .room .content .rates .rate .header { height: 34px; background: rgba(255, 255, 255, 0.6) none; } .ratelistview_roomsontop .room .content .rates .rate.opened .header { background-color: transparent; background-position: -90px -667px; background-repeat: no-repeat; } .ratelistview_roomsontop .room .content .rates .rate .header .iconbutton { float: left; display: block; margin: 6px 8px 0 6px; } .ratelistview_roomsontop .room .content .rates .rate .header h4 { float: left; width: 212px;  height: 30px; overflow: hidden; text-overflow: ellipsis; line-height: 30px; font-weight: bold; font-size: 0.8em;  cursor: pointer; } .ratelistview_roomsontop .room .content .rates .rate .header .rateicons { float: left; width: auto;  height: 32px; } .ratelistview_roomsontop .room .content .rates .rate .header .rateicons .rateicon { float: left; width: 30px; height: 24px; margin: 5px 0 0 4px; background-repeat: no-repeat; } .ratelistview_roomsontop .room .content .rates .rate .header .price { float: right; margin: 3px 4px 0 0; position: relative; } .ratelistview_roomsontop .room .content .rates .rate .header .price .left { display: block; height: 28px; width: 22px; float: left; background-color: transparent; background-position: -1590px -416px; background-repeat: no-repeat; cursor: pointer; } .ratelistview_roomsontop .room .content .rates .rate .header .price .left:hover { background-position: -1590px -444px; } .ratelistview_roomsontop .room .content .rates .rate .header .price .right { display: block; height: 28px; float: left; background-color: transparent; background-position: right -416px; background-repeat: no-repeat; } .ratelistview_roomsontop .room .content .rates .rate .header .price .right span.pricevalue { display:block; float: left; margin: 0 4px 0 0; padding: 1px; font-size: 1em; line-height: 24px; cursor: default; font-weight: bold; font-family: Tahoma,Verdana,Arial,sans-serif; height: 26px;  } .ratelistview_roomsontop .room .content .rates .rate .header .price .right .button { float: right; margin: 2px 2px 0px 2px; } .ratelistview_roomsontop .room .content .rates .rate .header .strikeout_price { float: right; margin: 0; padding-right: 5px; height: 32px; display: block; overflow: hidden; text-align: right; font-size: 0.9em; text-decoration: line-through; line-height: 34px; } .ratelistview_roomsontop .room .content .rates .rate .border { height: 1px; overflow: hidden; background-color: transparent; background-position: -90px -629px; background-repeat: repeat-x; border-bottom: 1px solid #FFFFFF; } .ratelistview_roomsontop .room .content .rates .rate .content { padding: 15px 20px; margin: 0; border-bottom: 1px solid #CCCCCC; font-size: 0.9em; } .ratelistview_roomsontop .rate .rate_image { float: left; width: 170px; margin: 0 10px 0 0; } .ratelistview_roomsontop .rate .rate_description { float: left; width: 324px; } .ratelistview_roomsontop .rate a.details { display: block; float: right; margin: 0 0 0 20px; padding: 0 0 0 12px; font-size: 0.8em; line-height: 28px; position: relative; } .ratelistview_roomsontop .rate a.details span.arrow { display: block; position: absolute; left: 0px; top: 11px; width: 7px; height: 7px; background-color: transparent; background-position: -1110px -160px; background-repeat: no-repeat; overflow: hidden; } .ratelistview_roomsontop .rate .detailcontent_description, .ratelistview_roomsontop .rate .detailcontent_policies { font-size: 0.9em; } 
+.ratelistview_ratesontop .rate { margin: 0 0 20px 0;
+} .ratelistview_ratesontop .rate .header { height: 38px; margin: 0; background-color: transparent; background-position: -91px -499px; background-repeat: no-repeat; } .ratelistview_ratesontop .rate.opened .header { height: 39px; } .ratelistview_ratesontop .rate .header.withwarning { height: 38px; } .ratelistview_ratesontop .rate .header h3 { line-height: 37px; margin: 0 8px; float: left;  font-weight: normal; font-size: 1.1em; overflow: hidden;  cursor: pointer; } .ratelistview_ratesontop .rate .header .moreinfos { line-height: 14px; float: right; width: 112px; height: 27px; margin: 7px 10px 0 0; padding: 0 32px 0 0; overflow: hidden; position: relative; text-align: right; font-size: 0.9em; } .ratelistview_ratesontop .rate .header .moreinfos span { font-size: 0.8em; line-height: 1em; } .ratelistview_ratesontop .rate .header .moreinfos .iconbutton { position: absolute; top: 1px; right: 0px; } .ratelistview_ratesontop .rate .rate_details { font-size: 0.9em; padding: 10px; } .ratelistview_ratesontop .rate .rate_details .rate_image { float: left; width: 346px; margin: 0 10px 0 0; } .ratelistview_ratesontop .rate .rate_details .rate_description { float: left; width: 380px; } .ratelistview_ratesontop .rate .rate_details .detailcontent_policies { margin: 20px 0 10px 0; } .ratelistview_ratesontop .rate .content { background-color: transparent; margin: 0; } .ratelistview_ratesontop .rate.opened .content { margin: 0; } .ratelistview_ratesontop .room .rooms_left_warning { height: 27px; font-size: 0.9em; background-color: transparent; background-position: -91px -728px; background-repeat: no-repeat; margin: 0; padding: 10px 15px 0 15px; line-height: 20px; } .ratelistview_ratesontop .room .rooms_left_warning span { position: relative; padding: 0 0 0 30px; } .ratelistview_ratesontop .room .rooms_left_warning span.icon_warning { width: 20px; height: 17px; overflow: hidden; position: absolute; top: 0; left: 0; padding: 0; margin: 0; background-color: transparent; background-position: -1020px -160px; background-repeat: no-repeat; } .ratelistview_ratesontop .room.closed .rooms_left_warning { margin: 0; display: none; } .ratelistview_ratesontop .rate .rooms .header { } .ratelistview_ratesontop .rate .rooms .header a.iconbutton { float: left; margin: 8px 8px 0 8px; } .ratelistview_ratesontop .rate .rooms .header h4 { float: left; margin: 0 20px 0 0; font-size: 0.8em; font-weight: normal; } .ratelistview_ratesontop .rate .rooms .header .strikeout_price { float: left; margin: 0; } .ratelistview_ratesontop .rate .rooms .header .price { float: right; margin: 0 10px; } .ratelistview_ratesontop .room .room_details { padding: 12px 12px 30px 12px; font-size: 0.8em; } .ratelistview_ratesontop .room .room_details .vmenu { width: 144px; float: left; margin: 0 12px 0 0; padding: 5px 0 0 0; } .ratelistview_ratesontop .room .room_details .vmenu ul { list-style-type: none; margin: 0; padding: 2px 0 0 0; width: 144px; background-color: transparent; background-position: -1980px -1649px; background-repeat: no-repeat; } .ratelistview_ratesontop .room .room_details .vmenu li { height: 28px; line-height: 26px; padding: 0 11px; cursor: pointer; } .ratelistview_roomsontop .room .room_details .vmenu li.active { font-weight: bold; } .ratelistview_ratesontop .room .room_details .vmenu li.sep { height: 1px; overflow: hidden; padding: 0; cursor: default; background-color: transparent; background-position: -1982px -1883px; background-repeat: repeat-x; border-bottom: 1px solid #FFFFFF; } .ratelistview_ratesontop .room .room_details .bottom { height: 5px; overflow: hidden; background-color: transparent; background-position: -1980px -1862px; background-repeat: no-repeat; } .ratelistview_ratesontop .room .room_details .tab_container { float: left; margin: 6px 0 0 20px; width: 560px; } .ratelistview_ratesontop .room .room_details .tab_container .tab p { margin: 0 0 1.2em 0; } .ratelistview_ratesontop .room_details .content .images { float: left; width: 193px; margin: 0 20px 10px 0; } .ratelistview_ratesontop .room_details .images .innerimagegallery { width: 193px; height: 121px; margin: 0; text-align: center; display: table-cell; vertical-align: middle; background: -moz-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -webkit-gradient(linear, left top, left bottom, from(#B3B3B3), to(#CCCCCC));  background: -webkit-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -o-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -ms-linear-gradient(top, #B3B3B3, #CCCCCC);  background: linear-gradient(top, #B3B3B3, #CCCCCC);  } .ratelistview_ratesontop .room_details .images .innerimagegallery_thumbs { width: 193px; height: 27px; margin: 6px 0 0 0; } .ratelistview_ratesontop .room_details .images .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .ratelistview_ratesontop .room_details .images .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 6px 0 0; } .ratelistview_ratesontop .room_details .images .innerimagegallery_thumbs li img { width: 100%; height: 100%; cursor: pointer; } .ratelistview_ratesontop .room_details .images .innerimagegallery_thumbs li.open_gallery_in_lightbox { margin: 0px !important; width: 25px !important; } .ratelistview_ratesontop .room_details .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span { display: block; width: 18px; height: 18px; margin: 4px 0 0 0; cursor: pointer; background-color: transparent; background-position: -1079px -159px; background-repeat: no-repeat; } .ratelistview_ratesontop .rate .content .rooms { margin-left: 0px; } .ratelistview_ratesontop .rate .content .rooms .room .header { height: 36px; margin: 0; background-color: transparent; background-position: -90px -666px; background-repeat: no-repeat; } .ratelistview_ratesontop .rate .content .rooms .room .header .iconbutton { float: left; display: block; margin: 8px 8px 0 8px; } .ratelistview_ratesontop .rate .content .rooms .room .header h4 { float: left; width: 280px; height: 30px; overflow: hidden; text-overflow: ellipsis; line-height: 35px; font-weight: bold; font-size: 0.8em;  cursor: pointer; } .ratelistview_ratesontop .rate .content .rooms .room .header .rateicons { float: left; width: 106px; height: 32px; } .ratelistview_ratesontop .rate .header .rateicons .rateicon { float: left; width: 30px; height: 24px; margin: 5px 0 0 4px; background-repeat: no-repeat; background-color: transparent; } .ratelistview_ratesontop .rate .content .rooms .room .header .strikeout_price { float: right; height: 32px; display: block; margin: 1px 5px 0 10px; overflow: hidden; text-align: right; font-size: 0.9em; text-decoration: line-through; line-height: 34px; } .ratelistview_ratesontop .rate .content .rooms .room .header .price { float: right; margin: 3px 4px 0 0; position: relative; } .ratelistview_ratesontop .rate .content .rooms .room .header .price .left { display: block; height: 28px; width: 22px; float: left; background-color: transparent; background-position: -1590px -416px; background-repeat: no-repeat; cursor: pointer; } .ratelistview_ratesontop .rate .content .rooms .room .header .price .left:hover { background-position: -1590px -444px; } .ratelistview_ratesontop .rate .content .rooms .room .header .price .right { display: block; height: 28px; float: left; background-color: transparent; background-position: right -416px; background-repeat: no-repeat; } .ratelistview_ratesontop .rate .content .rooms .room .header .price .right span.pricevalue { display:block; float: left; margin: 0 4px 0 0; padding: 1px; font-size: 1em; line-height: 24px; cursor: default; font-weight: bold; font-family: Tahoma,Verdana,Arial,sans-serif; height: 26px;  } .ratelistview_ratesontop .rate .content .rooms .room .header .price .right .button { float: right; margin: 2px 2px 0px 2px; } .ratelistview_ratesontop .rooms .room .content { padding: 10px 10px 20px 10px; border-bottom: 1px solid #CCCCCC; } .ratelistview_ratesontop .rooms .room .expanded_view .content .images { float: left; width: 193px; margin: 0 20px 10px 0; } .ratelistview_ratesontop .rooms .room .expanded_view .content .images .innerimagegallery { width: 193px; height: 121px; margin: 0; text-align: center; display: table-cell; vertical-align: middle; background: -moz-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -webkit-gradient(linear, left top, left bottom, from(#B3B3B3), to(#CCCCCC));  background: -webkit-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -o-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -ms-linear-gradient(top, #B3B3B3, #CCCCCC);  background: linear-gradient(top, #B3B3B3, #CCCCCC);  } .ratelistview_ratesontop .rooms .room .expanded_view .content .images .innerimagegallery_thumbs { width: 193px; height: 27px; margin: 6px 0 0 0; } .ratelistview_ratesontop .rooms .room .expanded_view .content .images .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .ratelistview_ratesontop .rooms .room .expanded_view .content .images .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 6px 0 0; } .ratelistview_ratesontop .rooms .room .expanded_view .content .images .innerimagegallery_thumbs li img { width: 100%; height: 100%; cursor: pointer; } .ratelistview_ratesontop .rooms .room .images .content .innerimagegallery_thumbs li.open_gallery_in_lightbox { margin: 0px !important; width: 25px !important; } .ratelistview_ratesontop .rooms .room .images .content .innerimagegallery_thumbs li.open_gallery_in_lightbox span { display: block; width: 18px; height: 18px; margin: 4px 0 0 0; cursor: pointer; background-color: transparent; background-position: -1079px -159px; background-repeat: no-repeat; } .ratelistview_ratesontop .room .content .vmenu { width: 144px; float: left; margin: 0 12px 0 0; padding: 0; } .ratelistview_ratesontop .room .content .vmenu ul { list-style-type: none; margin: 0; padding: 2px 0 0 0; width: 144px; background-color: transparent; background-position: -1980px -1649px; background-repeat: no-repeat; } .ratelistview_ratesontop .room .content .vmenu li { height: 28px; line-height: 26px; padding: 0 11px; cursor: pointer; } .ratelistview_ratesontop .room .content .vmenu li.active { font-weight: bold; } .ratelistview_ratesontop .room .content .vmenu li.sep { height: 1px; overflow: hidden; padding: 0; cursor: default; background-color: transparent; background-position: -1982px -1883px; background-repeat: repeat-x; border-bottom: 1px solid #FFFFFF; } .ratelistview_ratesontop .room .room_details .tab_container .tab p { margin: 0 0 1.2em 0; } .ratelistview_ratesontop .room .expanded_view .content .bottom { height: 5px; overflow: hidden; background-color: transparent; background-position: -1980px -1862px; background-repeat: no-repeat; } .ratelistview_ratesontop .room .expanded_view .content .tab_container { float: left; margin: 6px 0 0 10px; width: 356px; } .ratelistview_ratesontop .room .expanded_view .content .tab_container .tab { line-height: 18px; font-size: 0.9em; } .ratelistview_ratesontop .room .collapsed_view { } .ratelistview_ratesontop .room .collapsed_view .content .innerimagegallery_thumbs { float: left; margin: 0 13px 0 0; } .ratelistview_ratesontop .room .collapsed_view .content .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .ratelistview_ratesontop .room .collapsed_view .content .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 7px 0 0; } .ratelistview_ratesontop .room .collapsed_view .content .innerimagegallery_thumbs li img { width: 100%; height: 100%; cursor: pointer; } .ratelistview_ratesontop .room .collapsed_view .content a.video { display: block; float: left; width: 130px; overflow: hidden; line-height: 24px; } .ratelistview_ratesontop .room .collapsed_view .content a.video:hover span { text-decoration: underline; } .ratelistview_ratesontop .room .collapsed_view .content a.video:hover span.icon { text-decoration: none; } .ratelistview_ratesontop .room .collapsed_view .content .short_description { display: block; float: left; width: 355px; height: 22px; overflow: hidden; text-overflow: ellipsis; line-height: 24px; } .ratelistview_ratesontop .room .collapsed_view .content .short_description p { height: 22px; line-height: 24px; } .ratelistview_ratesontop .room .collapsed_view .content .moreinfos { line-height: 14px; float: right; margin: 6px 0 0 15px; padding: 0; overflow: hidden; position: relative; text-align: right; } 
+.ratelistview_combined .roomrate { margin: 0 0 30px 0; padding: 38px 0 0 0; position: relative;
+}
+.ratelistview_combined .roomrate.opened.withwarning { padding: 69px 0 0 0;
+} .ratelistview_combined .roomrate .header { height: 38px;  margin: 0; position: absolute; top: 0; left: 0; width: 100%; z-index: 3; background-color: transparent; background-position: -90px -850px; background-repeat: no-repeat; cursor: default !important; overflow: hidden;  } .ratelistview_combined .roomrate.withwarning .header { height: 37px;  } .ratelistview_combined .roomrate .header .iconbutton { float: left; display: block; margin: 9px 8px 0 9px; } .ratelistview_combined .roomrate.opened .header .iconbutton { background-position: -1006px -402px; } .ratelistview_combined .roomrate.opened .header .iconbutton:hover { background-position: -1006px -423px; } .ratelistview_combined .roomrate .header h3 { line-height: 37px; margin: 0 11px 0 8px; float: left;  font-weight: normal; font-size: 1.1em; max-width: 300px; height: 35px; overflow: hidden; text-overflow: ellipsis; } .ratelistview_combined .roomrate .header h4 { line-height: 39px; margin: 0; float: left; font-weight: bold; font-size: 0.8em; height: 35px; max-width: 220px; overflow: hidden; text-overflow: ellipsis; } .ratelistview_combined .header .strikeout_price { display: block; float: right; height: 32px; margin: 1px 5px 0 10px; overflow: hidden; text-align: right; font-size: 0.9em; text-decoration: line-through; line-height: 34px; } .ratelistview_combined .header .price { float: right; margin: 4px 4px 0 0; position: relative; } .ratelistview_combined .header .price .left { display: block; height: 28px; width: 22px; float: left; background-color: transparent; background-position: -1590px -416px; background-repeat: no-repeat; cursor: pointer; } .ratelistview_combined .header .price .left:hover { background-position: -1590px -444px; } .ratelistview_combined .header .price .right { display: block; height: 28px; float: left; background-color: transparent; background-position: right -416px; background-repeat: no-repeat; } .ratelistview_combined .header .price .right span.pricevalue { display:block; float: left; margin: 0 4px 0 0; padding: 1px; font-size: 1em; line-height: 24px; cursor: default; font-weight: bold; font-family: Tahoma,Verdana,Arial,sans-serif; height: 26px;  } .ratelistview_combined .header .price .right .button { float: right; margin: 2px 2px 0px 2px; } .ratelistview_combined .roomrate .rooms_left_warning { height: 27px; font-size: 0.9em; background-color: transparent; background-position: -91px -728px; background-repeat: no-repeat; margin: 0; padding: 10px 15px 0 15px; line-height: 20px; position: absolute; top: 32px;  left: 0; width: 730px;  z-index: 2; } .ratelistview_combined .roomrate .rooms_left_warning span { position: relative; padding: 0 0 0 30px; } .ratelistview_combined .roomrate .rooms_left_warning span.icon_warning { width: 20px; height: 17px; overflow: hidden; position: absolute; top: 0; left: 0; padding: 0; margin: 0; background-color: transparent; background-position: -1020px -160px; background-repeat: no-repeat; } .ratelistview_combined .roomrate .content { padding: 12px 12px 20px 12px; font-size: 0.8em; background-color: #FFFFFF; border-bottom: 1px solid #CCCCCC; } .ratelistview_combined .roomrate.closed .content { padding: 5px 12px 4px 12px; } .ratelistview_combined .roomrate.withwarning.closed .content { padding: 36px 12px 4px 12px; } .ratelistview_combined .roomrate .content .expanded_view .content_right { float: left; width: 523px; } .ratelistview_combined .roomrate .content .expanded_view .images { float: left; width: 193px; margin: 0 20px 10px 0; } .ratelistview_combined .roomrate .content .expanded_view .images .innerimagegallery { width: 193px; height: 121px; margin: 0; text-align: center; display: table-cell; vertical-align: middle; background: -moz-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -webkit-gradient(linear, left top, left bottom, from(#B3B3B3), to(#CCCCCC));  background: -webkit-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -o-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -ms-linear-gradient(top, #B3B3B3, #CCCCCC);  background: linear-gradient(top, #B3B3B3, #CCCCCC);  } .ratelistview_combined .roomrate .content .expanded_view .images .innerimagegallery_thumbs { width: 193px; height: 27px; margin: 6px 0 0 0; } .ratelistview_combined .roomrate .content .expanded_view .images .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .ratelistview_combined .roomrate .content .expanded_view .images .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 6px 0 0; } .ratelistview_combined .roomrate .content .expanded_view .images .innerimagegallery_thumbs li img { width: 100%; height: 100%; cursor: pointer; } .ratelistview_combined .roomrate .content .images .innerimagegallery_thumbs li.open_gallery_in_lightbox { margin: 0px !important; width: 25px !important; } .ratelistview_combined .roomrate .content .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span { display: block; width: 18px; height: 18px; margin: 4px 0 0 0; cursor: pointer; background-color: transparent; background-position: -1079px -159px; background-repeat: no-repeat; } .ratelistview_combined .roomrate .content .vmenu-container { width: 144px; float: left; margin: 0 12px 0 0; padding: 0; } .ratelistview_combined .roomrate .content .vmenu { width: 144px; margin: 0; padding: 0; } .ratelistview_combined .roomrate .content .vmenu ul { list-style-type: none; margin: 0; padding: 2px 0 0 0; width: 144px; background-color: transparent; background-position: -1980px -1649px; background-repeat: no-repeat; } .ratelistview_combined .roomrate .content .vmenu li { height: 28px; line-height: 26px; padding: 0 11px; cursor: pointer; } .ratelistview_combined .roomrate .content .vmenu li.active { font-weight: bold; } .ratelistview_combined .roomrate .content .vmenu li.sep { height: 1px; overflow: hidden; padding: 0; cursor: default; background-color: transparent; background-position: -1982px -1883px;; background-repeat: repeat-x; border-bottom: 1px solid #FFFFFF; } .ratelistview_combined .roomrate .content .expanded_view .rateicons { width: 144px; height: 32px; } .ratelistview_combined .roomrate .content .expanded_view .rateicons .rateicon { float: left; width: 30px; height: 24px; margin: 5px 4px 0 0; background-color: transparent; background-repeat: no-repeat; } .ratelistview_combined .roomrate .room_details .tab_container .tab p { margin: 0 0 1.2em 0; } .ratelistview_combined .roomrate .content .expanded_view .bottom { height: 5px; overflow: hidden; background-color: transparent; background-position: -1980px -1862px; background-repeat: no-repeat; } .ratelistview_combined .roomrate .content .expanded_view .tab_container { float: left; margin: 6px 0 0 10px; width: 356px; } .ratelistview_combined .roomrate .content .expanded_view .tab_container .tab { line-height: 18px; } .ratelistview_combined .roomrate .content .collapsed_view .innerimagegallery_thumbs { float: left; margin: 0 13px 0 0; } .ratelistview_combined .roomrate .content .collapsed_view .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .ratelistview_combined .roomrate .content .collapsed_view .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 7px 0 0; } .ratelistview_combined .roomrate .content .collapsed_view .innerimagegallery_thumbs li img { width: 100%; height: 100%; cursor: pointer; } .ratelistview_combined .roomrate .content .collapsed_view a.video { display: block; float: left; width: 130px; overflow: hidden; line-height: 24px; } .ratelistview_combined .roomrate .content .collapsed_view a.video:hover span { text-decoration: underline; } .ratelistview_combined .roomrate .content .collapsed_view a.video:hover span.icon { text-decoration: none; } .ratelistview_combined .roomrate .content .collapsed_view .short_description { display: block; float: left; width: 355px; height: 22px; overflow: hidden; text-overflow: ellipsis; line-height: 24px; } .ratelistview_combined .roomrate .content .collapsed_view .short_description p { height: 22px; line-height: 24px; } .ratelistview_combined .roomrate .content .collapsed_view .moreinfos { line-height: 14px; float: right; margin: 6px 0 0 15px; padding: 0; overflow: hidden; position: relative; text-align: right; }  .package-detail-layer .ratelistview_combined .roomrate .content .expanded_view .content_right { width: 500px; } .ratelistview_combined .roomrate .content .expanded_view .tab_container { width: 330px; }  #content-inner .errormsg { margin: 0 20px 20px 20px; padding: 0 10px 10px 10px; font-size: 0.9em; font-weight: bold; border: 2px solid #FF6A01; border-radius: 5px 5px 5px 5px;
+} #content-inner .errormsg p { margin: 10px 0 0 0; } .formbox,
+.packagebox { margin: 0 0 20px 0;
+} .formbox .header, .packagebox .header { height: 37px; overflow: hidden; background-color: transparent; background-position: -90px -850px; background-repeat: no-repeat; } .formbox .header a.iconbutton, .packagebox .header a.iconbutton { display: block; float: left; margin: 8px 0 0 10px; } .formbox .header span.title, .packagebox .header span.title { display: block; float: left; font-size: 0.95em; font-weight: normal; line-height: 37px; margin: 0 0 0 10px; } .formbox .inner { padding: 0px; margin: 0; position: relative; } .formbox .form { padding: 20px; } .formbox .formdata { padding: 7px 20px 12px 20px; } .formbox.guestdetails .inner { border-bottom-width: 0 !important; } .formbox .inner .form .form-field-row { line-height: 25px; margin: 0 0 12px 0; } .formbox .inner .form .form-field-row.error .textinput, .formbox .inner .form .form-field-row label { display: block; float: left; width: 160px; text-align: right; font-weight: bold; font-size: 0.8em; margin: 0 30px 0 0; } .formbox .inner .form .form-field-row label span.title { display: block; float: right; } .formbox .inner .form .form-field-row label span.star { display: block; float: right; margin: 6px 6px 0 0; width: 0; height: 0; overflow: hidden; } .formbox .inner .form .form-field-row.required label span.star { width: 10px; height: 10px; background-color: transparent; background-position: -1050px -160px; background-repeat: no-repeat; } .formbox .inner .form .form-field-row textarea { max-width: 392px; } .formbox .inner .form .form-field-row.error .textinput, .formbox .inner .form .form-field-row.error .ui-selectmenu, .formbox .inner .form .form-field-row.error textarea { font-size: 0.8em; border: 1px solid #FF6A01; } .formbox .inner .form .form-field-row .field { float: left; } .formbox .required-legend { font-size: 0.8em; position: absolute; top: 20px; right: 20px; } .formbox .required-legend span.star { display: block; float: left; width: 10px; height: 10px; margin: 3px 0 0 0; background-color: transparent; background-position: -1050px -160px; background-repeat: no-repeat; } .formbox .required-legend span.title { display: block; float: left; padding: 0 0 0 5px; } .formbox .signup .form-group span { display: block; float: left; line-height: 31px; margin: 0 15px; font-size: 0.8em; font-weight: bold; } .formbox .signup .form-group a.iconbutton { display: block; float: left; margin: 4px 0 0 0; } .formbox .signup .form-field-row a.button { margin: 1px 0 0 10px; } .formbox .errormessage, .simple-login-form .errormessage { position: relative; float: left; min-width: 60px; min-height: 20px; max-width: 280px; margin: 0 0 0 10px; background-color: transparent; background-position: -613px -1173px; background-repeat: no-repeat; } .formbox .errormessage .border-top, .formbox .errormessage .border-right, .formbox .errormessage .border-bottom, .formbox .errormessage .border-left, .simple-login-form .errormessage .border-top, .simple-login-form .errormessage .border-right, .simple-login-form .errormessage .border-bottom, .simple-login-form .errormessage .border-left { display: block; position: absolute; } .formbox .errormessage .border-top, .simple-login-form .errormessage .border-top { top: 0; left: 0; width: 100%; height: 4px; z-index: 90; background-color: transparent; background-position: -614px -1170px; background-repeat: no-repeat; } .formbox .errormessage .border-right, .simple-login-form .errormessage .border-right { top: 0; right: 0; width: 4px; height: 100%; z-index: 91; background-color: transparent; background-position: -1366px -1173px; background-repeat: no-repeat; } .formbox .errormessage .border-bottom, .simple-login-form .errormessage .border-bottom { bottom: 0; left: 0; width: 100%; height: 4px; z-index: 92; background-color: transparent; background-position: -614px -1426px; background-repeat: no-repeat; } .formbox .errormessage .border-left, .simple-login-form .errormessage .border-left { bottom: 0; left: 0; width: 4px; height: 100%; z-index: 93; background-color: transparent; background-position: -610px -1173px; background-repeat: no-repeat; } .formbox .errormessage .edge-lt, .formbox .errormessage .edge-rt, .formbox .errormessage .edge-lb, .formbox .errormessage .edge-rb, .simple-login-form .errormessage .edge-lt, .simple-login-form .errormessage .edge-rt, .simple-login-form .errormessage .edge-lb, .simple-login-form .errormessage .edge-rb { display: block; position: absolute; width: 4px; height: 4px; background-color: transparent; background-repeat: no-repeat; } .formbox .errormessage .edge-lt, .simple-login-form .errormessage .edge-lt { top: 0; left: 0; z-index: 96; background-position: -610px -1170px; } .formbox .errormessage .edge-rt, .simple-login-form .errormessage .edge-rt { top: 0; right: 0; z-index: 98; background-position: -1366px -1170px; } .formbox .errormessage .edge-lb, .simple-login-form .errormessage .edge-lb { bottom: 0; left: 0; z-index: 97; background-position: -610px -1426px; } .formbox .errormessage .edge-rb, .simple-login-form .errormessage .edge-rb { bottom: 0; right: 0; z-index: 99; background-position: -1366px -1426px; } .formbox .errormessage .content, .simple-login-form .errormessage .content { margin: 10px; background-color: transparent; position: relative; } .formbox .errormessage .content span.icon_warning, .simple-login-form .errormessage .content span.icon_warning { width: 20px; height: 17px; overflow: hidden; position: absolute; z-index: 101; top: 0; left: 0; padding: 0; margin: 0; background-position: -1020px -160px; background-repeat: no-repeat; } .formbox .errormessage .content .inner, .simple-login-form .errormessage .content .inner { font-size: 0.8em; background-color: transparent; margin: 1px 0 0 28px; border: 0; line-height: 1.2em; } .formbox .inner .form .form-field-row.guarantyselection { margin: 20px 0; } .formbox .inner .form .form-field-row.guarantyselection label { width: 690px; float: none; clear: both; text-align: left; } .formbox .inner .form .form-field-row.guarantyselection label .star { float: left; } .formbox .inner .form .form-field-row.guarantyselection label .title { float: left; } .formbox .inner .form .form-field-row.guarantyselection .checkboxfield { margin-left: 190px; } .formbox .inner .form .form-field-row.guarantyselection .checkboxfield label { float: none; display: inline; font-weight: normal; } .formbox .inner .form .form-field-row.guarantyselection { margin: 20px 0; } .formbox .inner .form .form-field-row.guarantyselection label { width: 690px; float: none; clear: both; text-align: left; } .formbox .inner .form .form-field-row.guarantyselection label .star { float: left; } .formbox .inner .form .form-field-row.guarantyselection label .title { float: left; } .formbox .inner .form .form-field-row.guarantyselection .checkboxfield { margin-left: 190px; } .formbox .inner .form .form-field-row.guarantyselection .checkboxfield label { float: none; display: inline; font-weight: normal; } .packagebox .inner { background-color: #FFFFFF; padding: 20px 0 0 20px; margin: 0; } .packagebox .inner .package { float: left; width: 350px; height: 141px; margin: 0 20px 20px 0; position: relative; background-color: transparent; background-position: -90px -956px;; background-repeat: no-repeat; cursor: pointer; } .packagebox .inner .package .content { padding: 0; height: 113px; position: relative; } .packagebox .inner .package .content div.img { width: 175px; height: 113px; overflow: hidden; float: left; } .packagebox .inner .package .content div.content-description { height: 90px; width: 155px; float: left; text-align: left; padding: 10px; font-size: 0.8em; } .packagebox .inner .package .content div.content-description p { height: 90px; line-height: 1.2em; overflow: auto; } .packagebox .inner .package .bar { position: absolute; left: 0; bottom: 0; right: 0; padding: 2px; height: 24px;  } .packagebox .inner .package .bar .title { position: absolute; top: 2px; left: 8px; height: 22px; width: 190px; font-size: 0.9em; line-height: 23px; } .packagebox .inner .package .bar .title h4 { height: 24px; overflow: hidden; text-overflow: ellipsis; } .packagebox .inner .package .bar .right { position: relative; float: right; } .packagebox .inner .package .bar .right .button { margin: 0 0 0 7px; float: right; font-size: 0.7em; } .packagebox .inner .package .bar .right .price { float: right; line-height: 24px; font-size: 1em; font-weight: bold; padding: 0 0 0 5px;  background-color: transparent; background-position: -100px -1072px; background-repeat: no-repeat; } .packagebox .inner .roomupgrade { float: left; width: 349px; height: 185px; margin: 0 21px 20px 0; position: relative; background-color: transparent; background-position: -501px -956px; background-repeat: no-repeat; } .packagebox .inner .roomupgrade .bar { position: absolute; left: 0; top: 0; right: 0; padding: 2px; height: 24px;  } .packagebox .inner .roomupgrade .bar .title { position: absolute; top: 2px; left: 8px; height: 22px; width: 190px; font-size: 0.9em; line-height: 23px; } .packagebox .inner .roomupgrade .bar .title h4 { height: 24px; overflow: hidden; text-overflow: ellipsis; } .packagebox .inner .roomupgrade .bar .right { position: relative; float: right; } .packagebox .inner .roomupgrade .bar .right .button { margin: 0 0 0 7px; float: right; font-size: 0.7em; } .packagebox .inner .roomupgrade .bar .right .price { float: right; line-height: 24px; font-size: 1em; font-weight: bold; padding: 0 0 0 5px;  background-color: transparent; background-position: -100px -1072px; background-repeat: no-repeat; } .packagebox .inner .roomupgrade .content { margin: 28px 0 0 0; padding: 0; height: 161px; position: relative; } .packagebox .inner .roomupgrade .content div.innerimagegallery { width: 175px; height: 161px; overflow: hidden; float: left; display: table-cell; vertical-align: middle; } .packagebox .inner .roomupgrade .content div.innerimagegallery div.img { height: 121px; text-align: center; background: -moz-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -webkit-gradient(linear, left top, left bottom, from(#B3B3B3), to(#CCCCCC));  background: -webkit-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -o-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -ms-linear-gradient(top, #B3B3B3, #CCCCCC);  background: linear-gradient(top, #B3B3B3, #CCCCCC);  } .packagebox .inner .roomupgrade .content div.content-description { height: 134px; width: 154px;  float: left; text-align: left; padding: 6px 10px 10px 10px; font-size: 0.8em; overflow: auto;  } .packagebox .inner .roomupgrade .content div.content-description p { height: 143px; line-height: 1.4em; text-overflow: ellipsis; } .packagebox .inner .roomupgrade .content div.innerimagegallery_thumbs { width: 175px; height: 29px; overflow: hidden; float: left; } .packagebox .inner .roomupgrade .content div.innerimagegallery_thumbs ul { list-style-type: none; margin: 5px 0 0 6px; padding: 0; height: 27px; } .packagebox .inner .roomupgrade .content div.innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 6px 0 0; } .packagebox .inner .roomupgrade .content div.innerimagegallery_thumbs li img { width: 100%; height: 100%; cursor: pointer; } .reviewbox .header a.button { margin: 8px 0 0 10px;
+}
+.reviewbox .header a.details { display: block; float: right; margin: 0 10px 0 20px; padding: 0 0 0 12px; font-size: 0.65em; font-weight: normal; line-height: 37px; position: relative;
+} .reviewbox .header a.details span.arrow { display: block; position: absolute; left: 0px; top: 15px; width: 7px; height: 7px; background-color: transparent; background-position: -1110px -160px; background-repeat: no-repeat; overflow: hidden; }
+.reviewbox .inner .room-details { margin: 10px 0; padding: 0; font-size: 0.8em;
+} .reviewbox .inner table td { font-size: 0.8em; padding: 2px 8px 1px 20px;
+} .reviewbox .inner table td.label { font-weight: bold; }
+.reviewbox .inner table.withbottomborder tr.last td { border-bottom-width: 0 !important;
+}
+.reviewbox .inner table tr.noborder td { border-bottom: 0px;
+} .reviewbox .inner table.dynpackagestable td { font-size: 1em;
+}
+.reviewbox .inner table.dynpackagestable td span.dynpackage_info { font-size: 0.85em;
+} .reviewbox .inner div.roomtype,
+.reviewbox .inner div.ratename,
+.completionbox .inner div.roomtype,
+.completionbox .inner div.ratename { max-width: 410px; overflow: hidden; text-overflow: ellipsis;
+} 
+.reviewbox .inner .packagebox { margin-left: 1px; margin-bottom: 0px;
+}
+.reviewbox .inner .packagebox.closed { margin-bottom: 20px;
+} .reviewbox .inner .packagebox .header { height: 31px; background-position: -90px -800px; font-size: 0.85em; } .reviewbox .inner .packagebox .header .iconbutton { margin: 6px 0 0 10px; } .reviewbox .inner .packagebox > .inner { padding: 20px 0 0 19px; border-bottom: 0 !important; } .reviewbox span.dynpackage .deleteBtn { height: 13px; width: 12px; overflow: hidden; background-position: -989px -160px; float: none; display: inline;
+} 
+.hotelsearchbox { margin: 0 0 20px 0;
+} .hotelsearchbox .header { height: 44px; overflow: hidden; background-color: transparent; background-position: -90px -50px; background-repeat: no-repeat; } .hotelsearchbox .header h3 { display: block; font-size: 1.4em; font-weight: normal; line-height: 44px; margin: 0 0 0 10px; color: #FFFFFF; } .hotelsearchbox .inner { padding: 20px 10px; font-size: 0.8em; } .hotelsearchbox .inner .form-field-row { margin: 0 0 20px 0; } .hotelsearchbox .inner label, .hotelsearchbox .inner .field { float: left; } .hotelsearchbox .inner label .title { display: block; height: 27px; line-height: 25px; overflow: hidden; padding: 0 10px 0 0; } .hotelsearchbox .inner label .star, .hotelsearchbox .inner label .clear { display: none; } .hotelsearchbox .inner .form-field-row .field .ui-selectmenu { font-size: 1.2em; } .hotelsearchbox .inner .form-field-row.row1 .field { margin: 0 10px 0 0; } .hotelsearchbox .inner .form-field-row.row1 .field .ui-selectmenu { min-width: 100px; } .hotelsearchbox .inner #hotelselection_country { min-width: 178px; width: 178px; } .hotelsearchbox .inner #hotelselection_city { min-width: 178px; width: 178px; } .hotelsearchbox .inner #hotelselection_city-button { margin-right: 49px; } .hotelsearchbox .inner #hotelselection_hotelCode-button, .hotelsearchbox .inner #hotelselection_hotelCode-button { min-width: 150px; } .hotelsearchbox .inner .form-field-row.row3 .field .ui-selectmenu { min-width: 79px; } .hotelsearchbox .inner .form-field-row.row3 .field.children_ages .ui-selectmenu { min-width: 51px; } .hotelsearchbox .inner .form-field-row .w43 { width: 43px; } .hotelsearchbox .inner .form-field-row .w59 { width: 59px; } .hotelsearchbox .inner .form-field-row .w63 { width: 63px; } .hotelsearchbox .inner .form-field-row .w75 { width: 75px; } .hotelsearchbox .inner .form-field-row .w131 { width: 131px; } .hotelsearchbox .inner .form-field-row .w145 { width: 145px; } .hotelsearchbox .inner .form-field-row .w194 { width: 194px; } .hotelsearchbox .inner .form-field-row #hotelselection_country-button .ui-selectmenu-status, .hotelsearchbox .inner .form-field-row #hotelselection_city-button .ui-selectmenu-status, .hotelsearchbox .inner .form-field-row #hotelselection_hotelCode-button .ui-selectmenu-status { font-weight: bold; } .hotelsearchbox .button2 { float: right; } .refinesearchbox { margin: 0 0 20px 0;
+} .refinesearchbox .header { height: 38px; overflow: hidden; background-color: transparent; background-position: -91px -499px; background-repeat: no-repeat; } .refinesearchbox .header h3 { display: block; font-size: 1.2em; font-weight: normal; line-height: 38px; margin: 0 0 0 10px; color: #666666; } .refinesearchbox .header h3 .iconbutton { float: left; margin: 9px 10px 0 0; } .refinesearchbox .header h3 .title { float: left; } .refinesearchbox .inner { padding: 10px; font-size: 0.8em; background-color: #FFFFFF; margin: 0 1px; border-left: 1px solid #CDCDCD; border-right: 1px solid #CDCDCD; border-bottom: 1px solid #CDCDCD; } .refinesearchbox .inner .cb_hotelfacility { float: left; width: 365px; } .cb_hotelfacility { height: 24px; overflow: hidden; margin: 0 0 5px 0;
+} .cb_hotelfacility .cb_hotelfacility_icon { float: left; width: 60px; height: 24px; overflow: hidden; margin: 0 10px 0 0; cursor: pointer; background-color: transparent; background-repeat: no-repeat; background-position: 1000px 1000px; -moz-user-select: none; -khtml-user-select: none; user-select: none; } .cb_hotelfacility .cb_hotelfacility_icon input { display: block; margin: 5px 0 0 38px; }  .cb_hotelfacility .cb_hotelfacility_icon_nsr { background-position: -1260px -100px; } .cb_hotelfacility.active .cb_hotelfacility_icon_nsr { background-position: -1423px -100px; }  .cb_hotelfacility .cb_hotelfacility_icon_ria { background-position: -1260px -130px; } .cb_hotelfacility.active .cb_hotelfacility_icon_ria { background-position: -1423px -130px; }  .cb_hotelfacility .cb_hotelfacility_icon_hia { background-position: -1260px -160px; } .cb_hotelfacility.active .cb_hotelfacility_icon_hia { background-position: -1423px -160px; }  .cb_hotelfacility .cb_hotelfacility_icon_hwl { background-position: -1260px -190px; } .cb_hotelfacility.active .cb_hotelfacility_icon_hwl { background-position: -1423px -190px; }  .cb_hotelfacility .cb_hotelfacility_icon_rac { background-position: -1260px -220px; } .cb_hotelfacility.active .cb_hotelfacility_icon_rac { background-position: -1423px -220px; }  .cb_hotelfacility .cb_hotelfacility_icon_wca { background-position: -1260px -250px; } .cb_hotelfacility.active .cb_hotelfacility_icon_wca { background-position: -1423px -250px; }  .cb_hotelfacility .cb_hotelfacility_icon_fcl { background-position: -1260px -280px; } .cb_hotelfacility.active .cb_hotelfacility_icon_fcl { background-position: -1423px -280px; }  .cb_hotelfacility .cb_hotelfacility_icon_tco { background-position: -1260px -310px; } .cb_hotelfacility.active .cb_hotelfacility_icon_tco { background-position: -1423px -310px; }  .cb_hotelfacility .cb_hotelfacility_icon_gco { background-position: -1260px -340px; } .cb_hotelfacility.active .cb_hotelfacility_icon_gco { background-position: -1423px -340px; }  .cb_hotelfacility .cb_hotelfacility_icon_spa { background-position: -1260px -370px; } .cb_hotelfacility.active .cb_hotelfacility_icon_spa { background-position: -1423px -370px; }  .cb_hotelfacility .cb_hotelfacility_icon_wtr { background-position: -1260px -400px; } .cb_hotelfacility.active .cb_hotelfacility_icon_wtr { background-position: -1423px -400px; }  .cb_hotelfacility .cb_hotelfacility_icon_swp { background-position: -1260px -430px; } .cb_hotelfacility.active .cb_hotelfacility_icon_swp { background-position: -1423px -430px; }  .cb_hotelfacility .cb_hotelfacility_icon_sea { background-position: -1260px -460px; } .cb_hotelfacility.active .cb_hotelfacility_icon_sea { background-position: -1423px -460px; }  .cb_hotelfacility .cb_hotelfacility_icon_res { background-position: -1260px -490px; } .cb_hotelfacility.active .cb_hotelfacility_icon_res { background-position: -1423px -490px; }  .cb_hotelfacility .cb_hotelfacility_icon_bce { background-position: -1340px -100px; } .cb_hotelfacility.active .cb_hotelfacility_icon_bce { background-position: -1504px -100px; }  .cb_hotelfacility .cb_hotelfacility_icon_cro { background-position: -1340px -130px; } .cb_hotelfacility.active .cb_hotelfacility_icon_cro { background-position: -1504px -130px; }  .cb_hotelfacility .cb_hotelfacility_icon_chp { background-position: -1340px -160px; } .cb_hotelfacility.active .cb_hotelfacility_icon_chp { background-position: -1504px -160px; }  .cb_hotelfacility .cb_hotelfacility_icon_fro { background-position: -1340px -190px; } .cb_hotelfacility.active .cb_hotelfacility_icon_fro { background-position: -1504px -190px; }  .cb_hotelfacility .cb_hotelfacility_icon_pet { background-position: -1340px -220px; } .cb_hotelfacility.active .cb_hotelfacility_icon_pet { background-position: -1504px -220px; }  .cb_hotelfacility .cb_hotelfacility_icon_pps { background-position: -1340px -250px; } .cb_hotelfacility.active .cb_hotelfacility_icon_pps { background-position: -1504px -250px; }  .cb_hotelfacility .cb_hotelfacility_icon_fps { background-position: -1340px -280px; } .cb_hotelfacility.active .cb_hotelfacility_icon_fps { background-position: -1504px -280px; }  .cb_hotelfacility .cb_hotelfacility_icon_fas { background-position: -1340px -310px; } .cb_hotelfacility.active .cb_hotelfacility_icon_fas { background-position: -1504px -310px; }  .cb_hotelfacility .cb_hotelfacility_icon_asa { background-position: -1340px -340px; } .cb_hotelfacility.active .cb_hotelfacility_icon_asa { background-position: -1504px -340px; }  .cb_hotelfacility .cb_hotelfacility_icon_bho { background-position: -1340px -370px; } .cb_hotelfacility.active .cb_hotelfacility_icon_bho { background-position: -1504px -370px; }  .cb_hotelfacility .cb_hotelfacility_icon_aph { background-position: -1340px -400px; } .cb_hotelfacility.active .cb_hotelfacility_icon_aph { background-position: -1504px -400px; }  .cb_hotelfacility .cb_hotelfacility_icon_cih { background-position: -1340px -430px; } .cb_hotelfacility.active .cb_hotelfacility_icon_cih { background-position: -1504px -430px; }  .cb_hotelfacility .cb_hotelfacility_icon_reh { background-position: -1340px -460px; } .cb_hotelfacility.active .cb_hotelfacility_icon_reh { background-position: -1504px -460px; }  .cb_hotelfacility .cb_hotelfacility_icon_coh { background-position: -1340px -490px; } .cb_hotelfacility.active .cb_hotelfacility_icon_coh { background-position: -1504px -490px; } .cb_hotelfacility label { float: left; line-height: 24px; -moz-user-select: none; -khtml-user-select: none; user-select: none; } .cb_hotelfacility.active label { font-weight: bold; } .buttonbar.backtohotellist { float: left;
+} .buttonbar.backtohotellist a.button { margin-left: 0; } .hoteldetailbox { margin: 0 0 20px 0;
+} .hoteldetailbox .header { height: 44px; overflow: hidden; background-color: transparent; background-position: -90px -50px; background-repeat: no-repeat; } .hoteldetailbox .header h3 { display: inline; display: inline-block; font-size: 1.2em; font-weight: normal; line-height: 44px; margin: 0 0 0 10px; color: #FFFFFF; } .hoteldetailbox .header .stars { display: inline; display: inline-block; line-height: 44px; margin: 2px 0 0 10px; overflow: hidden; } .hoteldetailbox .header span.star, .hoteldetailbox .header span.halfstar { display: inline-block; height: 22px; line-height: 22px; width: 23px; margin: 5px 1px 0 0; background-color: transparent; background-position: -995px -99px; background-repeat: no-repeat; } .hoteldetailbox .header span.halfstar { background-position: -1019px -99px; } .hoteldetailbox .inner { padding: 10px; font-size: 0.8em; } .hoteldetailbox .inner .left { float: left; } .hoteldetailbox .inner .left .innerimagegallery_thumbs { width: 193px; height: 27px; margin: 13px 0 0 0; } .hoteldetailbox .inner .left .innerimagegallery_thumbs ul { list-style-type: none; margin: 0; padding: 0; height: 27px; } .hoteldetailbox .inner .left .innerimagegallery_thumbs li { display: block; float: left; width: 34px; height: 100%; margin: 0 6px 0 0; } .hoteldetailbox .inner .left .innerimagegallery_thumbs li img { width: 100%; height: 100%; vertical-align: middle; cursor: pointer; } .hoteldetailbox .inner .rightcontent { float: right; clear: right; } .hoteldetailbox .inner .map { padding: 0 10px 0 0; width: 138px; } .hoteldetailbox .inner .hoteladdress { padding: 0 10px 0 0; } .hoteldetailbox .inner .hoteladdress p { margin: 0 0 3px 0; } .hoteldetailbox .inner .hoteladdress .images { margin: 10px 0 0 0; } .hoteldetailbox .inner .rightcontent .price { float: right; line-height: 28px; height: 28px; overflow: hidden; margin: 4px 5px 0 0; text-align: right; } .hoteldetailbox .inner .rightcontent .price .left { display: block; background-color: transparent; background-position: -2170px -472px; background-repeat: no-repeat; cursor: pointer; display: block; float: left; height: 28px; width: 6px; } .hoteldetailbox .inner .rightcontent .price .right { display: block; background-color: transparent; background-position: right -416px; background-repeat: no-repeat; cursor: pointer; display: block; float: left; height: 28px; padding: 2px 0 0 0; } .hoteldetailbox .inner .rightcontent .price .right .pricevalue { font-size: 0.9em; font-weight: bold; line-height: 26px; } .hoteldetailbox .inner .rightcontent .price .right .pricevalue span { font-size: 1.4em; font-weight: normal; } .hoteldetailbox .inner .rightcontent .price .right .button { float: right; margin: 0 2px 0 6px; } #creditcard_expirymonth-button { float: left; margin: 0 32px 0 0;
+}
+.error #creditcard_expirymonth-button { margin: 0 30px 0 0;
+}
+#creditcard_expiryyear-button { float: left; margin: 0;
+} .roompreferences #roompreferences_label { }
+.roompreferences-checkboxes { margin-left: 190px; width: 400px;
+}
+.roompreferences .checkboxfield { float: left; margin: 0 10px 0 0;
+} .roompreferences .checkboxfield label { display: inline !important; float: none !important; width: auto !important; font-weight: normal !important; margin: 0 !important; } .form-group { height: 31px; background-color: transparent; background-position: -90px -800px; background-repeat: no-repeat;
+} .form-group h4 { line-height: 31px; font-size: 0.8em; font-weight: bold; margin: 0 10px; } #additional_flightarrival_hour,
+#additional_flightarrival_hour-button { float: left; margin: 0 34px 0 0;
+}
+#additional_flightarrival_minute,
+#additional_flightarrival_minute-button { float: left; margin: 0px;
+} .buttonbar { height: 41px; background-color: transparent; background-position: -90px -900px; background-repeat: no-repeat; padding: 0 4px 0 16px; position: relative; margin: 0 0 20px 0;
+} .buttonbar div.toc_checkbox { margin: 9px 0 0 0; display: block; position: relative; float: left; } .buttonbar div.toc_checkbox.error { border: 2px solid #FF6800; } .buttonbar div.toc_checkbox input { padding: 3px 0 0 0; } .buttonbar div.toc_checkbox span { font-size: 0.7em; line-height: 0.9em; } .buttonbar div.toc_checkbox span a { text-decoration: underline; } .buttonbar div.toc_checkbox span a:hover { text-decoration: none; } .buttonbar a.button { display: block; float: right; margin: 4px 0 0 20px; font-size: 0.9em; } .buttonbar.noborder { background: transparent none; padding: 0;
+} .room-subtotal { padding: 0 0 20px 0 !important; border-bottom: 0 none !important;
+} .room-subtotal table td { font-size: 1.0em !important; padding: 2px 20px !important; } .room-subtotal table td.priceval { text-align: right; } .room-subtotal table tr.sumrow td { font-size: 1.2em !important; font-weight: bold !important; } .completionbox { font-size: 0.8em;
+} .completionbox .inner .formdata { padding: 0 20px; } div#pagecontent-inner .completionbox .inner h1 { float: left; font-size: 1.4em; margin: 6px 10px 0 7px; } div#pagecontent-inner .completionbox .header span.title { font-size: 1.2em; } div#pagecontent-inner .changestep .completionbox .header span.title { font-size: 0.95em; } .completionbox .header a.details, .completionbox .inner a.details { display: block; float: left; margin: 0 10px 0 20px; padding: 0 0 0 12px; font-size: 0.9em; font-weight: normal; line-height: 37px; position: relative; } .completionbox .header a.details span.arrow, .completionbox .inner a.details span.arrow { display: block; position: absolute; left: 0px; top: 15px; width: 7px; height: 7px; background-color: transparent; background-position: -1110px -160px; background-repeat: no-repeat; overflow: hidden; } .completionbox .inner .reservation-no { display: block; float: right; margin: 7px 160px 0 15px; font-size: 1em; line-height: 28px; position: relative; } .completionbox .inner .reservation-no span { font-weight: bold; font-size: 1.2em; } .completionbox .inner table td { border-bottom: 1px solid #D5D5D5; padding: 2px 10px; } .completionbox .inner table td.noborder { border-bottom: 0px; } .completionbox .inner table td.label { font-weight: bold; } .completionbox .inner table td.price { font-weight: bold; font-size: 1.1em; background-color: #F2F2F2; text-align: right; width: 141px; } .completionbox .inner table td.grandprice { font-weight: bold; font-size: 1.1em; background-color: #DEDEDE; text-align: right; padding-top: 20px; padding-bottom: 20px; width: 141px; } .completionbox .inner div.dynpackage { width: 500px; }  
+.hotelinfobox { padding: 5px 8px; font-size: 0.9em;
+} .hotelinfobox p { font-size: 0.9em; margin: 0 0 7px 0; line-height: 1.5em; } .hotelinfobox .button { margin: 8px 0 2px; } 
+.panel.hotelinfos-detail .inner { padding: 8px 9px;
+} .panel.hotelinfos-detail .static-maps img { display: block; margin: 0 0 10px 0; } 
+.panel.gallery { margin: 0 0 20px 0;
+} .panel.gallery .header { height: 38px; margin: 0; background-color: transparent; background-position: -91px -499px; background-repeat: no-repeat; } .panel.gallery h3 { line-height: 37px; margin: 0 8px; float: left;  font-weight: normal; font-size: 1.1em; overflow: hidden; } .panel.gallery .header span.iconbutton { display: block; float: left; margin: 8px 0 0 10px; } .panel.gallery .header span.title { display: block; float: left; margin: 0 0 0 10px; } .panel.gallery .inner { margin: 0; padding: 0; background-color: #FFFFFF; } .panel.gallery .inner .content-image { display: block; text-align: center; position: relative; } .panel.gallery .inner .content-image .img-container { display: block; text-align: center; vertical-align: middle; position: relative; overflow: hidden; background-color: #BFBFBF; background: -moz-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -webkit-gradient(linear, left top, left bottom, from(#B3B3B3), to(#CCCCCC));  background: -webkit-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -o-linear-gradient(top, #B3B3B3, #CCCCCC);  background: -ms-linear-gradient(top, #B3B3B3, #CCCCCC);  background: linear-gradient(top, #B3B3B3, #CCCCCC);  } .panel.gallery .inner .content-image .img-container .jump-left, .panel.gallery .inner .content-image .img-container .jump-right { display: block; position: absolute; width: 190px; height: 100%; top: 0; filter: alpha(opacity=0); opacity: 0; background: #FFFFFF; cursor: pointer; z-index: 10; } .panel.gallery .inner .content-image .img-container .jump-left .arrow, .panel.gallery .inner .content-image .img-container .jump-right .arrow { display: block; width: 21px; height: 22px; margin: 118% 0 0 45%; position: relative; overflow: hidden; text-indent: -999px; visibility: hidden; } .panel.gallery .inner .content-image .img-container .jump-left:hover, .panel.gallery .inner .content-image .img-container .jump-right:hover { background-color: #FFFFFF; filter: alpha(opacity=60); opacity: 0.6; } .panel.gallery .inner .content-image .img-container .jump-left.hover .arrow, .panel.gallery .inner .content-image .img-container .jump-right.hover .arrow { visibility: visible; } .panel.gallery .inner .content-image .img-container .jump-left { left: 0; } .panel.gallery .inner .content-image .img-container .jump-left .arrow { background-color: transparent; background-position: -1050px -100px; background-repeat: no-repeat; } .panel.gallery .inner .content-image .img-container .jump-right { right: 0; } .panel.gallery .inner .content-image .img-container .jump-right .arrow { background-color: transparent; background-position: -1080px -100px; background-repeat: no-repeat; } .panel.gallery .inner .content-image .img-container .slideshow-pause { position: absolute; display: block; bottom: 0; left: 48%; width: 32px; height: 27px; background: #FFFFFF; cursor: pointer; opacity: 0.6; z-index: 10; visibility: hidden; overflow: hidden; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; } .panel.gallery .inner .content-image .img-container .slideshow-pause .icon { display: block; width: 15px; height: 15px; margin: 6px 0 0 9px; overflow: hidden; text-indent: -999px; background-color: transparent; background-position: -1110px -100px; background-repeat: no-repeat; } .panel.gallery .inner .content-image .img-container:hover .slideshow-pause { visibility: visible; } .panel.gallery .inner .content-description { display: block; text-align: left; background-color: #EDEDED; margin: 1px; padding: 14px 20px; font-size: 0.9em; line-height: 0.9em; } .panel.gallery .inner .content-thumbs { display: block; text-align: left; margin: 0; padding: 12px 17px 20px 17px; } .panel.gallery .inner .content-thumbs img { cursor: pointer; } 
+.panel.maps { margin: 0 0 20px 0; position: relative;
+} .panel.maps .header { height: 39px; margin: 0; background-color: transparent; background-position: -91px -499px; background-repeat: no-repeat; } .panel.maps h3 { line-height: 37px; margin: 0 8px; float: left;  font-weight: normal; font-size: 1.1em; overflow: hidden; } .panel.maps .header span.iconbutton { display: block; float: left; margin: 8px 0 0 10px; } .panel.maps .header span.title { display: block; float: left; margin: 0 0 0 10px; } .panel.maps .inner { margin: 0; padding: 0; background-color: #FFFFFF; } #gmap_canvas { height: 391px; border-bottom: 1px solid #CCCCCC; } 
+#login-layer { width: 251px; position: absolute; top: 8px; left: 868px;
+} #login-layer .content form { display: block; margin: 5px 10px 5px 5px; padding: 0; } #login-layer .content form .form-field-row { margin: 0; } #login-layer .content form .form-field-row .textinput { float: left; margin: 0 10px 10px 0; } #login-layer .content form .form-field-row .textinput input { font-style: italic; } #login-layer .content form .form-field-row .button { float: left; margin-top: 2px; padding: 0 0 0 8px; } #login-layer .content form .form-field-row .button span { padding: 0 10px 0 0; } #login-layer .content a.forgot-pw { font-family: Tahoma, Arial, sans-serif; font-size: 0.75em; } #forgotpw-layer { width: 285px; position: absolute; top: 8px; left: 868px;
+} #forgotpw-layer .content form { display: block; margin: 5px 7px 0 5px; padding: 0; font-size: 0.8em; } #forgotpw-layer .content p { margin: 0 0 5px 2px; } #forgotpw-layer .content form .form-field-row { margin: 12px 0 0 0; } #forgotpw-layer .content form .form-field-row .textinput { float: left; margin: 0 10px 10px 0; } #forgotpw-layer .content form .form-field-row .textinput input { font-style: italic; } #forgotpw-layer .content form .form-field-row .button { float: left; margin: 2px 0px 0 0; padding: 0 0 0 8px; } #forgotpw-layer .content form .form-field-row .button span { padding: 0 10px 0 0; } #forgotpw-layer .content form #login-btn3 { float: right; margin: 0 0 5px 0; } 
+#tooltipLayer { position: absolute; z-index: 9999; padding: 10px; border: 1px solid #EDEDED; background-color: #FFFFFF; font-size: 0.8em; box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+} #tooltipLayer .inner { position: relative; } #tooltipLayer .inner p { line-height: 1.5em; margin: 0 0 2px 0; } #occupancyinfo { display: none;
+}
+#occupancyinfoLayer { position: absolute; z-index: 9999; padding: 0; border: 0; background-color: transparent; font-size: 0.8em; width: 236px;
+} #occupancyinfoLayer .top { background-color: transparent; background-position: -1137px -989px; background-repeat: no-repeat; padding: 15px 34px 10px 49px; text-align: left; min-height: 30px; overflow-y: visible; font-size: 0.9em; line-height: 1.4em; } #occupancyinfoLayer .bottom { height: 5px; overflow: hidden; background-color: transparent; background-position: -1137px -1154px; background-repeat: no-repeat; } #occupancyinfoLayer .closeBtn { position: absolute; z-index: 10000; right: 9px; top: 5px; } .roomselection.withoccupancyinfo .subpanel-content .textinput,
+.roomselection.withoccupancyinfo .subpanel-content .ui-selectmenu { border: 1px solid #FF6B01;
+} 
+.registerbox { } .registerbox .form { padding: 30px 0px 20px 15px; position: relative; } .registerbox hr { border: 0; margin: 15px 0px 15px 0; height: 1px; background-color: #C7C7C7; } .registerbox .button4 { float: right; padding: 0 0 0 4px;  margin-top: 10px; } .registerbox .col_1-2 { float: left; width: 352px; position: relative; } .registerbox .inner .form .form-field-row label, .registerbox .inner .form .col_1-2 .form-field-row label { width: 125px; margin-right: 20px; } .registerbox .col_2-2 { float: left; width: 385px; position: relative; } .registerbox .inner .form .col_2-2 .form-field-row label { width: 150px; margin-right: 20px; } .registerbox .inner .form .col_1-2 .form-field-row .errormessage { margin: 5px 11px 0 10px; float: right; } .registerbox .inner .form .col_2-2 .form-field-row .errormessage { margin: 5px 18px 0 10px; float: right; } .registerbox .inner .form .form-field-row .textinput, .registerbox .inner .form .form-field-row a.ui-selectmenu { border: 1px solid #999999; } .registerbox .inner .form .form-field-row .field a.button { margin: 0 0 0 10px; } .registerbox .form #creditcard_expirymonth-button { margin-right: 41px; } .registerbox a.ui-selectmenu span.ui-selectmenu-status { font-size: 0.9em; } .registerbox .required-legend { position: relative; float: none; top: auto; left: auto; right: auto; bottom: auto; } .registerbox .col_1-2 .disableLayer, .registerbox .col_2-2 .disableLayer { position: absolute; z-index: 99999; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(255,255,255,0.7); text-indent: -9999px; } 
+.tabbed-contents { position: relative; margin: 0 0 20px 0; } .tabbed-contents ul { position: relative; display: block; margin: 0; padding: 0; list-style-type: none; clear: both; float: none; } .tabbed-contents li { position: relative; display: block; float: left; margin: 0 1px 0 0; padding: 0; line-height: 33px; height: 35px; overflow: hidden; list-style-type: none; cursor: pointer; } .tabbed-contents li a { -moz-user-select: none; -khtml-user-select: none; user-select: none; line-height: 36px; height: 35px; } .tabbed-contents li a span { padding: 0 4px 0 0; display: block; float: left; line-height: 36px; font-size: 0.9em; height: 35px; -moz-user-select: none; -khtml-user-select: none; user-select: none; background-color: transparent; background-position: -95px -220px; background-repeat: no-repeat; } .tabbed-contents li a span.left-edge { padding: 0 4px 0 0; width: 5px; background-position: -90px -220px; } .tabbed-contents li a span.right-edge { padding: 0; width: 5px; background-position: -739px -220px; } .tabbed-contents li span.clear { clear: both; display: inline-block; width: 0; height: 0; overflow: hidden; background: none; }  .tabbed-contents li.active a span { background-position: -95px -270px; } .tabbed-contents li.active a span.left-edge { background-position: -90px -270px; } .tabbed-contents li.active a span.right-edge { background-position: -739px -270px; } .tabbed-contents .contents { position: relative; display: block; clear: both; float: none; margin: 0; padding: 0; font-size: 0.9em; border-top: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE; } .tabbed-contents .contents .tabbed-content { position: relative; clear: both; float: none; margin: 0; padding: 0; background-color: #FFFFFF; padding: 20px; } .tabbed-contents ul.bulletlist { list-style-type: disc; } .tabbed-contents ul.bulletlist.col_1-2 { width: 48%; margin: 0 2% 0 0; padding: 0 0 0 15px; display: block; float: left; clear: none; } .tabbed-contents ul.bulletlist.col_2-2 { width: 47%; margin: 0; display: block; float: left; clear: none; } .tabbed-contents ul.bulletlist li { float: none; display: list-item; height: auto; overflow: visible; list-style-type: disc; cursor: default; line-height: 1.3em; } .tabbed-contents ul.bulletlist li.header { display: list-item; list-style-type: none; font-weight: bold; margin-left: -15px; } 
+.footerlinks { text-align: center; font-size: 0.75em; line-height: 1.4em; margin: 10px 0 20px 0;
+}
+#footer { text-align: center; font-size: 0.9em;
+} 
+.changestep { margin-left: 0px; 
+} div#content-inner.changestep h1.toppadding { margin: 40px 0 5px 0; } div#content-inner.changestep p.header_subdescr { font-size: 0.75em; margin-left: 0; } .simple-login-form { } .simple-login-form .form-field-row { margin: 1px 0 6px 0; } .simple-login-form .form-field-row label { display: block; float: left; width: 190px; line-height: 24px; height: 24px; overflow: hidden; margin: 0 5px 0 0; font-size: 0.8em; font-weight: bold; } .simple-login-form .form-field-row .field { width: 240px; float: left; } .simple-login-form .form-field-row input { display: block; float: left; } .simple-login-form .row-button { margin: 1px 0 0 20px; float: left; } .simple-login-form .row-button .button { margin: 0; float: left; } .simple-login-form .errormessage { margin: 5px 0 20px 0; clear: both; } .changestep .completionbox { font-size: 1em; } .changestep .completionbox .header .button2 { font-size: 0.7em; display: block; float: left; margin: 8px 10px 0 10px; } .changestep .completionbox .header a.details { font-size: 0.8em; display: block; float: right; margin: 1px 10px 0 10px; } .changestep .completionbox .inner { font-size: 0.8em; } .changestep .completionbox .inner .formdata { padding: 10px 20px 0 20px; } .changestep #reservationdetails { padding: 10px 20px 20px 20px; } .changestep .room-subtotal table td { background-color: #F2F2F2; line-height: 1.4em; } .changestep .completionbox .inner td.room-subtotal { border: 0; } 
+  
+#tbLayerDiv .loader { background-color: #FFFFFF; background-image: url(/tb3/media/img/ajax-loader.gif);
+} 
+.avcalendar .calendar .loading { background-image: url(/tb3/media/img/ajax-loader.gif) !important;
+}
+.avcalendar tbody.pbdcalendarDays td.soldout,
+.avcalendar tbody.pbdcalendarDays td.restr,
+.avcalendar tbody.pbdcalendarDays td.outofrange,
+.avcalendar tbody.pbdcalendarDays td.outofrange:hover,
+.avcalendar .rightbar a.switch-view span,
+.avcalendar .rightbar .legend .legend_soldout span,
+.avcalendar .rightbar .legend .legend_restr span,
+.avcalendar .rightbar .legend .legend_outofrange span { -webkit-background-size: 2200px 2500px; background-image: url(/tb3/media/img/sprite/SPRITE_cyan.png) !important;
+} 
+#lightboxLayer .stage .loading { background: url(/tb3/media/img/ajax-loader.gif) center no-repeat scroll #FFFFFF;
+}
+#lightboxLayer .stage .jump-left .arrow { -webkit-background-size: 2200px 2500px; background: url(/tb3%2Fmedia%2Fimg%2Fsprite%2FSPRITE%5Fcyan%2Epng) no-repeat -1050px -100px transparent;
+}
+#lightboxLayer .stage .jump-right .arrow { -webkit-background-size: 2200px 2500px; background: url(/tb3%2Fmedia%2Fimg%2Fsprite%2FSPRITE%5Fcyan%2Epng) no-repeat -1080px -100px transparent;
+}
+#lightboxLayer .stage .close { background: url(/tb3/media/img/btn_close.png) center no-repeat scroll transparent;
+} .tabbed-contents .contents .tabbed-content { background-color: #FFFFFF !important; 
+}
+.white-detail-layer .content .inner .toc { background-color: #FFFFFF !important; 
+}
+.content-noavailabilty { background-color: #FFFFFF !important; 
+}  body,table,tr,th,td,p,div,span,b,h5,h6 { color: #333333; 
+}
+h1,h2,h3,h4 { color: #007980; 
+} div#main { background-color: #F1F0F0;
+} .textinput input,
+.textinput span,
+textarea,
+.formbox .ui-selectmenu-status,
+.roomselection .ui-selectmenu-status,
+.button2 span { color: #666666; 
+} .hotelsearchbox .inner { background-color: #FFFFFF; 
+}
+.hoteldetailbox .inner { background-color: #FFFFFF; 
+} #top-elements .button2 span { color: #007980; 
+}
+#login-layer .content a.forgot-pw { color: #007980; 
+} #menu li a { color: #007980; 
+}
+#menu li.active a { color: #007980; 
+} .panel { color: #4B4B4B; 
+}
+.panel.roomselection h3 .title { color: #333333;
+}
+.panel.grad2 .header h3 .button1 span { color: #007980; 
+}
+.panel.roomselection .subpanel h3 .title { color: #007980; 
+}
+.panel.roomselection .subpanel.active h3 .title { color: #FFFFFF; 
+}
+.panel.grad3 h3 .title a {   color: #666666; 
+}
+.panel.roomselection .subpanel .inner { background-color: #FFFFFF; 
+}
+.panel.roomselection .bottom_panel .form-field-row.talink a { color: #007980; 
+}
+.panel.roomselection .inner a { color: #007980; 
+}
+.panel.roomselection .inner .button.change-room-btn span { color: #666666; 
+}
+.panel.roomselection .totals_panel .grandtotal_label { color: #4B4B4B; 
+}
+.panel.roomselection .roomtotal_panel .total_value .price,
+.panel.roomselection .totals_panel .grandtotal_value .price { color: #007980; 
+}
+.panel.roomselection .totals_panel .grandtotal_value .price_info { color: #4B4B4B; 
+} .button.button1:hover span,
+.button.button1.hover span,
+.button.button2:hover span,
+.button.button2.hover span { color: #007980; 
+}
+.button.button3 span { color: #FFFFFF; 
+}
+.button.button3:hover span,
+.button.button3.hover span { color: #FFFFFF; 
+} .contentslider .package-description h3 { color: #007980; 
+}
+.contentslider .package-description p,
+.contentslider .package-description a,
+.contentslider .package-description a:link,
+.contentslider .package-description a:hover,
+.contentslider .package-description a:visited { color: #333333; 
+}
+.contentslider .navigation a { color: #4B4B4B; 
+} #pricerange { color: #4B4B4B; 
+} .hotelresultlist .hotel .header .price .right .pricevalue { color: #333333; 
+}
+.hotelresultlist .hotel .inner { background-color: #FFFFFF; 
+}
+.hotelresultlist .hotel .inner a.details { color: #007980; 
+} .hoteldetailbox .inner .rightcontent .price .pricevalue,
+.hoteldetailbox .inner .rightcontent .price .pricevalue span { color: #333333; 
+} .hotelinfobox a { color: #333333; 
+} .room .moreinfos span a,
+.rate .moreinfos span a { color: #007980; 
+}
+.rooms_left_warning span { color: #333333; 
+}
+.room_details { background-color: #FFFFFF; 
+}
+.room .room_details .vmenu li { color: #007980; 
+}
+.room .room_details .vmenu li.active { color: #333333; 
+} .room .rate a.details { color: #007980; 
+} .roomrate .header h4 { color: #007980; 
+} .pricevalue,
+.pricevalue span { color: #007980; 
+}
+.strikeout_price { color: #BE2426; 
+} .room .content .vmenu li span,
+.rate .content .vmenu li span,
+.roomrate .content .vmenu li span { color: #007980; 
+}
+.room .content .vmenu li.active span,
+.rate .content .vmenu li.active span,
+.roomrate .content .vmenu li.active span { color: #4B4B4B; 
+} .ratelistview_combined .roomrate .content .collapsed_view a.video span { color: #007980; 
+}
+.ratelistview_combined .roomrate .content .collapsed_view .moreinfos a { color: #007980; 
+} .formbox .inner { background-color: #FFFFFF;  border-bottom: 1px solid #CCCCCC; 
+} .buttonbar div.toc_checkbox span a { color: #007980; 
+} .packagebox .inner .bar .price { color: #007980; 
+} .reviewbox .inner table td { color: #4B4B4B; 
+}
+.reviewbox .inner table.withbottomborder td { border-bottom: 1px solid #D4D4D4;
+}
+.reviewbox .room-subtotal table { background-color: #F2F2F2; 
+}
+.reviewbox .room-subtotal table tr.sumrow td.priceval { color: #007980; 
+} .changestep .room-subtotal table tr.sumrow td { color: #007980; 
+} .formbox .errormessage .content .inner,
+.simple-login-form .errormessage .content .inner { color: #4B4B4B; 
+} .simple-login-form .errormessage,
+.simple-login-form .errormessage .border-top,
+.simple-login-form .errormessage .border-right,
+.simple-login-form .errormessage .border-bottom,
+.simple-login-form .errormessage .border-top,
+.simple-login-form .errormessage .border-left,
+.simple-login-form .errormessage .edge-lt,
+.simple-login-form .errormessage .edge-rt,
+.simple-login-form .errormessage .edge-rb,
+.simple-login-form .errormessage .edge-lb { background-color: #FFFFFF; 
+} .reviewbox .header a.details { color: #007980; 
+} .completionbox .header a.details,
+.completionbox .inner a.details { color: #007980; 
+} .completionbox .inner table td.grandprice { color: #007980; 
+} 
+.avcalendar,
+.avcalendar strong,
+.avcalendar div,
+.avcalendar td,
+.avcalendar span { color: #333333 !important;
+}
+.avcalendar .rightbar a.switch-view { color: #0F5499 !important;
+} 
+body.useWebFonts h1,
+.hotelsearchbox .header h3,
+.hoteldetailbox .header h3,
+.panel.gallery h3,
+.panel.maps h3,
+.panel.grad1 .header h3 span.title,
+.panel.grad2 .header h3 .button1 span,
+.panel.roomselection .header h3 span.title,
+#menu li a,
+.hotelresultlist .hotel .header h3,
+.package-detail-layer .header h3,
+.package-detail-layer .header h3 span.small,
+.packagebox .header span.title,
+.ratelistview_roomsontop .room .header h3,
+.ratelistview_ratesontop .rate .header h3,
+.ratelistview_combined .roomrate .header h3 { font-family: 'Droid Sans',Arial,sans-serif; letter-spacing: 0.0em;
+} .ratelistview_roomsontop .room .content .rates .rate .content { background-color: #FFFFFF; 
+}
+.ratelistview_roomsontop .room .content .rates .rate .header { background-image: none !important;  background: transparent;  background: -ms-linear-gradient(top, #FFFFFF 60%, #FFFFFF 60%);  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#90FFFFFF,endColorStr=#90FFFFFF);   background-color: rgba(255, 255, 255, 0.6) !important;
+} .ratelistview_ratesontop .rate .rate_details { background-color: #FFFFFF; 
+}
+.ratelistview_ratesontop .rooms .room .content { background-color: #FFFFFF; 
+} .panel.grad1 .inner p a { color: #333333; 
+} .footerlinks,
+#footer { color: #4B4B4B; 
+} .footerlinks a, #footer a { color: #007980;  } 
+.button.button1,
+.button.button1 span,
+.button.button1:hover,
+.button.button1.hover,
+.button.button1:hover span,
+.button.button1.hover span,
+.button.button2,
+.button.button2 span,
+.button.button2:hover,
+.button.button2.hover,
+.button.button2:hover span,
+.button.button2.hover span,
+.button.button3,
+.button.button3 span,
+.button.button3:hover,
+.button.button3.hover,
+.button.button3:hover span,
+.button.button3.hover span,
+.button.button4,
+.button.button4 span,
+.button.button4 span.arrow,
+.button.button4:hover,
+.button.button4.hover,
+.button.button4:hover span,
+.button.button4.hover span,
+.button.button4:hover span.arrow,
+.button.button4.hover span.arrow,
+.button.button5,
+.button.button5 span,
+.button.button5:hover,
+.button.button5.hover,
+.button.button5:hover span,
+.button.button5.hover span,
+.toggleBtn,
+.toggleBtn:hover,
+.toggleBtn.hover,
+.opened .toggleBtn,
+.opened .toggleBtn:hover,
+.opened .toggleBtn.hover,
+.iconbutton,
+a.ui-selectmenu,
+a.ui-selectmenu span.ui-icon-triangle-1-s,
+.textinput,
+textarea,
+.dateinput-trigger,
+#menu li,
+#menu li.left-edges,
+#menu li.right-edges,
+#menu li.seperator span,
+#menu li.active a,
+.hotelsearchbox .header,
+.refinesearchbox .header,
+.cb_hotelfacility .cb_hotelfacility_icon,
+.hotelresultlist .hotel .header,
+.hotelresultlist .hotel .inner .hotel_details .vmenu ul,
+.hotelresultlist .hotel .inner .hotel_details .bottom,
+.hotelresultlist .hotel .inner .hotel_details .rateicons .rateicon,
+.hotelresultlist .hotel .header .price .left,
+.hotelresultlist .hotel .header .price .right,
+.hotelresultlist .hotel .inner a span.arrow,
+.hotelresultlist .hotel .inner .open_gallery_in_lightbox span,
+.hoteldetailbox .header,
+.hoteldetailbox span.star,
+.hoteldetailbox span.halfstar,
+.hoteldetailbox .inner .rightcontent .price .left,
+.hoteldetailbox .inner .rightcontent .price .right,
+.panel.grad1 .header,
+.panel.grad1 .header .bottom,
+.panel.grad1 .inner,
+.panel.grad1 .bottom,
+.panel.grad2 .header,
+.panel.grad2 .header .bottom,
+.panel.grad2 .inner,
+.panel.roomselection .subpanel.multiroom .subpanel-content,
+.panel.roomselection .subpanel.multiroom.active .subpanel-content,
+.panel.roomselection .subpanel .inner .roomtotal_panel,
+.panel.roomselection .subpanel.multiroom .bottom,
+.panel.roomselection.withtotal .bottom_panel,
+.panel.grad3,
+.panel.verisign,
+.panel.verisign:hover,
+.panel.verisign.hover,
+.filterPanel,
+#pricerangeslider.ui-widget-content,
+#pricerangeslider .ui-state-default,
+#pricerangeslider .ui-widget-content .ui-state-default,
+.contentslider .item .package-description a span.arrow,
+.hotel-stars span.star,
+.hotel-stars span.halfstar,
+.layer1 .border-top,
+.layer1 .border-right,
+.layer .border-bottom,
+.layer1 .border-left,
+.layer1 .edge-lt,
+.layer1 .edge-rt,
+.layer1 .edge-lb,
+.layer1 .edge-rb,
+.layer1 .content,
+.package-detail-layer .header,
+.white-detail-layer .border-top,
+.white-detail-layer .border-right,
+.white-detail-layer .border-bottom,
+.white-detail-layer .border-left,
+.white-detail-layer .edge-lt,
+.white-detail-layer .edge-rt,
+.white-detail-layer .edge-lb,
+.white-detail-layer .edge-rb,
+.white-detail-layer .content,
+.room .content .vmenu li.video span.icon,
+.roomrate .content .vmenu li.video span.icon,
+.roomrate .content .collapsed_view a.video span.icon,
+#ratescalendar .header .arrDayDec,
+#ratescalendar .header .arrDayInc,
+#ratescalendar .header .title,
+.ratelistview_roomsontop .room .header,
+.ratelistview_roomsontop .room .rooms_left_warning,
+.ratelistview_roomsontop .room .rooms_left_warning span.icon_warning,
+.ratelistview_roomsontop .room .room_details .vmenu ul,
+.ratelistview_roomsontop .room .room_details .vmenu li.sep,
+.ratelistview_roomsontop .room .room_details .bottom,
+.ratelistview_roomsontop .room .content .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span,
+.ratelistview_roomsontop .room .content .rates .rate.opened .header,
+.ratelistview_roomsontop .room .content .rates .rate .header .rateicons .rateicon,
+.ratelistview_roomsontop .room .content .rates .rate .header .price .left,
+.ratelistview_roomsontop .room .content .rates .rate .header .price .right,
+.ratelistview_roomsontop .room .content .rates .rate a span.arrow,
+.ratelistview_roomsontop .room .content .rates .rate .border,
+.ratelistview_ratesontop .rate .header,
+.ratelistview_ratesontop .room .rooms_left_warning,
+.ratelistview_ratesontop .room .rooms_left_warning span.icon_warning,
+.ratelistview_ratesontop .room .room_details .vmenu ul,
+.ratelistview_ratesontop .room .room_details .vmenu li.sep,
+.ratelistview_ratesontop .room .room_details .bottom,
+.ratelistview_ratesontop .room_details .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span,
+.ratelistview_ratesontop .rate .content .rooms .room .header,
+.ratelistview_ratesontop .rate .header .rateicons .rateicon,
+.ratelistview_ratesontop .rate .content .rooms .room .header .price .left,
+.ratelistview_ratesontop .rate .content .rooms .room .header .price .right,
+.ratelistview_ratesontop .rooms .room .content .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span,
+.ratelistview_ratesontop .room .content .vmenu ul,
+.ratelistview_ratesontop .room .content .vmenu li.sep,
+.ratelistview_ratesontop .room .content .expanded_view .bottom,
+.ratelistview_combined .roomrate .header,
+.ratelistview_combined .header .price .left,
+.ratelistview_combined .header .price .right,
+.ratelistview_combined .roomrate .rooms_left_warning,
+.ratelistview_combined .roomrate .rooms_left_warning span.icon_warning,
+.ratelistview_combined .roomrate .content .images .innerimagegallery_thumbs li.open_gallery_in_lightbox span,
+.ratelistview_combined .roomrate .content .vmenu ul,
+.ratelistview_combined .roomrate .content .vmenu li.sep,
+.ratelistview_combined .roomrate .content .expanded_view .bottom,
+.ratelistview_combined .roomrate .content .expanded_view .rateicons .rateicon,
+.formbox .header,
+.packagebox .header,
+.formbox .inner .form .form-field-row.required label span.star,
+.formbox .required-legend span.star,
+.formbox .errormessage,
+.formbox .errormessage .border-top,
+.formbox .errormessage .border-right,
+.formbox .errormessage .border-bottom,
+.formbox .errormessage .border-left,
+.formbox .errormessage .edge-lt,
+.formbox .errormessage .edge-rt,
+.formbox .errormessage .edge-lb,
+.formbox .errormessage .edge-rb,
+.formbox .errormessage .content span.icon_warning,
+.simple-login-form .errormessage,
+.simple-login-form .errormessage .border-top,
+.simple-login-form .errormessage .border-right,
+.simple-login-form .errormessage .border-bottom,
+.simple-login-form .errormessage .border-left,
+.simple-login-form .errormessage .edge-lt,
+.simple-login-form .errormessage .edge-rt,
+.simple-login-form .errormessage .edge-lb,
+.simple-login-form .errormessage .edge-rb,
+.simple-login-form .errormessage .content span.icon_warning,
+.packagebox .inner .package,
+.packagebox .inner .package .bar .right .price,
+.packagebox .inner .roomupgrade,
+.packagebox .inner .roomupgrade .bar .right .price,
+.form-group,
+.buttonbar,
+.reviewbox .header a span.arrow,
+.completionbox .header a.details span.arrow,
+.completionbox .inner a span.arrow,
+.panel.gallery .header,
+.panel.gallery .inner .content-image .img-container .jump-left .arrow,
+.panel.gallery .inner .content-image .img-container .jump-right .arrow,
+.panel.gallery .inner .content-image .img-container .slideshow-pause .icon,
+.panel.maps .header,
+#occupancyinfoLayer .top,
+#occupancyinfoLayer .bottom,
+/*.tabbed-contents li span { -webkit-background-size: 2200px 2500px; background-image: url(sprite.png);*/
+}
