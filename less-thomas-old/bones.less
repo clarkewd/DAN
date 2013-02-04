@@ -1,0 +1,42 @@
+body{
+	// background-color:black;
+	color:@brand-color-base;
+	-webkit-text-size-adjust:none;
+	background-color:@brand-color-highlight;
+	font-size:100%;
+	line-height:@row-height;
+	// .body-text;
+	a{
+		color:@brand-color-base;
+		text-decoration:none;
+		&:hover{
+			color:@brand-color-base-invert;
+			.transition(0.2s, ease-in-out);
+		}
+	}
+}
+.wrap{
+	.clearfix;
+	display:block;
+	width:100%;
+	height:100%;
+}
+.wrap-carousel{
+	position:absolute;
+	height:100%;
+}
+.mobile-toggle{
+	display:none;
+}
+.mobile-top-push{
+	display:none;
+}
+@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+	.mobile-toggle{
+		display:block;
+	}
+	.mobile-top-push{
+		display:block;
+		height:@row-height*3;
+	}
+}

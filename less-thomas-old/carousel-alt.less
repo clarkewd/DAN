@@ -47,14 +47,6 @@ ul.slides{
 				background-color:@brand-color-highlight-entertained-lighter;
 				float:none;
 				z-index:101;
-				@media screen and (max-width:@tablet-02){
-					.column(8,12);
-					display:block;
-					position:relative;
-					margin:0 auto;
-					padding:@row-height*2;
-					float:none;
-				}
 				img{
 					display:block;
 					position:relative;
@@ -78,17 +70,6 @@ ul.slides{
 					font-size:1.25em;
 					line-height:1.25em;
 				}
-				@media screen and (max-width:@tablet-02){
-					.column(8,12);
-					display:block;
-					position:relative;
-					margin:0 auto;
-					padding:@row-height*2;
-					float:none;
-					p{
-						margin:0 @row-height*2;
-					}
-				}
 			}
 			@media screen and (max-width:@mobile){
 				position:relative;
@@ -102,10 +83,9 @@ ul.slides{
 						display:none;
 					}
 					h1{
-						.brand-type;
-						font-size:2em;
+						font-size:1.5em;
 						letter-spacing:0;
-						text-transform:uppercase;
+						text-transform:none;
 						font-weight:400;
 					}
 					p{

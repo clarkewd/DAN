@@ -1,0 +1,240 @@
+.site-nav{
+	display:block;
+	position:fixed;
+	width:100%;
+	z-index:102;
+	background-color:@brand-color-base-invert-light;
+	@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+		position:relative;
+		background-color:@brand-color-base-invert;
+	}
+	.wrap{
+	}
+}
+.identity{
+	margin-bottom:@row-height;
+	a{
+		&:hover{
+			color:@brand-color-base;
+		}
+		img{
+			width:380px;
+			margin:@row-height auto @row-height*1.5;
+			display:block;
+			position:relative;
+			float:none;
+			@media screen and (max-width:@tablet-02){
+				width:300px;
+			}
+		}
+	}
+	.logo{
+		.column(4,14);
+		display:block;
+		float:none;
+		margin:@row-height auto;
+		img{
+			display:block;
+			margin:0 auto;
+			width:15%;
+		}
+		@media screen and (max-width:@tablet-01){
+			.column(4,14);
+			display:block;
+			float:none;
+			margin:@row-height auto;
+			img{
+				width:25%;
+			}
+		}
+		@media screen and (max-width:@tablet-02){
+			.column(8,14);
+			display:block;
+			float:none;
+			margin:@row-height auto;
+		}
+	}
+	.hide-logo{
+		// margin-top:-75px;
+		.transition(0.6s, ease-in-out);
+	}
+	.logotype-wrap{
+		.column(4,14);
+		display:block;
+		float:none;
+		margin:0 auto;
+		@media screen and (max-width:@tablet-01){
+			.column(12,14);
+			display:block;
+			float:none;
+			margin:0 auto;
+		}
+		.logo-type{
+		}
+	}
+	.logo-text-wrap{
+		.column(4,14);
+		display:block;
+		float:none;
+		margin:0 auto;
+		.logo-text{
+			display:block;
+			margin:0 auto;
+			text-align:center;
+		}
+	}
+}
+.nav-bar{
+	.clearfix();
+	// margin-top:@row-height;
+	>ul{
+		.clearfix();
+		margin:0;
+		padding-left:0;
+		li{
+			display:block;
+			float:left;
+			margin-right:@row-height;
+		}
+	}
+	.nav-hide{
+		.column(1,14);
+		position:absolute;
+		text-align:center;
+		top:0;
+		a{
+			padding:@row-height*0.5 0 @row-height*0.2;
+			display:block;
+			img{
+				display:block;
+				position:relative;
+				margin:0 auto;
+			}
+		}
+	}
+	.main-nav{
+		.column(12,14);
+		display:block;
+		float:none;
+		margin:0 auto;
+		.clearfix;
+		@media screen and (max-width:@laptop){
+			.column(14,14);
+			float:none;
+		}
+		@media screen and (min-width:@wide){
+			width:@wide;
+			margin:0 auto;
+		}
+		.menu-item {
+			.menu-text;
+			width:16.66%;
+			margin:0;
+			display:inline;
+			float:left;
+			text-align:center;
+			@media screen and (max-width:@tablet-02){
+				width:33.3333%;
+			}
+			a{
+				span.menu-break{
+					display:block;
+					.touch &{
+						@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+							display:none;
+						}
+					}
+				}
+				display:block;
+				// width:50%;
+				margin:0 auto;
+				padding:@row-height*1.2 0;
+				&:hover{
+					background-color:@brand-color-highlight-entertained;
+					color:@brand-color-base-invert;
+				}
+				@media screen and (max-width:@laptop){
+					padding:@row-height*1.2 0;
+				}
+				@media screen and (max-width:@tablet-01){
+					padding:@row-height*1.2 0;
+				}
+			}
+			&:first-child{
+				a{
+					padding:@row-height*1.7 0;
+					.touch &{
+						@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+							padding:@row-height*1.2 0;
+						}
+					}
+				}
+			}
+          &.current-menu-item{
+            a {
+              background-color:@brand-color-highlight-entertained;
+              color:@brand-color-base-invert;
+            }
+          }
+		}
+		@media screen and (max-width:@mobile), (-webkit-min-device-pixel-ratio: 2){
+			display:none;
+			width:100%;
+			padding-top:@row-height*2;
+			.menu-item {
+				.brand-type;
+				display:block;
+				position:relative;
+				width:100%;
+				line-height:1em;
+				a{
+					padding:@row-height*1.2  0;
+				}
+			}
+
+		}
+	}
+	.mobile-main-nav{
+		top:@row-height*3.5;
+		display:block;
+		position:fixed;
+		background-color:@brand-color-base-invert-light;
+	}
+	.sec-nav{
+		float:right;
+	}
+}
+.mobile-nav{
+	.clearfix;
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:300;
+	background-color:@brand-color-base-invert;
+	margin-top:0;
+	padding:0;
+	list-style:none;
+	.menu-item {
+		.menu-text;
+		display:block;
+		position:relative;
+		margin:2%;
+		height:@row-height*3;
+	}
+	.nav-item-menu{
+		float:left;
+	}
+	.nav-item-booking{
+		float:right;
+	}
+}
+.sec-nav{
+	.menu-item {
+		float:left;
+		a{
+			&:hover{
+
+			}
+		}
+	}
+}
