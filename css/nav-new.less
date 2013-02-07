@@ -157,6 +157,13 @@
 			&:first-child{
 				a{
 					padding:@row-height*1.7 0;
+					height:14px;
+					background-image:url('@{site-house-header}');
+					background-position:center center;
+					background-repeat:no-repeat;
+					&:hover{
+						background-image:url('@{site-house-header-neg}');
+					}
 					.touch &{
 						@media screen and (max-width:@mobile){
 							padding:@row-height*1.2 0;
